@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bmupftdn8r7js"
-path="res://.godot/imported/sharko.png-39883cb5cb48dc266517cb86fe073b75.ctex"
+path="res://.godot/imported/sharko.png-f58063db5937da88dd0bb6e0ded1e01a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/misc/sharko.png"
-dest_files=["res://.godot/imported/sharko.png-39883cb5cb48dc266517cb86fe073b75.ctex"]
+source_file="res://assets/unsorted/sharko.png"
+dest_files=["res://.godot/imported/sharko.png-f58063db5937da88dd0bb6e0ded1e01a.ctex"]
 
 [params]
 
