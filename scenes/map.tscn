@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://gjrq8c7t8xje" path="res://scenes/map_room.gd" id="2_paxxb"]
 
 [node name="Map" type="CanvasLayer" unique_id=373471948]
+process_mode = 2
 
 [node name="Control" type="Control" parent="." unique_id=483778741]
 layout_mode = 3
