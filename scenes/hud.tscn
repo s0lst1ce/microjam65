@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ddy2k1p5c4i6k"]
+
+[ext_resource type="Texture2D" uid="uid://b3i116f0yxtoj" path="res://icon.svg" id="1_ahhtf"]
+[ext_resource type="Texture2D" uid="uid://cttp8u4yck7cn" path="res://assets/editor/click.svg" id="2_oo0fn"]
+[ext_resource type="Script" uid="uid://cker0h66hbv4u" path="res://scenes/map_button.gd" id="3_5ysmq"]
+
+[node name="HUD" type="CanvasLayer" unique_id=166520485]
+
+[node name="MapButton" type="TextureButton" parent="." unique_id=1976855983]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -128.0
+offset_bottom = 128.0
+grow_horizontal = 0
+texture_normal = ExtResource("1_ahhtf")
+texture_pressed = ExtResource("2_oo0fn")
+script = ExtResource("3_5ysmq")
+
+[connection signal="pressed" from="MapButton" to="MapButton" method="_on_pressed"]
