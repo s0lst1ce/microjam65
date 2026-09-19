@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://c1aqm36w3am2k"]
+
+[ext_resource type="Script" uid="uid://birsj1hmvmeyf" path="res://room.gd" id="1_t3x5t"]
+[ext_resource type="Texture2D" uid="uid://cttp8u4yck7cn" path="res://assets/editor/click.svg" id="2_4iwim"]
+
+[node name="Garden" type="Node2D" unique_id=1849668048]
+script = ExtResource("1_t3x5t")
+metadata/_custom_type_script = "uid://birsj1hmvmeyf"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=928645284]
+position = Vector2(943.99994, 621)
+scale = Vector2(29.25, 36.333332)
+texture = ExtResource("2_4iwim")
