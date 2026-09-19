@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://bkmva8o6n4kky"]
+
+[ext_resource type="Texture2D" uid="uid://b3i116f0yxtoj" path="res://icon.svg" id="1_4xfga"]
+[ext_resource type="Script" uid="uid://gjrq8c7t8xje" path="res://scenes/map_room.gd" id="2_paxxb"]
+
+[node name="Map" type="CanvasLayer" unique_id=373471948]
+
+[node name="Control" type="Control" parent="." unique_id=483778741]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Cafeteria" type="MarginContainer" parent="Control" unique_id=1235137214]
+layout_mode = 0
+offset_left = 319.0
+offset_top = 193.0
+offset_right = 735.0
+offset_bottom = 365.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="TextureRect" type="TextureButton" parent="Control/Cafeteria" unique_id=1677816074]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_4xfga")
+stretch_mode = 0
+script = ExtResource("2_paxxb")
+room = "cafeteria"
+
+[node name="Garden" type="MarginContainer" parent="Control" unique_id=1370805120]
+layout_mode = 0
+offset_left = 1090.0
+offset_top = 431.0
+offset_right = 1506.0
+offset_bottom = 603.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="TextureRect" type="TextureButton" parent="Control/Garden" unique_id=2059813146]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("1_4xfga")
+stretch_mode = 0
+script = ExtResource("2_paxxb")
+room = "garden"
+
+[connection signal="pressed" from="Control/Cafeteria/TextureRect" to="Control/Cafeteria/TextureRect" method="_on_pressed"]
+[connection signal="pressed" from="Control/Garden/TextureRect" to="Control/Garden/TextureRect" method="_on_pressed"]
