@@ -5,3 +5,4 @@ extends TextureButton
 func _on_pressed() -> void:
 	print("clicked")
 	SceneSwitching.goto_room.emit(room)
+	SceneSwitching.toggle_map.emit()

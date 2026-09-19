@@ -14,6 +14,7 @@ extends Node2D
 func _ready() -> void:
 	SceneSwitching.goto_room.connect(_on_change_room)
 	SceneSwitching.toggle_map.connect(_on_toggle_map)
+	change_scene("cafeteria")
 
 func _on_intro_video_finished() -> void:
 	self.add_child(scenes[current_room])
@@ -25,15 +26,20 @@ func change_scene(room: String) -> void:
 	self.add_child(scenes[current_room])
 
 func _on_change_room(room: String) -> void:
-	print("changing room")
 	change_scene(room)
 
 func _on_toggle_map():
-	if map.opened:
-		map.paused=true
-		map.hide()
-		scenes[current_room].paused = true
+	#MAP
+	get_tree().paused = not get_tree().paused
+	scenes[current_room].visible = not scenes[current_room].visible
+	#map.modulate.a = 0.0
+	map.visible = not map.visible
+	#create_tween().tween_property(map, "modulate:a", 1.0, 0.15)
+	
+	#Map Button
+	var button =$HUD/MapButton
+	button.is_open = not button.is_open
+	if button.is_open:
+		button.texture_normal = button.opened
 	else:
-		map.paused=false
-		map.show()
-		scenes[current_room].paused = false
+		button.texture_normal = button.closed
