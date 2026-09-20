@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjak53a4nxova"
-path="res://.godot/imported/lampvrai.png-efd39ad3d06ded413d95efd1910cb5e9.ctex"
+uid="uid://l5bbe48c5ark"
+path="res://.godot/imported/etagere.png-690550e129c850da879abaca1aed6c2a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/lampvrai.png"
-dest_files=["res://.godot/imported/lampvrai.png-efd39ad3d06ded413d95efd1910cb5e9.ctex"]
+source_file="res://assets/unsorted/etagere.png"
+dest_files=["res://.godot/imported/etagere.png-690550e129c850da879abaca1aed6c2a.ctex"]
 
 [params]
 

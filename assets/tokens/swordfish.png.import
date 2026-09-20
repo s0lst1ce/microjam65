@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cuijjrqyjdj27"
-path="res://.godot/imported/backgroundlibrary.png-471fe0a786ab40e7c375c47807f4ccd4.ctex"
+uid="uid://dgax66kwl7jed"
+path="res://.godot/imported/swordfish.png-b30d6a3bc16bc9ae428b62456088a936.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/backgroundlibrary.png"
-dest_files=["res://.godot/imported/backgroundlibrary.png-471fe0a786ab40e7c375c47807f4ccd4.ctex"]
+source_file="res://assets/tokens/swordfish.png"
+dest_files=["res://.godot/imported/swordfish.png-b30d6a3bc16bc9ae428b62456088a936.ctex"]
 
 [params]
 
