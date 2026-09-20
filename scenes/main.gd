@@ -30,15 +30,17 @@ func change_scene(room: String) -> void:
 	self.add_child(scenes[current_room])
 
 func _on_change_room(room: String) -> void:
+	print("Going to ", room)
 	change_scene(room)
 
 func _on_toggle_map():
 	#MAP
 	get_tree().paused = not get_tree().paused
 	scenes[current_room].visible = not scenes[current_room].visible
+	#$Map/Control.modulate.a=0.0
 	#map.modulate.a = 0.0
 	map.visible = not map.visible
-	#create_tween().tween_property(map, "modulate:a", 1.0, 0.15)
+	#create_tween().tween_property($Map/Control, "modulate:a", 1.0, 0.15)
 	
 	#Map Button
 	var button =$HUD/MapButton

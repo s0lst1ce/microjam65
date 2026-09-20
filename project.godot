@@ -36,6 +36,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "arrival": "res://dialogic/arrival.dtl",
+"meeting_couple": "res://dialogic/meeting_couple.dtl",
 "meeting_lantern": "res://dialogic/meeting_lantern.dtl",
 "meeting_swordfish": "res://dialogic/meeting_swordfish.dtl",
 "meeting_whale": "res://dialogic/meeting_whale.dtl",
