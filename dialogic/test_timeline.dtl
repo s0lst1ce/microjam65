@@ -1,4 +1,9 @@
+[background arg="res://assets/unsorted/backgroundroom2.png" fade="0.0"]
 join anemon left [animation="Instant In"]
 anemon: Hello! I'm Anne and this little guy is Mon.
 join sharko right [animation="Slide From Right"]
 sharko: Sharko. Now get out of my way!
+leave sharko [animation="Slide To Right"]
+join brochette right
+join pirhana rightmost
+brochette: Hello dear, are you the deetctive ?

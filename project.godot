@@ -26,12 +26,48 @@ Dialogic="*uid://ds2q0uclmolvu"
 
 directories/dch_directory={
 "anemon": "res://dialogic/anemon.dch",
+"brochette": "res://dialogic/brochette.dch",
+"pirhana": "res://dialogic/pirhana.dch",
 "sharko": "res://dialogic/sharko.dch"
 }
 directories/dtl_directory={
 "test_timeline": "res://dialogic/test_timeline.dtl"
 }
 layout/style_directory={}
+glossary/default_case_sensitive=true
+variables={}
+text/letter_speed=0.01
+text/initial_text_reveal_skippable=true
+text/text_reveal_skip_delay=0.1
+text/advance_delay=0.1
+text/autoadvance_per_character_delay=0.1
+text/autoadvance_ignored_characters_enabled=true
+choices/autofocus_first=true
+choices/delay=0.2
+choices/reveal_delay=0
+choices/reveal_by_input=false
+save/autosave_delay=60.0
+save/encryption_on_exports_only=true
+animations/join_default_length=0.5
+animations/join_default_wait=true
+animations/leave_default_length=0.5
+animations/leave_default_wait=true
+animations/cross_fade_default_length=0.5
+text/autopauses={}
+audio/channel_defaults={
+"": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": false,
+"volume": 0.0
+},
+"music": {
+"audio_bus": "",
+"fade_length": 0.0,
+"loop": true,
+"volume": 0.0
+}
+}
 
 [display]
 

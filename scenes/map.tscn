@@ -3,6 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://b3i116f0yxtoj" path="res://icon.svg" id="1_4xfga"]
 [ext_resource type="Script" uid="uid://dvh3k6dq3ovej" path="res://scenes/map.gd" id="1_gldc4"]
 [ext_resource type="Script" uid="uid://gjrq8c7t8xje" path="res://scenes/map_room.gd" id="2_paxxb"]
+[ext_resource type="Texture2D" uid="uid://bwmdfc7r84xq7" path="res://assets/rooms/bedroom_couple.png" id="4_0cso3"]
+[ext_resource type="Texture2D" uid="uid://bmupftdn8r7js" path="res://assets/portraits/sharko.png" id="5_2lpho"]
+[ext_resource type="Texture2D" uid="uid://51erjked01we" path="res://assets/portraits/brochette.png" id="6_nakos"]
 
 [node name="Map" type="CanvasLayer" unique_id=942313466]
 process_mode = 2
@@ -43,12 +46,13 @@ stretch_mode = 0
 script = ExtResource("2_paxxb")
 room = "cafeteria"
 
-[node name="Garden" type="MarginContainer" parent="Control" unique_id=1214140749]
+[node name="BedroomCouple" type="MarginContainer" parent="Control" unique_id=1214140749]
 layout_mode = 0
 offset_left = 1089.0
 offset_top = 478.0
-offset_right = 1505.0
-offset_bottom = 650.0
+offset_right = 3029.0
+offset_bottom = 1578.0
+scale = Vector2(0.15519369, 0.15519369)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/margin_left = 10
@@ -56,14 +60,25 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="TextureRect" type="TextureButton" parent="Control/Garden" unique_id=1800774651]
+[node name="TextureRect" type="TextureButton" parent="Control/BedroomCouple" unique_id=1800774651]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture_normal = ExtResource("1_4xfga")
+texture_normal = ExtResource("4_0cso3")
 stretch_mode = 0
 script = ExtResource("2_paxxb")
-room = "garden"
+room = "bedroom_couple"
+
+[node name="Occupants" type="HBoxContainer" parent="Control/BedroomCouple" unique_id=775944105]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control/BedroomCouple/Occupants" unique_id=467602901]
+layout_mode = 2
+texture = ExtResource("5_2lpho")
+
+[node name="TextureRect2" type="TextureRect" parent="Control/BedroomCouple/Occupants" unique_id=514872536]
+layout_mode = 2
+texture = ExtResource("6_nakos")
 
 [connection signal="pressed" from="Control/Cafeteria/TextureRect" to="Control/Cafeteria/TextureRect" method="_on_pressed"]
-[connection signal="pressed" from="Control/Garden/TextureRect" to="Control/Garden/TextureRect" method="_on_pressed"]
+[connection signal="pressed" from="Control/BedroomCouple/TextureRect" to="Control/BedroomCouple/TextureRect" method="_on_pressed"]
