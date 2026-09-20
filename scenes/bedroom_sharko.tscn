@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://c83eng2l4wp26"]
+
+[ext_resource type="Script" uid="uid://birsj1hmvmeyf" path="res://room.gd" id="1_2aifn"]
+[ext_resource type="Texture2D" uid="uid://bdonf2blj6up7" path="res://assets/rooms/bedroom_sharko.png" id="2_ou55f"]
+[ext_resource type="Texture2D" uid="uid://bmupftdn8r7js" path="res://assets/portraits/sharko.png" id="3_60cc3"]
+[ext_resource type="Script" uid="uid://c6lanv6uyjx5f" path="res://scenes/sharko.gd" id="4_2aifn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
+size = Vector2(455.71356, 665.09534)
+
+[node name="BedroomSharko" type="Node2D" unique_id=955813256]
+script = ExtResource("1_2aifn")
+metadata/_custom_type_script = "uid://birsj1hmvmeyf"
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1480456828]
+texture = ExtResource("2_ou55f")
+centered = false
+
+[node name="Sharko" type="Sprite2D" parent="." unique_id=1136671448]
+position = Vector2(1423, 784)
+scale = Vector2(0.73072237, 0.73072237)
+texture = ExtResource("3_60cc3")
+script = ExtResource("4_2aifn")
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="Sharko" unique_id=554691055]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sharko/Area2D" unique_id=316826227]
+position = Vector2(-10.263794, -2.7369385)
+shape = SubResource("RectangleShape2D_3bft5")

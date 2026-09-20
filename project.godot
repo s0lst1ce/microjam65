@@ -49,6 +49,7 @@ variables={
 "NextDialogue": {
 "couple": "meeting_couple",
 "lantern": "meeting_lantern",
+"sharko": "meeting_sharko",
 "swordfish": "meeting_swordfish",
 "whale": "arrival"
 }

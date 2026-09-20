@@ -10,6 +10,9 @@ extends Node2D
 	"garden": preload("res://scenes/garden.tscn").instantiate(),
 	"corridor": preload("res://scenes/corridor.tscn").instantiate(),
 	"bedroom_couple": preload("res://scenes/bedroom_couple.tscn").instantiate(),
+	"bedroom_sharko": preload("res://scenes/bedroom_sharko.tscn").instantiate(),
+	"bedroom_swordfish": preload("res://scenes/bedroom_swordfish.tscn").instantiate(),
+	
 }
 
 @onready var sfx = $SFX
