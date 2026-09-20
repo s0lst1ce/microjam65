@@ -37,11 +37,18 @@ directories/dch_directory={
 directories/dtl_directory={
 "arrival": "res://dialogic/arrival.dtl",
 "meeting_lantern": "res://dialogic/meeting_lantern.dtl",
+"meeting_swordfish": "res://dialogic/meeting_swordfish.dtl",
+"meeting_whale": "res://dialogic/meeting_whale.dtl",
+"nothing_whale": "res://dialogic/nothing_whale.dtl",
 "test_timeline": "res://dialogic/test_timeline.dtl"
 }
 layout/style_directory={}
 glossary/default_case_sensitive=true
-variables={}
+variables={
+"NextDialogue": {
+"whale": "arrival"
+}
+}
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
 text/text_reveal_skip_delay=0.1

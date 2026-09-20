@@ -14,8 +14,10 @@ latern: I am sleeping. Or trying to. Some seek light to guide their path their e
 [wait time="2.0"]
 latern: Sorry. I am always a little tense what with sleep-deprevation. Shrimp's passing has made me positively fraught.
 anemon: Speaking of Shrimp, what do you know about her death ?
-latern: I am also the one who found Shrimp in the Library.
+[wait time="2.0"]
+latern: I am the one who found her in the Library. Her body was crushed under books. Her entrails splattered on the floor.
 leave latern
 joe: This one is unhinged.
 anemon: I like her. I like her a [b]lot[/b]!
-joe: Of course you do! You really should see a psy some day Anne.
+joe: Of course you would! You really should see a shrink some day Anne.
+anemon: No thanks, I really don't wanna be as small as you !

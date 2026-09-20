@@ -4,7 +4,7 @@ whale: Hi Ms.Mone, Mr.Ker ! Welcome to WhaleBack, though I'm pained it had to be
 join anemon leftmost [animation="Instant In"]
 anemon: Thanks ! I always wanted to visit a caring home !
 whale: ...
-[wait time="2.0"]
+[wait time="1.0"]
 whale: As you know our cherished Shrimp passed away recently.
 whale (Crying): [i]whwawhahwhaw[/i]
 whale (Main): I'm sorry. It's just, I liked her so much! Every time I think of her death I tear up. Especially since I fear her death was not of natural causes.
@@ -14,4 +14,4 @@ anemon: So Joe, happy to be here ?
 joe: Locked up in a caring home along a dead body and murderer, how could I not. We're here to solve a murder Anne, not have fun.
 anemon: Always so gloomy ! You should try smiling some day, everything is just so much more fun that way!
 joe: ...
-[wait time="2.0"]
+set {NextDialogue.whale} = "meeting_whale"
