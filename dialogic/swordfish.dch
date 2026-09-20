@@ -2,7 +2,7 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 &"_translation_id": "",
-&"color": Color(1, 1, 1, 1),
+&"color": Color(0.47058824, 0.4392157, 0.58431375, 1),
 &"custom_info": {
 "prefix": "",
 "sound_mood_default": "",
@@ -12,7 +12,7 @@
 },
 &"default_portrait": "Main",
 &"description": "",
-&"display_name": "Swordfish",
+&"display_name": "William",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),

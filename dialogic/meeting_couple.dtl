@@ -1,0 +1,6 @@
+[background arg="res://assets/unsorted/black.png" fade="0.0"]
+join anemon left [animation="Instant In"]
+join brochette right [animation="Slide From Right"]
+join pirhana rightmost [animation="Slide From Right"]
+[wait time="3.0"]
+<Empty Text Event>
