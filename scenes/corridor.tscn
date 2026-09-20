@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d1py8s7lhr7cl"]
+
+[ext_resource type="Script" uid="uid://birsj1hmvmeyf" path="res://room.gd" id="1_xswuy"]
+[ext_resource type="Texture2D" uid="uid://ctkom2uiqsnv0" path="res://assets/portraits/whale.png" id="2_pucmg"]
+
+[node name="Corridor" type="Node2D" unique_id=1391204446]
+script = ExtResource("1_xswuy")
+metadata/_custom_type_script = "uid://birsj1hmvmeyf"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=52918985]
+position = Vector2(905, 678)
+texture = ExtResource("2_pucmg")

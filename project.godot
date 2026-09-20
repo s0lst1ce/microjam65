@@ -27,6 +27,7 @@ Dialogic="*uid://ds2q0uclmolvu"
 directories/dch_directory={
 "anemon": "res://dialogic/anemon.dch",
 "brochette": "res://dialogic/brochette.dch",
+<<<<<<< Updated upstream
 "pirhana": "res://dialogic/pirhana.dch",
 "sharko": "res://dialogic/sharko.dch",
 "swordfish": "res://dialogic/swordfish.dch",
@@ -35,6 +36,13 @@ directories/dch_directory={
 directories/dtl_directory={
 "arrival": "res://dialogic/arrival.dtl",
 "test_timeline": "res://dialogic/test_timeline.dtl"
+=======
+"sharko": "res://dialogic/sharko.dch",
+"whale": "res://dialogic/whale.dch"
+}
+directories/dtl_directory={
+"arrival": "res://dialogic/arrival.dtl"
+>>>>>>> Stashed changes
 }
 layout/style_directory={}
 glossary/default_case_sensitive=true
