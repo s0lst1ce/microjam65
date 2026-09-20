@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ch3oww7ukyuxc"
-path="res://.godot/imported/anemonesansjoe.png-5e79ae1b4eecb97b190355b84e646a6a.ctex"
+uid="uid://b2f14v05r1pie"
+path="res://.godot/imported/joe.png-c9ac06c86f3ff4f7727d74962bca7a71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/anemonesansjoe.png"
-dest_files=["res://.godot/imported/anemonesansjoe.png-5e79ae1b4eecb97b190355b84e646a6a.ctex"]
+source_file="res://assets/portraits/joe.png"
+dest_files=["res://.godot/imported/joe.png-c9ac06c86f3ff4f7727d74962bca7a71.ctex"]
 
 [params]
 

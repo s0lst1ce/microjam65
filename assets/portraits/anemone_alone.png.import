@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2f14v05r1pie"
-path="res://.godot/imported/joe.png-033361f1524caebc9f195f2434b011b1.ctex"
+uid="uid://ch3oww7ukyuxc"
+path="res://.godot/imported/anemone_alone.png-0e6a6342c59c4ece0d5c07010bad823d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/joe.png"
-dest_files=["res://.godot/imported/joe.png-033361f1524caebc9f195f2434b011b1.ctex"]
+source_file="res://assets/portraits/anemone_alone.png"
+dest_files=["res://.godot/imported/anemone_alone.png-0e6a6342c59c4ece0d5c07010bad823d.ctex"]
 
 [params]
 

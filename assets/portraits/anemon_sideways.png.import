@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bfrm48q4k5hx7"
-path="res://.godot/imported/anemoneprofil.png-8546a9baa42bf636d183f2238ceb0bc5.ctex"
+path="res://.godot/imported/anemon_sideways.png-a363b212172dee00f8c0ff952f21575f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/anemoneprofil.png"
-dest_files=["res://.godot/imported/anemoneprofil.png-8546a9baa42bf636d183f2238ceb0bc5.ctex"]
+source_file="res://assets/portraits/anemon_sideways.png"
+dest_files=["res://.godot/imported/anemon_sideways.png-a363b212172dee00f8c0ff952f21575f.ctex"]
 
 [params]
 
