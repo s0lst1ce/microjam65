@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c23xbmnbp74ds"
-path="res://.godot/imported/oeilbaleine.png-41d3654209a4c71bef7f6598dc8bc0b3.ctex"
+uid="uid://6wjgxdgnoeck"
+path="res://.godot/imported/black.png-d8504dd1044e4a8802c08872cd97a09b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/oeilbaleine.png"
-dest_files=["res://.godot/imported/oeilbaleine.png-41d3654209a4c71bef7f6598dc8bc0b3.ctex"]
+source_file="res://assets/unsorted/black.png"
+dest_files=["res://.godot/imported/black.png-d8504dd1044e4a8802c08872cd97a09b.ctex"]
 
 [params]
 
