@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TokenData" format=3 uid="uid://ba2eed72pw084"]
+
+[ext_resource type="Texture2D" uid="uid://cpmfhwo1hm6c8" path="res://assets/tokens/pirhana.png" id="1_b6gsr"]
+[ext_resource type="Script" uid="uid://ury7uw8n8n8c" path="res://token.gd" id="1_mchl5"]
+
+[resource]
+script = ExtResource("1_mchl5")
+name = "pirhana"
+icon = ExtResource("1_b6gsr")
+tooltip = "William was somewhere to my right And I was next to Shrimp."
+metadata/_custom_type_script = "uid://ury7uw8n8n8c"

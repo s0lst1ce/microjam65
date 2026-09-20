@@ -4,6 +4,12 @@
 [ext_resource type="Texture2D" uid="uid://vcqobsvm38xi" path="res://assets/rooms/cafeteria.png" id="2_ly403"]
 [ext_resource type="Texture2D" uid="uid://qecvmpn6x7jy" path="res://assets/portraits/lantern.png" id="3_4gkc1"]
 [ext_resource type="Script" uid="uid://c0mq0pmy07xpm" path="res://scenes/lantern.gd" id="4_rrnwm"]
+[ext_resource type="Texture2D" uid="uid://brjd8j1xuff8k" path="res://assets/furniture/table.png" id="5_rrnwm"]
+[ext_resource type="Script" uid="uid://cbs1mjlb1wqds" path="res://interactibles/dining_table.gd" id="6_rrnwm"]
+[ext_resource type="PackedScene" uid="uid://ckytasj551v7a" path="res://interactibles/table_puzzle.tscn" id="7_p4o86"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s86j8"]
+size = Vector2(1414.3859, 317.06262)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
 size = Vector2(380.46683, 649.2218)
@@ -16,8 +22,26 @@ metadata/_custom_type_script = "uid://birsj1hmvmeyf"
 texture = ExtResource("2_ly403")
 centered = false
 
+[node name="Table" type="Sprite2D" parent="." unique_id=1173174391]
+position = Vector2(886, 779.00006)
+scale = Vector2(0.7664105, 0.7664105)
+texture = ExtResource("5_rrnwm")
+script = ExtResource("6_rrnwm")
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="TablePuzzle" parent="Table" unique_id=1424272518 instance=ExtResource("7_p4o86")]
+visible = false
+
+[node name="Area2D" type="Area2D" parent="Table" unique_id=811148548]
+position = Vector2(-16.962189, -52.191437)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Table/Area2D" unique_id=1527283933]
+position = Vector2(1.3047837, -1.3047485)
+scale = Vector2(0.9999998, 0.9999998)
+shape = SubResource("RectangleShape2D_s86j8")
+
 [node name="Lantern" type="Sprite2D" parent="." unique_id=1354272503]
-position = Vector2(1600, 791.00006)
+position = Vector2(1679, 834)
 scale = Vector2(0.5060371, 0.5060371)
 texture = ExtResource("3_4gkc1")
 script = ExtResource("4_rrnwm")

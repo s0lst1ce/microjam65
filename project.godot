@@ -21,6 +21,7 @@ Conductor="*uid://c3w8a3u78gho0"
 ItemExchange="*uid://cijrkpp58a3bx"
 SceneSwitching="*uid://dsdn8fwyha7x4"
 Dialogic="*uid://ds2q0uclmolvu"
+Enigma="*uid://d0yrislsdvpsh"
 
 [dialogic]
 
@@ -41,6 +42,8 @@ directories/dtl_directory={
 "meeting_swordfish": "res://dialogic/meeting_swordfish.dtl",
 "meeting_whale": "res://dialogic/meeting_whale.dtl",
 "nothing_whale": "res://dialogic/nothing_whale.dtl",
+"table_disabled": "res://dialogic/table_disabled.dtl",
+"table_success": "res://dialogic/table_success.dtl",
 "test_timeline": "res://dialogic/test_timeline.dtl"
 }
 layout/style_directory={}
@@ -52,7 +55,8 @@ variables={
 "sharko": "meeting_sharko",
 "swordfish": "meeting_swordfish",
 "whale": "arrival"
-}
+},
+"table_puzzle_enabled": false
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true

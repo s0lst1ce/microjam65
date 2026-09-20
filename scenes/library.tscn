@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://rjri13qi2aik"]
+
+[ext_resource type="Script" uid="uid://birsj1hmvmeyf" path="res://room.gd" id="1_m4m2s"]
+[ext_resource type="Texture2D" uid="uid://cuijjrqyjdj27" path="res://assets/rooms/library.png" id="2_n61aj"]
+[ext_resource type="Shader" uid="uid://2q563rjql2f2" path="res://scenes/black.gdshader" id="3_6frsu"]
+[ext_resource type="Texture2D" uid="uid://6wjgxdgnoeck" path="res://assets/unsorted/black.png" id="3_igipr"]
+[ext_resource type="Script" uid="uid://07coiec66sme" path="res://scenes/dark_room.gd" id="5_6frsu"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dr2oc"]
+shader = ExtResource("3_6frsu")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
+size = Vector2(1920.5, 1082)
+
+[node name="Room" type="Node2D" unique_id=1294214668]
+script = ExtResource("1_m4m2s")
+metadata/_custom_type_script = "uid://birsj1hmvmeyf"
+
+[node name="Background" type="Sprite2D" parent="." unique_id=2001336245]
+texture = ExtResource("2_n61aj")
+centered = false
+
+[node name="Dark" type="Sprite2D" parent="." unique_id=9684964]
+material = SubResource("ShaderMaterial_dr2oc")
+texture = ExtResource("3_igipr")
+centered = false
+script = ExtResource("5_6frsu")
+interacts_with = Array[String](["portable_lantern"])
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="Dark" unique_id=25726762]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dark/Area2D" unique_id=2073096032]
+position = Vector2(959.75, 541)
+shape = SubResource("RectangleShape2D_3bft5")

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TokenData" format=3 uid="uid://d24a8ppg7gfv0"]
+
+[ext_resource type="Script" uid="uid://ury7uw8n8n8c" path="res://token.gd" id="1_ciwrq"]
+[ext_resource type="Texture2D" uid="uid://bshbj7loih7iw" path="res://assets/tokens/brochette.png" id="1_yb4l0"]
+
+[resource]
+script = ExtResource("1_ciwrq")
+name = "brochette"
+icon = ExtResource("1_yb4l0")
+tooltip = "Edmond was next to me, on my left."
+metadata/_custom_type_script = "uid://ury7uw8n8n8c"

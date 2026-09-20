@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cob3wvjc232ro"]
+
+[ext_resource type="Script" uid="uid://bp63adiuj3ujh" path="res://item_data.gd" id="1_slik2"]
+[ext_resource type="Texture2D" uid="uid://cu4yelulgt1ii" path="res://assets/furniture/donut.png" id="1_vnq7k"]
+
+[resource]
+script = ExtResource("1_slik2")
+name = "donut"
+icon = ExtResource("1_vnq7k")
+metadata/_custom_type_script = "uid://bp63adiuj3ujh"
