@@ -1,0 +1,31 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(0.67058825, 0.29411766, 0.22745098, 1),
+&"custom_info": {
+"prefix": "",
+"sound_mood_default": "",
+"sound_moods": {},
+"style": "",
+"suffix": ""
+},
+&"default_portrait": "Main",
+&"description": "",
+&"display_name": "Pirhana",
+&"mirror": false,
+&"nicknames": [""],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"Main": {
+"export_overrides": {
+"image": "\"res://assets/portraits/pirhana.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

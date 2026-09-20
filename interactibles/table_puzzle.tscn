@@ -1,0 +1,529 @@
+[gd_scene format=3 uid="uid://ckytasj551v7a"]
+
+[ext_resource type="Script" uid="uid://bijjioucygif3" path="res://interactibles/table_puzzle.gd" id="1_vog88"]
+[ext_resource type="Texture2D" uid="uid://dxuoq7cycn8ge" path="res://assets/furniture/table_topdown.png" id="2_nb681"]
+[ext_resource type="Script" uid="uid://cljufwwino3xj" path="res://interactibles/token_inventory.gd" id="3_322pw"]
+[ext_resource type="Script" uid="uid://4itk45jk0gyl" path="res://interactibles/token_slot.gd" id="3_tixy7"]
+[ext_resource type="Resource" uid="uid://ba2eed72pw084" path="res://token_pirhana.tres" id="5_allwu"]
+[ext_resource type="Resource" uid="uid://dit43tg48wx1l" path="res://token_sharko.tres" id="7_ry8c3"]
+[ext_resource type="Script" uid="uid://bagl42kilj7bt" path="res://interactibles/puzzle_plate.gd" id="7_t35mi"]
+[ext_resource type="Resource" uid="uid://d24a8ppg7gfv0" path="res://token_brochette.tres" id="7_vb20r"]
+[ext_resource type="Resource" uid="uid://ddky14du04t07" path="res://token_shrimp.tres" id="8_fkyci"]
+[ext_resource type="Resource" uid="uid://rwakvni6cmgm" path="res://token_lantern.tres" id="9_7dicd"]
+[ext_resource type="Resource" uid="uid://b8hsskdpiwvf" path="res://token_swordfish.tres" id="10_x4myp"]
+[ext_resource type="Shader" uid="uid://dvdb7o7b5ndrc" path="res://interactibles/table_puzzle.gdshader" id="12_fkyci"]
+[ext_resource type="Texture2D" uid="uid://w25jb2btssn2" path="res://assets/furniture/donut_eaten.png" id="13_cusmc"]
+[ext_resource type="Texture2D" uid="uid://cu4yelulgt1ii" path="res://assets/furniture/donut.png" id="13_x4myp"]
+[ext_resource type="Texture2D" uid="uid://1vdcg5hsdtwl" path="res://assets/unsorted/crux.png" id="16_s86j8"]
+[ext_resource type="Script" uid="uid://b2jgxvglqtwtu" path="res://interactibles/table_puzzle_close_button.gd" id="17_pt5tt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vb20r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t35mi"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fkyci"]
+shader = ExtResource("12_fkyci")
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/width = 10.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = true
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ihef7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p4o86"]
+shader = ExtResource("12_fkyci")
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/width = 5.0000002375
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = true
+
+[node name="TablePuzzle" type="CanvasLayer" unique_id=1424272518]
+process_mode = 2
+script = ExtResource("1_vog88")
+
+[node name="Background" type="TextureRect" parent="." unique_id=642099615]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_nb681")
+
+[node name="Inventory" type="Panel" parent="." unique_id=1152246160]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -389.0
+offset_top = 118.0
+offset_right = 379.0
+offset_bottom = 246.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_vb20r")
+script = ExtResource("3_322pw")
+
+[node name="MarginContainer" type="MarginContainer" parent="Inventory" unique_id=133078894]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GridContainer" type="GridContainer" parent="Inventory/MarginContainer" unique_id=1382178346]
+layout_mode = 2
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 6
+
+[node name="TokenSlot" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=658795528]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("3_tixy7")
+token = ExtResource("5_allwu")
+idx = 6
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/TokenSlot" unique_id=602700793]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot2" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=164920249]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("3_tixy7")
+token = ExtResource("7_vb20r")
+idx = 6
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/TokenSlot2" unique_id=324863453]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot3" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=2108420138]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("3_tixy7")
+token = ExtResource("7_ry8c3")
+idx = 6
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/TokenSlot3" unique_id=596842061]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot4" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=614674913]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("3_tixy7")
+token = ExtResource("8_fkyci")
+idx = 6
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/TokenSlot4" unique_id=9925303]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot5" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=755333223]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("3_tixy7")
+token = ExtResource("9_7dicd")
+idx = 6
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/TokenSlot5" unique_id=1913370683]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot6" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=1733585207]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("3_tixy7")
+token = ExtResource("10_x4myp")
+idx = 6
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/TokenSlot6" unique_id=2083914697]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="PlateSwordfish" type="Control" parent="." unique_id=1176526696]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 167.00002
+offset_top = 92.000015
+offset_right = 295.0
+offset_bottom = 220.00002
+scale = Vector2(2.3214662, 2.3214662)
+script = ExtResource("7_t35mi")
+
+[node name="TokenSlot4" type="Panel" parent="PlateSwordfish" unique_id=732256289]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 0.8615227
+offset_right = 1.5258789e-05
+offset_bottom = 0.8615265
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ihef7")
+script = ExtResource("3_tixy7")
+correct = ExtResource("10_x4myp")
+
+[node name="Icon" type="TextureRect" parent="PlateSwordfish/TokenSlot4" unique_id=1746969760]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -29.108265
+offset_top = -32.985123
+offset_right = 98.89174
+offset_bottom = 95.01488
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.44290543, 0.44290543)
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Donut3" type="TextureRect" parent="PlateSwordfish" unique_id=1606654862]
+layout_mode = 0
+offset_left = 55.568317
+offset_top = 100.798355
+offset_right = 227.56834
+offset_bottom = 277.79834
+rotation = 1.647955
+scale = Vector2(0.32304892, 0.32304892)
+texture = ExtResource("13_cusmc")
+
+[node name="PlateBrochette" type="Control" parent="." unique_id=1750118820]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 572.0
+offset_top = 92.000015
+offset_right = 700.0
+offset_bottom = 220.00002
+scale = Vector2(2.3214662, 2.3214662)
+script = ExtResource("7_t35mi")
+
+[node name="TokenSlot4" type="Panel" parent="PlateBrochette" unique_id=1637635558]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1.5258789e-05
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ihef7")
+script = ExtResource("3_tixy7")
+correct = ExtResource("7_vb20r")
+idx = 1
+
+[node name="Icon" type="TextureRect" parent="PlateBrochette/TokenSlot4" unique_id=591743254]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -29.108265
+offset_top = -32.985123
+offset_right = 98.89174
+offset_bottom = 95.01488
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.44290543, 0.44290543)
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Donut4" type="TextureRect" parent="PlateBrochette" unique_id=1013734570]
+layout_mode = 0
+offset_left = -34.46099
+offset_top = -27.999554
+offset_right = 137.53903
+offset_bottom = 149.00044
+scale = Vector2(0.32304892, 0.32304892)
+texture = ExtResource("13_x4myp")
+
+[node name="PlateLantern" type="Control" parent="." unique_id=1556872370]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1037.0
+offset_top = 135.0
+offset_right = 1165.0
+offset_bottom = 263.0
+scale = Vector2(2.3214662, 2.3214662)
+script = ExtResource("7_t35mi")
+
+[node name="TokenSlot4" type="Panel" parent="PlateLantern" unique_id=38020340]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1.5258789e-05
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ihef7")
+script = ExtResource("3_tixy7")
+correct = ExtResource("9_7dicd")
+idx = 2
+
+[node name="Icon" type="TextureRect" parent="PlateLantern/TokenSlot4" unique_id=76189697]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -29.108265
+offset_top = -32.985123
+offset_right = 98.89174
+offset_bottom = 95.01488
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.44290543, 0.44290543)
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Donut2" type="TextureRect" parent="PlateLantern" unique_id=241579346]
+layout_mode = 0
+offset_left = 44.368484
+offset_top = 24.553448
+offset_right = 216.36848
+offset_bottom = 201.55345
+rotation = 3.3861291
+scale = Vector2(0.32304892, 0.32304892)
+texture = ExtResource("13_cusmc")
+
+[node name="PlatePirhana" type="Control" parent="." unique_id=588673967]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1490.0
+offset_top = 95.0
+offset_right = 1618.0
+offset_bottom = 223.0
+scale = Vector2(2.3214662, 2.3214662)
+script = ExtResource("7_t35mi")
+
+[node name="Donut5" type="TextureRect" parent="PlatePirhana" unique_id=2128452353]
+layout_mode = 0
+offset_left = 146.88992
+offset_top = -18.09201
+offset_right = 318.88995
+offset_bottom = 158.90799
+rotation = 0.7538571
+scale = Vector2(0.32304892, 0.32304892)
+texture = ExtResource("13_x4myp")
+
+[node name="TokenSlot4" type="Panel" parent="PlatePirhana" unique_id=421732777]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1.5258789e-05
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ihef7")
+script = ExtResource("3_tixy7")
+correct = ExtResource("5_allwu")
+idx = 3
+
+[node name="Icon" type="TextureRect" parent="PlatePirhana/TokenSlot4" unique_id=1510135280]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -29.108265
+offset_top = -32.985123
+offset_right = 98.89174
+offset_bottom = 95.01488
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.44290543, 0.44290543)
+expand_mode = 3
+stretch_mode = 5
+
+[node name="PlateShrimp" type="Control" parent="." unique_id=2019361328]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1410.0
+offset_top = 591.0
+offset_right = 1538.0
+offset_bottom = 719.0
+scale = Vector2(2.3214662, 2.3214662)
+script = ExtResource("7_t35mi")
+
+[node name="TokenSlot4" type="Panel" parent="PlateShrimp" unique_id=1895901374]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1.5258789e-05
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ihef7")
+script = ExtResource("3_tixy7")
+correct = ExtResource("8_fkyci")
+idx = 4
+
+[node name="Icon" type="TextureRect" parent="PlateShrimp/TokenSlot4" unique_id=564589733]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -29.108265
+offset_top = -32.985123
+offset_right = 98.89174
+offset_bottom = 95.01488
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.44290543, 0.44290543)
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Donut4" type="TextureRect" parent="PlateShrimp" unique_id=1612911836]
+layout_mode = 0
+offset_left = 169.72034
+offset_top = 139.99773
+offset_right = 341.72034
+offset_bottom = 316.99774
+rotation = 3.3861291
+scale = Vector2(0.32304892, 0.32304892)
+texture = ExtResource("13_x4myp")
+
+[node name="PlateSharko" type="Control" parent="." unique_id=63226052]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 91.00012
+offset_top = 591.0
+offset_right = 219.00012
+offset_bottom = 719.0
+scale = Vector2(2.3214662, 2.3214662)
+script = ExtResource("7_t35mi")
+
+[node name="TokenSlot4" type="Panel" parent="PlateSharko" unique_id=478587879]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1.5258789e-05
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ihef7")
+script = ExtResource("3_tixy7")
+correct = ExtResource("7_ry8c3")
+idx = 5
+
+[node name="Icon" type="TextureRect" parent="PlateSharko/TokenSlot4" unique_id=1065801288]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -29.108265
+offset_top = -32.985123
+offset_right = 98.89174
+offset_bottom = 95.01488
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.44290543, 0.44290543)
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Donut3" type="TextureRect" parent="PlateSharko" unique_id=473617530]
+layout_mode = 0
+offset_left = 161.53578
+offset_top = 170.15108
+offset_right = 333.53577
+offset_bottom = 347.1511
+rotation = 3.3861291
+scale = Vector2(0.32304892, 0.32304892)
+texture = ExtResource("13_cusmc")
+
+[node name="CloseButton" type="TextureButton" parent="." unique_id=1615438251]
+material = SubResource("ShaderMaterial_p4o86")
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("16_s86j8")
+script = ExtResource("17_pt5tt")
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]

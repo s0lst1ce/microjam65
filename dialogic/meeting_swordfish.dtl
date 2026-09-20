@@ -1,0 +1,22 @@
+[background arg="res://assets/unsorted/black.png" fade="0.0"]
+join anemon left [animation="Instant In"]
+join swordfish right
+anemon: Hello Sir William ! I am Anne the detective in charge of the investigation. And a big fan of yours !
+joe: I'm Joe, her colleague.
+swordfish: Nice to meet you. What can I help you with ?
+anemon: What were you doing yesterday evening ?
+swordfish: After eating everyone I went back to my room to practice swordmanship.
+anemon: So you still train! The legendary Sir William sparring, that must be quite a sight ! Is your knack intact ?
+swordfish: [i]Hahaha[/i] Well I'm glad to know my fanbase is still intact ! I've definitely grown slower in my age but I'd like to think I've still got my acumen.
+joe: Anything else than swordmanship in your evening ? Surely you got tired at some point.
+swordfish: The sword is my life and mate­. I practice it by day and dream of it by night. Do you want to know the secret to success ? Hard-work is what ! So no, I didn't do anything else. I practiced till I dropped !
+anemon: Admirable dedication ! Regarding Shrimp, were you two close ?
+swordfish: I think we're all somewhat close here, we live together afterall. We weren't best friend by any shot but got along. We started out as playmates and gradually got to know each other along the way.
+anemon: Playmates ?
+swordfish: Yes, we both enjoyed playing games of various kinds. She was a great opponent !
+joe: So she beat you a lot ?
+swordfish: ...
+swordfish: She did.
+anemon: You said you oppened up to each other, what did you talk about ?
+swordfish: That's between the two of us but we mostly got to know each other. She was naturally curious about my competing days and I also got to know of her involvment in the fight for the rights of the crusteaceans. She apparently sponsored them a lot too.
+set {NextDialogue.swordfish} = "nothing_whale"

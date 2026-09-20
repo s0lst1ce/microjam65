@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://d1py8s7lhr7cl"]
+
+[ext_resource type="Script" uid="uid://birsj1hmvmeyf" path="res://room.gd" id="1_xswuy"]
+[ext_resource type="Texture2D" uid="uid://ctkom2uiqsnv0" path="res://assets/portraits/whale.png" id="2_pucmg"]
+[ext_resource type="Texture2D" uid="uid://cpstm02pr37cy" path="res://assets/rooms/corridor.png" id="2_xswuy"]
+[ext_resource type="Script" uid="uid://nuh3jf3k8ic7" path="res://scenes/whale.gd" id="4_mus4g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
+size = Vector2(334.21054, 551.4689)
+
+[node name="Corridor" type="Node2D" unique_id=1391204446]
+script = ExtResource("1_xswuy")
+metadata/_custom_type_script = "uid://birsj1hmvmeyf"
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1494126226]
+texture = ExtResource("2_xswuy")
+centered = false
+
+[node name="Interactible" type="Sprite2D" parent="." unique_id=1026083434]
+position = Vector2(973.00006, 690.00006)
+scale = Vector2(0.86771685, 0.89034957)
+texture = ExtResource("2_pucmg")
+script = ExtResource("4_mus4g")
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="Interactible" unique_id=1904777336]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactible/Area2D" unique_id=1121980302]
+position = Vector2(53.012695, -23.024841)
+shape = SubResource("RectangleShape2D_3bft5")

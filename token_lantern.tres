@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TokenData" format=3 uid="uid://rwakvni6cmgm"]
+
+[ext_resource type="Script" uid="uid://ury7uw8n8n8c" path="res://token.gd" id="1_mq0ni"]
+[ext_resource type="Texture2D" uid="uid://g3lou2cg1p5n" path="res://assets/tokens/lantern.png" id="1_wrre6"]
+
+[resource]
+script = ExtResource("1_mq0ni")
+name = "lantern"
+icon = ExtResource("1_wrre6")
+tooltip = "Pirhana was somewhere between me and Shrimp. And there was exactly one seat between me and Will."
+metadata/_custom_type_script = "uid://ury7uw8n8n8c"

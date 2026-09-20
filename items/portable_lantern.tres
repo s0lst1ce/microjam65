@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://f4mmrvrtj26i"]
+
+[ext_resource type="Texture2D" uid="uid://bjak53a4nxova" path="res://assets/furniture/portable_lantern.png" id="1_17jab"]
+[ext_resource type="Script" uid="uid://bp63adiuj3ujh" path="res://item_data.gd" id="1_r73kg"]
+
+[resource]
+script = ExtResource("1_r73kg")
+name = "portable_lantern"
+icon = ExtResource("1_17jab")
+metadata/_custom_type_script = "uid://bp63adiuj3ujh"

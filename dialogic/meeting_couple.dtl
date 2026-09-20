@@ -1,0 +1,31 @@
+[background arg="res://assets/unsorted/black.png" fade="0.0"]
+join anemon left [animation="Instant In"]
+join brochette right [animation="Slide From Right"]
+join pirhana rightmost [animation="Slide From Right"]
+anemon: Hello we're Anne and Joe,  the detectives in charge of the investigation, and we'd like to ask you a few questions.
+brochette: I'm Brochette and this is my husband Pirhana. We were quite shocked to learn of Shrimp's terrible accident.
+pirhana: Yes
+anemon: We're not so sure it was an accident actually.
+brochette: What are you implying ?
+anemon: We have reasons to believe it may have been a murder. What were you doing yesterday evening ?
+brochette: Are you suspecting me ?
+joe: This is a closed space ma'am, everyone is a suspect.
+anemon: And we were asking your husband as well, unless you have something to confess ?
+brochette: Yes I do! My necklace has disapeared! I had left it in my room as usual and it is not there anymore. Considering it's a closed space, as you so kindly pointed out, it must have been stolen! See I am a victim here, not a murderer! Isn't that right dear ?
+pirhana: Yes.
+brochette: I think they should apologize.
+pirhana: Yes.
+joe: We will, at the end of the investigation. Unless you happen to be associated with the crime or witheld critical information of course.
+anemon: In the meantime, could you describe that necklace for us please ?
+brochette: DESCRIBE NECKLACE
+pirhana: Yes
+anemon: And what did you do yesterday evening ?
+brochette: We ate with everyone in the refectory and then came to our room. That's when I found out my necklace had disappeared. Thinking it had been my husdand who misplaced it we got into some argument.
+pirhana: Yes
+brochette: But we eventually sorted it out. Isn't that right ?
+pirhana: Yes
+brochette: After that we simply slept and here you were.
+pirhana: Yes
+anemon: Are you always so short in your replies Pirhana ?
+brochette: Yes he is!
+set {NextDialogue.couple} = "nothing_whale"

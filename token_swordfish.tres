@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TokenData" format=3 uid="uid://b8hsskdpiwvf"]
+
+[ext_resource type="Script" uid="uid://ury7uw8n8n8c" path="res://token.gd" id="1_8ysyx"]
+[ext_resource type="Texture2D" uid="uid://dgax66kwl7jed" path="res://assets/tokens/swordfish.png" id="1_kkryb"]
+
+[resource]
+script = ExtResource("1_8ysyx")
+name = "swordfish"
+icon = ExtResource("1_kkryb")
+tooltip = "I was somewhere between Sharko and Brochette."
+metadata/_custom_type_script = "uid://ury7uw8n8n8c"

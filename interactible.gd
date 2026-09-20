@@ -7,7 +7,6 @@ class_name Interactible
 @export var interacts_with: Array[String]
 @export var gives: Array[ItemData] = []
 @export var click_sound: AudioStream
-@export var walk_to: Polygon2D
 
 @onready var area = $Area2D
 
@@ -22,8 +21,6 @@ func _get_configuration_warnings() -> PackedStringArray:
 	
 	if interacts_with == null:
 		warnings.append("Interaction candidate(s) must be set. Otherwise it should be turned into a Sprite2D.")
-	if walk_to == null:
-		warnings.append("A Marker2D designating the position to walk to when interacting must be set.")
 
 	return warnings
 
@@ -52,15 +49,13 @@ func _interact_with(_item: ItemData) -> void:
 func catch_item(data: Variant) -> void:
 	if data.item.name in interacts_with:
 		print(data.item, " is interacting with ", self)
-		ItemExchange.walk_to.emit(walk_to.global_position, self)
-		print("sending player to ", walk_to.global_position)
-		ItemExchange.prepare_use_item.emit(data)
+		_interact_with(data.item)
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("click") and get_rect().has_point(get_global_mouse_position()-position):
-		print("clicked on ", self, " moving player to ", walk_to.global_position)
 		get_viewport().set_input_as_handled()
-		ItemExchange.walk_to.emit(walk_to.global_position, self)
+		print("empty-handed interaction")
+		empty_handed_interaction()
 
 func empty_handed_interaction():
 		if len(gives) > 0:

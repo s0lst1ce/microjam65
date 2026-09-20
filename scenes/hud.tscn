@@ -1,0 +1,270 @@
+[gd_scene format=3 uid="uid://ddy2k1p5c4i6k"]
+
+[ext_resource type="Texture2D" uid="uid://rb217fhcfvrr" path="res://assets/misc/map_close.png" id="2_5ysmq"]
+[ext_resource type="Script" uid="uid://c0325j1vti6ny" path="res://scenes/inventory.gd" id="3_5pdws"]
+[ext_resource type="Script" uid="uid://cker0h66hbv4u" path="res://scenes/map_button.gd" id="3_5ysmq"]
+[ext_resource type="Script" uid="uid://bnikgswxgv1uf" path="res://scenes/item_slot.gd" id="3_047uy"]
+[ext_resource type="Shader" uid="uid://dvdb7o7b5ndrc" path="res://interactibles/table_puzzle.gdshader" id="3_uo2fv"]
+[ext_resource type="Resource" uid="uid://cob3wvjc232ro" path="res://items/donut.tres" id="5_047uy"]
+[ext_resource type="Shader" uid="uid://cqv4mrmukav8w" path="res://scenes/highlight.gdshader" id="7_5pdws"]
+[ext_resource type="Resource" uid="uid://f4mmrvrtj26i" path="res://items/portable_lantern.tres" id="8_hd3ao"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uo2fv"]
+shader = ExtResource("3_uo2fv")
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/width = 5.0000002375
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_047uy"]
+shader = ExtResource("7_5pdws")
+shader_parameter/Line_Smoothness = 0.045
+shader_parameter/Line_Width = 0.09
+shader_parameter/Brightness = 3.0
+shader_parameter/Rotation_deg = 30.0
+shader_parameter/Distortion = 1.8
+shader_parameter/Speed = 0.7
+shader_parameter/Position = 0.0
+shader_parameter/Position_Min = 0.25
+shader_parameter/Position_Max = 0.5
+shader_parameter/Alpha = 1.0
+
+[node name="HUD" type="CanvasLayer" unique_id=166520485]
+process_mode = 3
+
+[node name="MapButton" type="TextureButton" parent="." unique_id=1976855983]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -128.0
+offset_bottom = 128.0
+grow_horizontal = 0
+texture_normal = ExtResource("2_5ysmq")
+script = ExtResource("3_5ysmq")
+
+[node name="Inventory" type="Panel" parent="." unique_id=501356835]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -244.5
+offset_right = 244.5
+offset_bottom = 75.0
+grow_horizontal = 2
+scale = Vector2(1.3016127, 1.3016127)
+script = ExtResource("3_5pdws")
+
+[node name="MarginContainer" type="MarginContainer" parent="Inventory" unique_id=1115177449]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="GridContainer" type="GridContainer" parent="Inventory/MarginContainer" unique_id=1069348954]
+layout_mode = 2
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 8
+
+[node name="ItemSlot" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=672155765]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("3_047uy")
+item = ExtResource("5_047uy")
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot" unique_id=2043996317]
+material = SubResource("ShaderMaterial_uo2fv")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+
+[node name="ItemHighlight" type="ColorRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot" unique_id=1814024442]
+visible = false
+material = SubResource("ShaderMaterial_047uy")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="ItemSlot2" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=899131930]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("3_047uy")
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot2" unique_id=822962553]
+material = SubResource("ShaderMaterial_uo2fv")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+
+[node name="ItemHighlight" type="ColorRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot2" unique_id=1444673668]
+visible = false
+material = SubResource("ShaderMaterial_047uy")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="ItemSlot3" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=1600071151]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("3_047uy")
+item = ExtResource("8_hd3ao")
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot3" unique_id=1049831841]
+material = SubResource("ShaderMaterial_uo2fv")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+
+[node name="ItemHighlight" type="ColorRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot3" unique_id=1523548133]
+visible = false
+material = SubResource("ShaderMaterial_047uy")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="ItemSlot4" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=1677549761]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("3_047uy")
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot4" unique_id=1456906161]
+material = SubResource("ShaderMaterial_uo2fv")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+
+[node name="ItemHighlight" type="ColorRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot4" unique_id=1787561454]
+visible = false
+material = SubResource("ShaderMaterial_047uy")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="ItemSlot5" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=1108754886]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("3_047uy")
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot5" unique_id=1680700052]
+material = SubResource("ShaderMaterial_uo2fv")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+
+[node name="ItemHighlight" type="ColorRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot5" unique_id=1633228691]
+visible = false
+material = SubResource("ShaderMaterial_047uy")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="ItemSlot6" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=1459256991]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("3_047uy")
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot6" unique_id=1301676248]
+material = SubResource("ShaderMaterial_uo2fv")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+
+[node name="ItemHighlight" type="ColorRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot6" unique_id=571588623]
+visible = false
+material = SubResource("ShaderMaterial_047uy")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="ItemSlot7" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=1264288289]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+script = ExtResource("3_047uy")
+
+[node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot7" unique_id=815101867]
+material = SubResource("ShaderMaterial_uo2fv")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.9
+anchor_bottom = 0.9
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+
+[node name="ItemHighlight" type="ColorRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot7" unique_id=229195886]
+visible = false
+material = SubResource("ShaderMaterial_047uy")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[connection signal="pressed" from="MapButton" to="MapButton" method="_on_pressed"]

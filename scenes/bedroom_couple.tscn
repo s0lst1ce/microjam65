@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://blkqs1qb046sk"]
+
+[ext_resource type="Script" uid="uid://birsj1hmvmeyf" path="res://room.gd" id="1_qs15m"]
+[ext_resource type="Texture2D" uid="uid://bwmdfc7r84xq7" path="res://assets/rooms/bedroom_couple.png" id="2_px10l"]
+[ext_resource type="Texture2D" uid="uid://g53fpdh62wcs" path="res://assets/portraits/pirhana.png" id="3_5obm4"]
+[ext_resource type="Script" uid="uid://boxf0pdte2l2e" path="res://scenes/couple.gd" id="4_t7wao"]
+[ext_resource type="Texture2D" uid="uid://51erjked01we" path="res://assets/portraits/brochette.png" id="5_p08yg"]
+[ext_resource type="Texture2D" uid="uid://76m0lq2hmnfl" path="res://assets/furniture/bed_sharko.png" id="5_x3vfp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
+size = Vector2(345.093, 551.5416)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t7wao"]
+size = Vector2(416.94476, 578.8655)
+
+[node name="BedroomCouple" type="Node2D" unique_id=124514337]
+script = ExtResource("1_qs15m")
+metadata/_custom_type_script = "uid://birsj1hmvmeyf"
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1121744500]
+texture = ExtResource("2_px10l")
+centered = false
+
+[node name="Pirhana" type="Sprite2D" parent="." unique_id=5536094]
+position = Vector2(1610, 743.00006)
+scale = Vector2(0.9881397, 0.9881397)
+texture = ExtResource("3_5obm4")
+script = ExtResource("4_t7wao")
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="Pirhana" unique_id=182261235]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pirhana/Area2D" unique_id=1720994838]
+position = Vector2(-24.79419, -1.5180664)
+shape = SubResource("RectangleShape2D_3bft5")
+
+[node name="Brochette" type="Sprite2D" parent="." unique_id=2090154004]
+position = Vector2(1207, 745.00006)
+scale = Vector2(0.9881397, 0.9881397)
+texture = ExtResource("5_p08yg")
+script = ExtResource("4_t7wao")
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="Brochette" unique_id=34662602]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Brochette/Area2D" unique_id=1489342884]
+position = Vector2(-20.240234, -6.0720825)
+shape = SubResource("RectangleShape2D_t7wao")
+
+[node name="Bed" type="Sprite2D" parent="." unique_id=1488252497]
+position = Vector2(662, 630)
+texture = ExtResource("5_x3vfp")
