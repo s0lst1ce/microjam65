@@ -3,7 +3,7 @@ extends Node2D
 @onready var map = $Map
 @onready var hud = $HUD
 
-@onready var current_room: String = "garden"
+@onready var current_room: String = "corridor"
 
 @onready var scenes = {
 	"cafeteria": preload("res://scenes/cafeteria.tscn").instantiate(),
@@ -11,11 +11,13 @@ extends Node2D
 	"corridor": preload("res://scenes/corridor.tscn").instantiate(),
 }
 
+@onready var sfx = $SFX
+@onready var hovered_furniture: Interactible = null
 
 func _ready() -> void:
 	SceneSwitching.goto_room.connect(_on_change_room)
 	SceneSwitching.toggle_map.connect(_on_toggle_map)
-	change_scene("cafeteria")
+	change_scene("corridor")
 
 func _on_intro_video_finished() -> void:
 	self.add_child(scenes[current_room])

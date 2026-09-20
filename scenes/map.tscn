@@ -4,8 +4,9 @@
 [ext_resource type="Script" uid="uid://dvh3k6dq3ovej" path="res://scenes/map.gd" id="1_gldc4"]
 [ext_resource type="Script" uid="uid://gjrq8c7t8xje" path="res://scenes/map_room.gd" id="2_paxxb"]
 [ext_resource type="Texture2D" uid="uid://bwmdfc7r84xq7" path="res://assets/rooms/bedroom_couple.png" id="4_0cso3"]
-[ext_resource type="Texture2D" uid="uid://bmupftdn8r7js" path="res://assets/portraits/sharko.png" id="5_2lpho"]
-[ext_resource type="Texture2D" uid="uid://51erjked01we" path="res://assets/portraits/brochette.png" id="6_nakos"]
+[ext_resource type="Texture2D" uid="uid://cpstm02pr37cy" path="res://assets/rooms/corridor.png" id="5_2klcf"]
+[ext_resource type="Texture2D" uid="uid://vcqobsvm38xi" path="res://assets/rooms/cafeteria.png" id="5_2lpho"]
+[ext_resource type="Texture2D" uid="uid://ctkom2uiqsnv0" path="res://assets/portraits/whale.png" id="7_nakos"]
 
 [node name="Map" type="CanvasLayer" unique_id=942313466]
 process_mode = 2
@@ -24,34 +25,12 @@ offset_bottom = 40.0
 scale = Vector2(14.987615, 8.404397)
 texture = ExtResource("1_4xfga")
 
-[node name="Cafeteria" type="MarginContainer" parent="Control" unique_id=1235137214]
-layout_mode = 0
-offset_left = 319.0
-offset_top = 193.0
-offset_right = 735.0
-offset_bottom = 365.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_constants/margin_left = 10
-theme_override_constants/margin_top = 10
-theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 10
-
-[node name="TextureRect" type="TextureButton" parent="Control/Cafeteria" unique_id=1677816074]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-texture_normal = ExtResource("1_4xfga")
-stretch_mode = 0
-script = ExtResource("2_paxxb")
-room = "cafeteria"
-
 [node name="BedroomCouple" type="MarginContainer" parent="Control" unique_id=1214140749]
 layout_mode = 0
-offset_left = 1089.0
-offset_top = 478.0
-offset_right = 3029.0
-offset_bottom = 1578.0
+offset_left = 1333.0
+offset_top = 592.0
+offset_right = 3273.0
+offset_bottom = 1692.0
 scale = Vector2(0.15519369, 0.15519369)
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -69,16 +48,66 @@ stretch_mode = 0
 script = ExtResource("2_paxxb")
 room = "bedroom_couple"
 
-[node name="Occupants" type="HBoxContainer" parent="Control/BedroomCouple" unique_id=775944105]
+[node name="Cafeteria" type="MarginContainer" parent="Control" unique_id=842498289]
+layout_mode = 0
+offset_left = 450.00018
+offset_top = 408.0
+offset_right = 2390.0002
+offset_bottom = 1508.0
+scale = Vector2(0.15519369, 0.15519369)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="TextureRect" type="TextureButton" parent="Control/Cafeteria" unique_id=605550156]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("5_2lpho")
+stretch_mode = 0
+script = ExtResource("2_paxxb")
+room = "cafeteria"
+
+[node name="Corridor" type="MarginContainer" parent="Control" unique_id=1954965522]
+layout_mode = 0
+offset_left = 872.0
+offset_top = 406.0
+offset_right = 2812.0
+offset_bottom = 1506.0
+scale = Vector2(0.15519369, 0.15519369)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="TextureRect" type="TextureButton" parent="Control/Corridor" unique_id=684808767]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("5_2klcf")
+stretch_mode = 0
+script = ExtResource("2_paxxb")
+room = "corridor"
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/Corridor" unique_id=1803784172]
+layout_mode = 2
+theme_override_constants/margin_left = 700
+theme_override_constants/margin_top = 600
+theme_override_constants/margin_right = 600
+theme_override_constants/margin_bottom = 350
+
+[node name="Container" type="AspectRatioContainer" parent="Control/Corridor/MarginContainer" unique_id=1989605234]
 layout_mode = 2
 
-[node name="TextureRect" type="TextureRect" parent="Control/BedroomCouple/Occupants" unique_id=467602901]
+[node name="TextureRect2" type="TextureRect" parent="Control/Corridor/MarginContainer/Container" unique_id=1390271028]
 layout_mode = 2
-texture = ExtResource("5_2lpho")
+texture = ExtResource("7_nakos")
 
-[node name="TextureRect2" type="TextureRect" parent="Control/BedroomCouple/Occupants" unique_id=514872536]
-layout_mode = 2
-texture = ExtResource("6_nakos")
-
-[connection signal="pressed" from="Control/Cafeteria/TextureRect" to="Control/Cafeteria/TextureRect" method="_on_pressed"]
 [connection signal="pressed" from="Control/BedroomCouple/TextureRect" to="Control/BedroomCouple/TextureRect" method="_on_pressed"]
+[connection signal="pressed" from="Control/Cafeteria/TextureRect" to="Control/Cafeteria/TextureRect" method="_on_pressed"]
+[connection signal="pressed" from="Control/Corridor/TextureRect" to="Control/Corridor/TextureRect" method="_on_pressed"]
