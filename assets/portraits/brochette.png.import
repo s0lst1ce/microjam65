@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://51erjked01we"
-path="res://.godot/imported/brochette.png-a22dd7037388a22e489968698d6d6df2.ctex"
+path="res://.godot/imported/brochette.png-27caf7f9eebef3305012e2b282ab25cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/brochette.png"
-dest_files=["res://.godot/imported/brochette.png-a22dd7037388a22e489968698d6d6df2.ctex"]
+source_file="res://assets/portraits/brochette.png"
+dest_files=["res://.godot/imported/brochette.png-27caf7f9eebef3305012e2b282ab25cc.ctex"]
 
 [params]
 

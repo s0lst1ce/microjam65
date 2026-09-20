@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://g53fpdh62wcs"
-path="res://.godot/imported/pirhana.png-7ec11d44da08b43bd6348e148f99ea42.ctex"
+uid="uid://b4duobwoiqmjg"
+path="res://.godot/imported/backgroundroom2.png-89adffbb84859c44c886ffcd16ae0655.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/pirhana.png"
-dest_files=["res://.godot/imported/pirhana.png-7ec11d44da08b43bd6348e148f99ea42.ctex"]
+source_file="res://assets/unsorted/backgroundroom2.png"
+dest_files=["res://.godot/imported/backgroundroom2.png-89adffbb84859c44c886ffcd16ae0655.ctex"]
 
 [params]
 
