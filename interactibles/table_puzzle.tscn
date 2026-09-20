@@ -80,6 +80,7 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
 script = ExtResource("3_tixy7")
 token = ExtResource("5_allwu")
+idx = 6
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/TokenSlot" unique_id=602700793]
 material = SubResource("ShaderMaterial_fkyci")
@@ -99,6 +100,7 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
 script = ExtResource("3_tixy7")
 token = ExtResource("7_vb20r")
+idx = 6
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/TokenSlot2" unique_id=324863453]
 material = SubResource("ShaderMaterial_fkyci")
@@ -118,6 +120,7 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
 script = ExtResource("3_tixy7")
 token = ExtResource("7_ry8c3")
+idx = 6
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/TokenSlot3" unique_id=596842061]
 material = SubResource("ShaderMaterial_fkyci")
@@ -137,6 +140,7 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
 script = ExtResource("3_tixy7")
 token = ExtResource("8_fkyci")
+idx = 6
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/TokenSlot4" unique_id=9925303]
 material = SubResource("ShaderMaterial_fkyci")
@@ -156,6 +160,7 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
 script = ExtResource("3_tixy7")
 token = ExtResource("9_7dicd")
+idx = 6
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/TokenSlot5" unique_id=1913370683]
 material = SubResource("ShaderMaterial_fkyci")
@@ -175,6 +180,7 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
 script = ExtResource("3_tixy7")
 token = ExtResource("10_x4myp")
+idx = 6
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/TokenSlot6" unique_id=2083914697]
 material = SubResource("ShaderMaterial_fkyci")

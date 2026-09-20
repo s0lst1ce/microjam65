@@ -16,9 +16,10 @@ func update_ui():
 	else:
 		icon.texture = token.icon
 		#TODO update this based on collected clues
-		tooltip_text = token.tooltip
+		if Dialogic.VAR.table_puzzle_enabled:
+			tooltip_text = token.tooltip
 
-#
+
 func _get_drag_data(_at_position: Vector2) -> Variant:
 	if not token:
 		print("no token")
@@ -47,8 +48,12 @@ func _drop_data(_at_position: Vector2, slot: Variant) -> void:
 
 	if token==correct:
 		Enigma.table_puzzle[idx] = 1
-		if Enigma.table_puzzle_complete():
-			Dialogic.start("table_success")
+		if not Enigma.table_puzzle_completed and Enigma.table_puzzle_complete():
+			Dialogic.start("table_success").process_mode = Node.PROCESS_MODE_ALWAYS
+			Dialogic.process_mode = Node.PROCESS_MODE_ALWAYS
+			ItemExchange.add_item.emit(preload("res://items/donut.tres"))
+			ItemExchange.add_item.emit(preload("res://items/donut.tres"))
+			
 	else:
 		Enigma.table_puzzle[idx] = 0
 

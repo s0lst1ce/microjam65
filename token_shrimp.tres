@@ -1,8 +1,11 @@
 [gd_resource type="Resource" script_class="TokenData" format=3 uid="uid://ddky14du04t07"]
 
 [ext_resource type="Script" uid="uid://ury7uw8n8n8c" path="res://token.gd" id="1_ij5m8"]
+[ext_resource type="Texture2D" uid="uid://crsb7assd6vgl" path="res://assets/tokens/shrimp.png" id="1_l1qsb"]
 
 [resource]
 script = ExtResource("1_ij5m8")
 name = "shrimp"
+icon = ExtResource("1_l1qsb")
+tooltip = "Shrimp"
 metadata/_custom_type_script = "uid://ury7uw8n8n8c"

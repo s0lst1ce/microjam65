@@ -56,7 +56,7 @@ variables={
 "swordfish": "meeting_swordfish",
 "whale": "arrival"
 },
-"table_puzzle_enabled": true
+"table_puzzle_enabled": false
 }
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true

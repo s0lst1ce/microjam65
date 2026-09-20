@@ -20,6 +20,7 @@ extends Node2D
 func _ready() -> void:
 	SceneSwitching.goto_room.connect(_on_change_room)
 	SceneSwitching.toggle_map.connect(_on_toggle_map)
+	SceneSwitching.toggle_hud_visibility.connect(_on_toggle_hud_visibility)
 	change_scene("corridor")
 
 func _on_intro_video_finished() -> void:
@@ -51,3 +52,6 @@ func _on_toggle_map():
 		button.texture_normal = button.opened
 	else:
 		button.texture_normal = button.closed
+
+func _on_toggle_hud_visibility():
+	hud.visible = not hud.visible

@@ -6,10 +6,8 @@ func _ready() -> void:
 func _on_visibility_changed() -> void:
 	if is_node_ready():
 		get_tree().paused = not get_tree().paused
-		print("changed visibility to ", visible)
+		SceneSwitching.toggle_hud_visibility.emit()
 		if visible and not Dialogic.VAR.table_puzzle_enabled:
-			Dialogic.paused=false
-			print("start dialogic")
 			Dialogic.start("table_disabled").process_mode = Node.PROCESS_MODE_ALWAYS
 			Dialogic.process_mode = Node.PROCESS_MODE_ALWAYS
 
