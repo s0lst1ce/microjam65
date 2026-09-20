@@ -28,9 +28,12 @@ directories/dch_directory={
 "anemon": "res://dialogic/anemon.dch",
 "brochette": "res://dialogic/brochette.dch",
 "pirhana": "res://dialogic/pirhana.dch",
-"sharko": "res://dialogic/sharko.dch"
+"sharko": "res://dialogic/sharko.dch",
+"swordfish": "res://dialogic/swordfish.dch",
+"whale": "res://dialogic/whale.dch"
 }
 directories/dtl_directory={
+"arrival": "res://dialogic/arrival.dtl",
 "test_timeline": "res://dialogic/test_timeline.dtl"
 }
 layout/style_directory={}

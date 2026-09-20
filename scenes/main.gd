@@ -7,7 +7,8 @@ extends Node2D
 
 @onready var scenes = {
 	"cafeteria": preload("res://scenes/cafeteria.tscn").instantiate(),
-	"garden": preload("res://scenes/garden.tscn").instantiate()
+	"garden": preload("res://scenes/garden.tscn").instantiate(),
+	"corridor": preload("res://scenes/corridor.tscn").instantiate(),
 }
 
 
