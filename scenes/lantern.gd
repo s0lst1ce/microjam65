@@ -1,4 +1,6 @@
 extends Interactible
 
 func _on_click() -> void:
-	Dialogic.start("meeting_lantern")
+	print(Dialogic.VAR.NextDialogue.lantern)
+	if Dialogic.VAR.NextDialogue.lantern != null:
+		Dialogic.start(Dialogic.VAR.NextDialogue.lantern)

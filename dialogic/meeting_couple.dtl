@@ -28,3 +28,4 @@ brochette: After that we simply slept and here you were.
 pirhana: Yes
 anemon: Are you always so short in your replies Pirhana ?
 brochette: Yes he is!
+set {NextDialogue.couple} = "nothing_whale"

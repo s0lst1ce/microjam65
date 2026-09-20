@@ -19,3 +19,4 @@ swordfish: ...
 swordfish: She did.
 anemon: You said you oppened up to each other, what did you talk about ?
 swordfish: That's between the two of us but we mostly got to know each other. She was naturally curious about my competing days and I also got to know of her involvment in the fight for the rights of the crusteaceans. She apparently sponsored them a lot too.
+set {NextDialogue.swordfish} = "nothing_whale"

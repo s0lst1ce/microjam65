@@ -21,3 +21,4 @@ joe: This one is unhinged.
 anemon: I like her. I like her a [b]lot[/b]!
 joe: Of course you would! You really should see a shrink some day Anne.
 anemon: No thanks, I really don't wanna be as small as you !
+set {NextDialogue.lantern} = "nothing_whale"

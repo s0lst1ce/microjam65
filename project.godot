@@ -47,6 +47,9 @@ layout/style_directory={}
 glossary/default_case_sensitive=true
 variables={
 "NextDialogue": {
+"couple": "meeting_couple",
+"lantern": "meeting_lantern",
+"swordfish": "meeting_swordfish",
 "whale": "arrival"
 }
 }
