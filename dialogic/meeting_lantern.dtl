@@ -1,0 +1,21 @@
+[background arg="res://assets/unsorted/black.png" fade="0.0"]
+join latern right [animation="Instant In"]
+join anemon left
+anemon: Hello I'm Anne, and this is Joe.
+latern: ...
+anemon: Is everything alright ?
+latern: AH!
+latern: Who are you ?!
+anemon: As I was saying I'm Anne, and this little guy here is Joe.
+joe: We're the detectives in charge of the investigaion. And I'm not small. I'm actually quite large for a clownfish !
+latern: Oh. Of course.  I am Lightbrarian the resident librarian of WhaleBack.
+anemon: What scared you so much just now ? Is heavy burden plaging you ?
+latern: I am sleeping. Or trying to. Some seek light to guide their path their entire lives, I bask in it every waking hour. Yet without shadow light does not guide but blind. Devoid of contrast I cannot discern anymore.
+[wait time="2.0"]
+latern: Sorry. I am always a little tense what with sleep-deprevation. Shrimp's passing has made me positively fraught.
+anemon: Speaking of Shrimp, what do you know about her death ?
+latern: I am also the one who found Shrimp in the Library.
+leave latern
+joe: This one is unhinged.
+anemon: I like her. I like her a [b]lot[/b]!
+joe: Of course you do! You really should see a psy some day Anne.

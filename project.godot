@@ -28,6 +28,7 @@ directories/dch_directory={
 "anemon": "res://dialogic/anemon.dch",
 "brochette": "res://dialogic/brochette.dch",
 "joe": "res://dialogic/joe.dch",
+"latern": "res://dialogic/latern.dch",
 "pirhana": "res://dialogic/pirhana.dch",
 "sharko": "res://dialogic/sharko.dch",
 "swordfish": "res://dialogic/swordfish.dch",
@@ -35,6 +36,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "arrival": "res://dialogic/arrival.dtl",
+"meeting_lantern": "res://dialogic/meeting_lantern.dtl",
 "test_timeline": "res://dialogic/test_timeline.dtl"
 }
 layout/style_directory={}
@@ -72,6 +74,8 @@ audio/channel_defaults={
 "volume": 0.0
 }
 }
+layout/style_list=[]
+layout/default_style=""
 
 [display]
 

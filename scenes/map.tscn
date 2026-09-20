@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://bkmva8o6n4kky"]
 
-[ext_resource type="Texture2D" uid="uid://b3i116f0yxtoj" path="res://icon.svg" id="1_4xfga"]
 [ext_resource type="Script" uid="uid://dvh3k6dq3ovej" path="res://scenes/map.gd" id="1_gldc4"]
+[ext_resource type="Texture2D" uid="uid://bg8lnmx5a6tls" path="res://assets/unsorted/carte.png" id="2_nakos"]
 [ext_resource type="Script" uid="uid://gjrq8c7t8xje" path="res://scenes/map_room.gd" id="2_paxxb"]
+[ext_resource type="Texture2D" uid="uid://6wjgxdgnoeck" path="res://assets/unsorted/black.png" id="3_jh32y"]
 [ext_resource type="Texture2D" uid="uid://bwmdfc7r84xq7" path="res://assets/rooms/bedroom_couple.png" id="4_0cso3"]
 [ext_resource type="Texture2D" uid="uid://cpstm02pr37cy" path="res://assets/rooms/corridor.png" id="5_2klcf"]
 [ext_resource type="Texture2D" uid="uid://vcqobsvm38xi" path="res://assets/rooms/cafeteria.png" id="5_2lpho"]
@@ -18,19 +19,24 @@ anchors_preset = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 
-[node name="TextureRect" type="TextureRect" parent="Control" unique_id=683536652]
+[node name="Background" type="TextureRect" parent="Control" unique_id=683536652]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-scale = Vector2(14.987615, 8.404397)
-texture = ExtResource("1_4xfga")
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_nakos")
+
+[node name="Black" type="TextureRect" parent="Control" unique_id=510930777]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("3_jh32y")
 
 [node name="BedroomCouple" type="MarginContainer" parent="Control" unique_id=1214140749]
 layout_mode = 0
-offset_left = 1333.0
-offset_top = 592.0
-offset_right = 3273.0
-offset_bottom = 1692.0
+offset_left = 827.0001
+offset_top = 135.00003
+offset_right = 2767.0
+offset_bottom = 1235.0
 scale = Vector2(0.15519369, 0.15519369)
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -50,10 +56,10 @@ room = "bedroom_couple"
 
 [node name="Cafeteria" type="MarginContainer" parent="Control" unique_id=842498289]
 layout_mode = 0
-offset_left = 450.00018
-offset_top = 408.0
-offset_right = 2390.0002
-offset_bottom = 1508.0
+offset_left = 408.0
+offset_top = 300.0
+offset_right = 2348.0
+offset_bottom = 1400.0
 scale = Vector2(0.15519369, 0.15519369)
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -73,10 +79,10 @@ room = "cafeteria"
 
 [node name="Corridor" type="MarginContainer" parent="Control" unique_id=1954965522]
 layout_mode = 0
-offset_left = 872.0
-offset_top = 406.0
-offset_right = 2812.0
-offset_bottom = 1506.0
+offset_left = 1339.9999
+offset_top = 270.0
+offset_right = 3280.0
+offset_bottom = 2040.0
 scale = Vector2(0.15519369, 0.15519369)
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -96,6 +102,7 @@ room = "corridor"
 
 [node name="MarginContainer" type="MarginContainer" parent="Control/Corridor" unique_id=1803784172]
 layout_mode = 2
+mouse_behavior_recursive = 1
 theme_override_constants/margin_left = 700
 theme_override_constants/margin_top = 600
 theme_override_constants/margin_right = 600

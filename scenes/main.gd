@@ -9,6 +9,7 @@ extends Node2D
 	"cafeteria": preload("res://scenes/cafeteria.tscn").instantiate(),
 	"garden": preload("res://scenes/garden.tscn").instantiate(),
 	"corridor": preload("res://scenes/corridor.tscn").instantiate(),
+	"bedroom_couple": preload("res://scenes/bedroom_couple.tscn").instantiate(),
 }
 
 @onready var sfx = $SFX
