@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://76m0lq2hmnfl"
-path="res://.godot/imported/litsharko.png-8969386e440f08a9ef95695140c312af.ctex"
+path="res://.godot/imported/bed_sharko.png-4ff4bf7fc7f94fccd7ad89b482627d13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/litsharko.png"
-dest_files=["res://.godot/imported/litsharko.png-8969386e440f08a9ef95695140c312af.ctex"]
+source_file="res://assets/furniture/bed_sharko.png"
+dest_files=["res://.godot/imported/bed_sharko.png-4ff4bf7fc7f94fccd7ad89b482627d13.ctex"]
 
 [params]
 
