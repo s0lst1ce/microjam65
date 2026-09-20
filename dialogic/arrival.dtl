@@ -10,8 +10,10 @@ whale (Crying): [i]whwawhahwhaw[/i]
 whale (Main): I'm sorry. It's just, I liked her so much! Every time I think of her death I tear up. Especially since I fear her death was not of natural causes.
 whale: We found her dead in the library, her crushed body is still there should you want to inspect it. I locked down the caring home as soon as her corpse was found. No one has come in or out since.
 leave whale [animation="Fade Out Down"]
-anemon: So Joe, happy to be here ?
+update anemon (Alone) [animation="Instant In"]
+join joe right
+anemon (Alone): So Joe, happy to be here ?
 joe: Locked up in a caring home along a dead body and murderer, how could I not. We're here to solve a murder Anne, not have fun.
-anemon: Always so gloomy ! You should try smiling some day, everything is just so much more fun that way!
+anemon (Alone): Always so gloomy ! You should try smiling some day, everything is just so much more fun that way!
 joe: ...
 set {NextDialogue.whale} = "meeting_whale"

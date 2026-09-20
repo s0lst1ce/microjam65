@@ -4,12 +4,16 @@
 [ext_resource type="Texture2D" uid="uid://c3n1qbseae57p" path="res://assets/unsorted/backgrounfmap.png" id="2_jh32y"]
 [ext_resource type="Script" uid="uid://gjrq8c7t8xje" path="res://scenes/map_room.gd" id="2_paxxb"]
 [ext_resource type="Texture2D" uid="uid://6wjgxdgnoeck" path="res://assets/unsorted/black.png" id="3_jh32y"]
+[ext_resource type="Texture2D" uid="uid://cfoac3fdxnmgs" path="res://assets/misc/frame.png" id="3_mlgqr"]
 [ext_resource type="Texture2D" uid="uid://bwmdfc7r84xq7" path="res://assets/rooms/bedroom_couple.png" id="4_0cso3"]
 [ext_resource type="Texture2D" uid="uid://cpstm02pr37cy" path="res://assets/rooms/corridor.png" id="5_2klcf"]
 [ext_resource type="Texture2D" uid="uid://vcqobsvm38xi" path="res://assets/rooms/cafeteria.png" id="5_2lpho"]
 [ext_resource type="Texture2D" uid="uid://ucokwuoy18ba" path="res://assets/rooms/bedroom_swordfish.png" id="5_blm8a"]
 [ext_resource type="Texture2D" uid="uid://bdonf2blj6up7" path="res://assets/rooms/bedroom_sharko.png" id="6_mlgqr"]
 [ext_resource type="Texture2D" uid="uid://ctkom2uiqsnv0" path="res://assets/portraits/whale.png" id="7_nakos"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_17jab"]
+texture = ExtResource("3_mlgqr")
 
 [node name="Map" type="CanvasLayer" unique_id=942313466]
 process_mode = 2
@@ -27,14 +31,23 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("2_jh32y")
 
-[node name="BedroomCouple" type="MarginContainer" parent="Control" unique_id=1214140749]
+[node name="Panel" type="Panel" parent="Control" unique_id=755861497]
+layout_mode = 0
+offset_left = 846.0
+offset_top = 242.0
+offset_right = 886.0
+offset_bottom = 282.0
+scale = Vector2(8.370527, 4.998875)
+theme_override_styles/panel = SubResource("StyleBoxTexture_17jab")
+
+[node name="BedroomCouple" type="MarginContainer" parent="Control/Panel" unique_id=1214140749]
 modulate = Color(1, 1, 1, 0.62352943)
 layout_mode = 0
-offset_left = 827.0001
-offset_top = 135.00003
-offset_right = 2767.0
-offset_bottom = 1235.0
-scale = Vector2(0.15519369, 0.15519369)
+offset_left = 6.69014
+offset_top = 6.80153
+offset_right = 1946.6902
+offset_bottom = 1106.8015
+scale = Vector2(0.01390228, 0.024246864)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/margin_left = 10
@@ -42,7 +55,7 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="TextureRect" type="TextureButton" parent="Control/BedroomCouple" unique_id=1800774651]
+[node name="TextureRect" type="TextureButton" parent="Control/Panel/BedroomCouple" unique_id=1800774651]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -169,7 +182,7 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("3_jh32y")
 
-[connection signal="pressed" from="Control/BedroomCouple/TextureRect" to="Control/BedroomCouple/TextureRect" method="_on_pressed"]
+[connection signal="pressed" from="Control/Panel/BedroomCouple/TextureRect" to="Control/Panel/BedroomCouple/TextureRect" method="_on_pressed"]
 [connection signal="pressed" from="Control/BedroomSwordfish/TextureRect" to="Control/BedroomSwordfish/TextureRect" method="_on_pressed"]
 [connection signal="pressed" from="Control/BedroomSharko/TextureRect" to="Control/BedroomSharko/TextureRect" method="_on_pressed"]
 [connection signal="pressed" from="Control/Cafeteria/TextureRect" to="Control/Cafeteria/TextureRect" method="_on_pressed"]

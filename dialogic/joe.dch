@@ -10,12 +10,22 @@
 "style": "",
 "suffix": ""
 },
-&"default_portrait": "",
+&"default_portrait": "Main",
 &"description": "",
 &"display_name": "Joe Ker",
 &"mirror": false,
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
-&"portraits": {},
+&"portraits": {
+"Main": {
+"export_overrides": {
+"image": "\"res://assets/portraits/joe.png\""
+},
+"mirror": true,
+"offset": Vector2(0, -100),
+"scale": 0.2,
+"scene": ""
+}
+},
 &"scale": 1.0
 }

@@ -1,10 +1,11 @@
 [background arg="res://assets/unsorted/black.png" fade="0.0"]
-join anemon left
-join joe center
+join anemon (Alone) left
+join joe right
 anemon: So the tooth we found is Pirahana's!
 joe: And he lied to us...
 anemon: How so ?
 joe: Well, he and Brochette told us they left after eating dessert, yet their donuts are untouched.
 anemon: Why would they lie about that ?
+joe: ...
 joe: Why indeed ?
 [signal arg="leave_table"]

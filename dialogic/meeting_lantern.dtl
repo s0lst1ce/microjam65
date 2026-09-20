@@ -17,6 +17,8 @@ anemon: Speaking of Shrimp, what do you know about her death ?
 [wait time="2.0"]
 latern: I am the one who found her in the Library. Her body was crushed under books. Her entrails splattered on the floor.
 leave latern
+update anemon (Alone)
+join joe right
 joe: This one is unhinged.
 anemon: I like her. I like her a [b]lot[/b]!
 joe: Of course you would! You really should see a shrink some day Anne.
