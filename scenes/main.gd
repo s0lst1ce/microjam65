@@ -62,7 +62,7 @@ func _on_toggle_hud_visibility():
 	
 func _on_drop_item(data: Variant):
 	print("Hovered ", hovered_furniture)
-	if hovered_furniture != null and is_instance_valid(hovered_furniture) and hovered_furniture.get_rect().has_point(get_global_mouse_position()-hovered_furniture.position):
+	if hovered_furniture != null and is_instance_valid(hovered_furniture) and hovered_furniture.get_rect().has_point(get_global_mouse_position()-hovered_furniture.position) and not get_tree().paused:
 		print("hey man!")
 		hovered_furniture.catch_item(data)
 

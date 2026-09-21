@@ -2,8 +2,9 @@ extends Panel
 
 @onready var grid_container: GridContainer = $"./MarginContainer/GridContainer"
 
-func _ready() -> void:	
-	ItemExchange.add_item.connect(_on_add_item)
+func _ready() -> void:
+	pass
+	#ItemExchange.add_item.connect(_on_add_item)
 
 
 var data_bk

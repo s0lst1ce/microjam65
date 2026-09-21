@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ddy2k1p5c4i6k"]
 
 [ext_resource type="Texture2D" uid="uid://rb217fhcfvrr" path="res://assets/misc/map_close.png" id="2_5ysmq"]
+[ext_resource type="Texture2D" uid="uid://dhrx2otlj5jss" path="res://assets/unsorted/inventaire.png" id="3_0i1j5"]
 [ext_resource type="Script" uid="uid://c0325j1vti6ny" path="res://scenes/inventory.gd" id="3_5pdws"]
 [ext_resource type="Script" uid="uid://cker0h66hbv4u" path="res://scenes/map_button.gd" id="3_5ysmq"]
 [ext_resource type="Script" uid="uid://bnikgswxgv1uf" path="res://scenes/item_slot.gd" id="3_047uy"]
@@ -10,6 +11,7 @@
 [ext_resource type="Resource" uid="uid://f4mmrvrtj26i" path="res://items/portable_lantern.tres" id="8_hd3ao"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cty71"]
+texture = ExtResource("3_0i1j5")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_uo2fv"]
 shader = ExtResource("3_uo2fv")
@@ -51,7 +53,7 @@ anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -244.5
 offset_right = 244.5
-offset_bottom = 75.0
+offset_bottom = 89.12021
 grow_horizontal = 2
 scale = Vector2(1.3016127, 1.3016127)
 theme_override_styles/panel = SubResource("StyleBoxTexture_cty71")
@@ -62,7 +64,7 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 theme_override_constants/margin_left = 5
-theme_override_constants/margin_top = 5
+theme_override_constants/margin_top = 19
 theme_override_constants/margin_right = 5
 theme_override_constants/margin_bottom = 5
 
