@@ -63,7 +63,7 @@ variables={
 "lantern": "meeting_lantern",
 "sharko": "meeting_sharko",
 "swordfish": "meeting_swordfish",
-"whale": "arrival"
+"whale": "meeting_whale"
 },
 "puzzle_pieces_count": 0,
 "sharko_got_can": false,
