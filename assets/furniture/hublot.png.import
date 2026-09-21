@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0b5ajx22u1d"
-path="res://.godot/imported/couteausansaccroche.png-e225feda241ba49dba2cd5d467173e59.ctex"
+uid="uid://du0pcpc0m1tye"
+path="res://.godot/imported/hublot.png-12ebd04452beedeacdf3cd0ee2cfa754.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/couteausansaccroche.png"
-dest_files=["res://.godot/imported/couteausansaccroche.png-e225feda241ba49dba2cd5d467173e59.ctex"]
+source_file="res://assets/furniture/hublot.png"
+dest_files=["res://.godot/imported/hublot.png-12ebd04452beedeacdf3cd0ee2cfa754.ctex"]
 
 [params]
 

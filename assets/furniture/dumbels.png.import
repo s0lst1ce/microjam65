@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi2n3kfl8cvqd"
-path="res://.godot/imported/horlogeshark.png-259417910558ca08fb48b8f8af8c7d0f.ctex"
+uid="uid://de61p3anqt0x8"
+path="res://.godot/imported/dumbels.png-6625318ad7e923c9430e28ce1a241efe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/horlogeshark.png"
-dest_files=["res://.godot/imported/horlogeshark.png-259417910558ca08fb48b8f8af8c7d0f.ctex"]
+source_file="res://assets/furniture/dumbels.png"
+dest_files=["res://.godot/imported/dumbels.png-6625318ad7e923c9430e28ce1a241efe.ctex"]
 
 [params]
 

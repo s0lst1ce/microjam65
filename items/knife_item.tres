@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://ds6o6wf3sfa2n"]
+
+[ext_resource type="Script" uid="uid://bp63adiuj3ujh" path="res://item_data.gd" id="1_i6i25"]
+[ext_resource type="Texture2D" uid="uid://0b5ajx22u1d" path="res://assets/furniture/knife_item.png" id="1_ucc1b"]
+
+[resource]
+script = ExtResource("1_i6i25")
+name = "knife"
+icon = ExtResource("1_ucc1b")
+metadata/_custom_type_script = "uid://bp63adiuj3ujh"

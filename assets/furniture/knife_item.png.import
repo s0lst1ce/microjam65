@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://80u1tkxd1f4u"
-path="res://.godot/imported/couteau.png-c43cdbe6c0a6791ca4974af071d82bb4.ctex"
+uid="uid://0b5ajx22u1d"
+path="res://.godot/imported/knife_item.png-cc2856b15e4de66c46f3ddcb6eaffdda.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/couteau.png"
-dest_files=["res://.godot/imported/couteau.png-c43cdbe6c0a6791ca4974af071d82bb4.ctex"]
+source_file="res://assets/furniture/knife_item.png"
+dest_files=["res://.godot/imported/knife_item.png-cc2856b15e4de66c46f3ddcb6eaffdda.ctex"]
 
 [params]
 

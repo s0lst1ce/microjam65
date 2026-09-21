@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtbotdvlx1uup"
-path="res://.godot/imported/haltereseule.png-d7a8b55f06ba35b999d881452120009e.ctex"
+uid="uid://2ruww4n3oyfx"
+path="res://.godot/imported/buoy.png-a250227ee3c380426a9fe06b74f0d76f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/haltereseule.png"
-dest_files=["res://.godot/imported/haltereseule.png-d7a8b55f06ba35b999d881452120009e.ctex"]
+source_file="res://assets/furniture/buoy.png"
+dest_files=["res://.godot/imported/buoy.png-a250227ee3c380426a9fe06b74f0d76f.ctex"]
 
 [params]
 

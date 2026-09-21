@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de61p3anqt0x8"
-path="res://.godot/imported/haleterevraiversion.png-3c9832c11069bf323f9a98fbbb45b036.ctex"
+uid="uid://beylpvgjj20nr"
+path="res://.godot/imported/carpet_shark.png-79f9a0846328a1df95bcc850175146e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/haleterevraiversion.png"
-dest_files=["res://.godot/imported/haleterevraiversion.png-3c9832c11069bf323f9a98fbbb45b036.ctex"]
+source_file="res://assets/furniture/carpet_shark.png"
+dest_files=["res://.godot/imported/carpet_shark.png-79f9a0846328a1df95bcc850175146e3.ctex"]
 
 [params]
 
