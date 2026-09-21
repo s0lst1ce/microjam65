@@ -12,3 +12,4 @@ anemon: I see, only the One Book for the accounting with Aggigawhale then.
 latern: Indeed
 anemon: Yet you were seen pushing a cart full of books during the evening.
 latern: Oh... Did I forget to mention that ? I can get disoriented sometimes. I picked up some books lying here and there on my way back to the library. I was with the cart when I got back to the library.
+set {NextDialogue.lantern} = "lantern_busy"

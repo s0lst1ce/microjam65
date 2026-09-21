@@ -8,3 +8,23 @@ sharko: Good ol'shrimp! My favorite ! I haven't eaten one of those in ages, what
 sharko: [i]nom nom[/i]
 anemon: So she stopped you from eating your favorite food ?
 sharko: That and so much else!
+anemon: Like what ?
+sharko: I was never allowed to work out when she came to see me for one ! In my own room, how dare she ?
+anemon: She often came!
+sharko: Yes, always pestering me
+joe: Why let her in then ?
+sharko: I was in no position to refuse!
+anemon: How come ?
+sharko: ...
+anemon: Is there anything you'd like to tell us ?
+sharko: No. Nothing.
+anemon: What did you do yesterday evening then ?
+sharko: I ate with everyone in the cafeteria and then came back to my room to train and rest. I have nothing to do with Shrimp's death.
+anemon: We never said you did. What makes you think someone had a hand in it ?
+sharko: I hear she was crushed, everyone here could have done with how small she was. And everyone had beef with her. If you ask me I'd say murder is in the cards. I even found this piece of paper in the caring home. There's not enough words left to make anything out but it's not my handwriting!
+leave sharko
+update anemon (Alone)
+join joe center
+anemon: You should be careful too Joe, you're not much bigger than a shrimp.
+joe: ...
+[signal arg="receive_torn_paper"]

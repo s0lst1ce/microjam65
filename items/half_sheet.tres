@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://b4lxcfoxv08ft"]
+
+[ext_resource type="Resource" uid="uid://bctgtiafwu5qp" path="res://items/sheet_written.tres" id="1_iafqg"]
+[ext_resource type="Script" uid="uid://bp63adiuj3ujh" path="res://item_data.gd" id="1_j64cl"]
+[ext_resource type="Texture2D" uid="uid://bbfbxnmrrsuv8" path="res://assets/furniture/half_sheet.png" id="1_rxdxv"]
+
+[resource]
+script = ExtResource("1_j64cl")
+name = "half_sheet"
+icon = ExtResource("1_rxdxv")
+combines_with = "half_sheet"
+combines_into = ExtResource("1_iafqg")
+metadata/_custom_type_script = "uid://bp63adiuj3ujh"

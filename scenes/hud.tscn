@@ -7,10 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://ij1l3s8wbibx" path="res://assets/misc/inventory.png" id="3_mphia"]
 [ext_resource type="Shader" uid="uid://dvdb7o7b5ndrc" path="res://interactibles/table_puzzle.gdshader" id="3_uo2fv"]
 [ext_resource type="Texture2D" uid="uid://dpjhgpanqef7d" path="res://assets/misc/carré .png" id="5_0m4u7"]
-[ext_resource type="Resource" uid="uid://cob3wvjc232ro" path="res://items/donut.tres" id="5_047uy"]
+[ext_resource type="Resource" uid="uid://bi5kaj7xmp2kd" path="res://items/torn_paper.tres" id="7_0i1j5"]
 [ext_resource type="Shader" uid="uid://cqv4mrmukav8w" path="res://scenes/highlight.gdshader" id="7_5pdws"]
-[ext_resource type="Resource" uid="uid://f4mmrvrtj26i" path="res://items/portable_lantern.tres" id="8_hd3ao"]
-[ext_resource type="Resource" uid="uid://cvivw8v45n7k1" path="res://items/shrimp_can.tres" id="10_0m4u7"]
+[ext_resource type="Resource" uid="uid://b4lxcfoxv08ft" path="res://items/half_sheet.tres" id="10_mphia"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cty71"]
 texture = ExtResource("3_mphia")
@@ -90,7 +89,7 @@ custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_mphia")
 script = ExtResource("3_047uy")
-item = ExtResource("5_047uy")
+item = ExtResource("7_0i1j5")
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot" unique_id=2043996317]
 material = SubResource("ShaderMaterial_uo2fv")
@@ -120,7 +119,7 @@ custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_apjy4")
 script = ExtResource("3_047uy")
-item = ExtResource("10_0m4u7")
+item = ExtResource("7_0i1j5")
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot2" unique_id=822962553]
 material = SubResource("ShaderMaterial_uo2fv")
@@ -150,7 +149,7 @@ custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_apjy4")
 script = ExtResource("3_047uy")
-item = ExtResource("8_hd3ao")
+item = ExtResource("10_mphia")
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot3" unique_id=1049831841]
 material = SubResource("ShaderMaterial_uo2fv")

@@ -4,9 +4,22 @@
 [ext_resource type="Texture2D" uid="uid://ctkom2uiqsnv0" path="res://assets/portraits/whale.png" id="2_pucmg"]
 [ext_resource type="Texture2D" uid="uid://cpstm02pr37cy" path="res://assets/rooms/corridor.png" id="2_xswuy"]
 [ext_resource type="Script" uid="uid://nuh3jf3k8ic7" path="res://scenes/whale.gd" id="4_mus4g"]
+[ext_resource type="Texture2D" uid="uid://cswsusr2d6c2d" path="res://assets/furniture/drum_blue.png" id="5_wctbt"]
+[ext_resource type="Script" uid="uid://brgtb1k50k6x" path="res://interactible.gd" id="6_uiklb"]
+[ext_resource type="Texture2D" uid="uid://ckreoqykt5jit" path="res://assets/furniture/drum_green.png" id="7_w32gw"]
+[ext_resource type="Texture2D" uid="uid://c2pht850177b3" path="res://assets/furniture/drum_orange.png" id="8_f323m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
 size = Vector2(334.21054, 551.4689)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wgcn5"]
+size = Vector2(136, 119)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wctbt"]
+size = Vector2(101, 92.99989)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uiklb"]
+size = Vector2(105.75, 92.99989)
 
 [node name="Corridor" type="Node2D" unique_id=1391204446]
 script = ExtResource("1_xswuy")
@@ -16,16 +29,58 @@ metadata/_custom_type_script = "uid://birsj1hmvmeyf"
 texture = ExtResource("2_xswuy")
 centered = false
 
-[node name="Interactible" type="Sprite2D" parent="." unique_id=1026083434]
+[node name="Abigawhale" type="Sprite2D" parent="." unique_id=1026083434]
 position = Vector2(973.00006, 694)
 scale = Vector2(0.86771685, 0.89034957)
 texture = ExtResource("2_pucmg")
 script = ExtResource("4_mus4g")
 metadata/_custom_type_script = "uid://brgtb1k50k6x"
 
-[node name="Area2D" type="Area2D" parent="Interactible" unique_id=1904777336]
+[node name="Area2D" type="Area2D" parent="Abigawhale" unique_id=1904777336]
 visible = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactible/Area2D" unique_id=1121980302]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Abigawhale/Area2D" unique_id=1121980302]
 position = Vector2(53.012695, -23.024841)
 shape = SubResource("RectangleShape2D_3bft5")
+
+[node name="DrumBlue" type="Sprite2D" parent="." unique_id=815847679]
+position = Vector2(662, 897)
+texture = ExtResource("5_wctbt")
+script = ExtResource("6_uiklb")
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="DrumBlue" unique_id=956585266]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DrumBlue/Area2D" unique_id=633403507]
+position = Vector2(2, -72.5)
+shape = SubResource("RectangleShape2D_wgcn5")
+
+[node name="DrumGreen" type="Sprite2D" parent="." unique_id=1174682529]
+position = Vector2(1286, 857)
+scale = Vector2(0.7683761, 0.7683761)
+texture = ExtResource("7_w32gw")
+script = ExtResource("6_uiklb")
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="DrumGreen" unique_id=2013350800]
+position = Vector2(-1.3013916, -3.904316)
+scale = Vector2(1.3014461, 1.3014461)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DrumGreen/Area2D" unique_id=1510922340]
+position = Vector2(-1.5, -53.49994)
+shape = SubResource("RectangleShape2D_wctbt")
+
+[node name="DrumOrange" type="Sprite2D" parent="." unique_id=2128458585]
+position = Vector2(1390, 975)
+scale = Vector2(0.69830674, 0.69830674)
+texture = ExtResource("8_f323m")
+script = ExtResource("6_uiklb")
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="DrumOrange" unique_id=424814604]
+position = Vector2(-92.40271, -101.512695)
+scale = Vector2(1.3014462, 1.3014462)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DrumOrange/Area2D" unique_id=1560824142]
+position = Vector2(71.125, 36.00006)
+shape = SubResource("RectangleShape2D_uiklb")

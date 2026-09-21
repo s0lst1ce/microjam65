@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bctgtiafwu5qp"]
+
+[ext_resource type="Script" uid="uid://bp63adiuj3ujh" path="res://item_data.gd" id="1_8s67e"]
+[ext_resource type="Texture2D" uid="uid://8qoady8ufxbv" path="res://assets/furniture/sheet_written.png" id="1_jpejy"]
+
+[resource]
+script = ExtResource("1_8s67e")
+name = "sheet_written"
+icon = ExtResource("1_jpejy")
+metadata/_custom_type_script = "uid://bp63adiuj3ujh"

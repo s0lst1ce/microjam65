@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bi5kaj7xmp2kd"]
+
+[ext_resource type="Script" uid="uid://bp63adiuj3ujh" path="res://item_data.gd" id="1_2h56m"]
+[ext_resource type="Texture2D" uid="uid://druqyq4k1rkdl" path="res://assets/furniture/torn_paper.png" id="1_2ku02"]
+[ext_resource type="Resource" uid="uid://b4lxcfoxv08ft" path="res://items/half_sheet.tres" id="1_aiea8"]
+
+[resource]
+script = ExtResource("1_2h56m")
+name = "torn_paper"
+icon = ExtResource("1_2ku02")
+combines_with = "torn_paper"
+combines_into = ExtResource("1_aiea8")
+metadata/_custom_type_script = "uid://bp63adiuj3ujh"

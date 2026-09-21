@@ -6,7 +6,7 @@ extends Node
 var painting_puzzle: Array = []
 @onready var correct_painting_puzzle = []
 @onready var painting_puzzle_completed=false
-
+@onready var given_torn_papers = 0
 
 signal drop_diamond
 

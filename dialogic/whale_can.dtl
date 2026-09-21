@@ -15,3 +15,4 @@ update anemon (Alone)
 join joe right
 joe: A can of shrimp ?
 [signal arg="gain_can"]
+set {NextDialogue.whale} = "whale_wailing"

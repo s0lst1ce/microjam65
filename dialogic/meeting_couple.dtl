@@ -17,7 +17,7 @@ brochette: I think they should apologize.
 pirhana: Yes.
 joe: We will, at the end of the investigation. Unless you happen to be associated with the crime or witheld critical information of course.
 anemon: In the meantime, could you describe that necklace for us please ?
-brochette: It is a large gold necklace with a inlaid emerald.
+brochette: It is a large gold necklace with a inlaid emerald. Also I found a torn piece of paper in the room, surely this is related! Here, take it!
 pirhana: Yes
 anemon: And what did you do yesterday evening ?
 brochette: We ate with everyone in the refectory and then came to our room. That's when I found out my necklace had disappeared. Thinking it had been my husdand who misplaced it we got into some argument.
@@ -30,3 +30,5 @@ brochette: I did not sleep very well though so I went on a stroll during the nig
 anemon: I see. Tell me Pirhana, are you always so short in your replies ?
 brochette: Yes he is!
 set {NextDialogue.couple} = "nothing_whale"
+set {NextDialogue.lantern} = "lantern_cart"
+[signal arg="receive_torn_paper"]

@@ -28,10 +28,11 @@ func _ready() -> void:
 	SceneSwitching.toggle_hud_visibility.connect(_on_toggle_hud_visibility)
 	ItemExchange.drop_item.connect(_on_drop_item)
 	ItemExchange.start_furniture_hover.connect(_on_furniture_enter)
+	Dialogic.text_signal.connect(_on_dialogic_text_signal)
 
 	self.add_child(scenes[current_room])
 	Dialogic.preload_timeline("arrival")
-	Dialogic.start("arrival")
+	#Dialogic.start("arrival")
 
 
 func change_scene(room: String) -> void:
@@ -72,3 +73,11 @@ func _on_drop_item(data: Variant):
 
 func _on_furniture_enter(furniture: Interactible):
 	hovered_furniture = furniture
+
+func _on_dialogic_text_signal(argument: String):
+	if argument == "receive_torn_paper":
+		if Enigma.given_torn_papers < 2:
+			ItemExchange.add_item.emit(preload("res://items/torn_paper.tres"))
+		else:
+			ItemExchange.add_item.emit(preload("res://items/half_sheet.tres"))
+		Enigma.given_torn_papers+=1
