@@ -1,9 +1,9 @@
 [background arg="res://assets/misc/black.png" fade="0.0"]
-join anemon left
 join sharko right
 sharko: [i]Hmph Hmph Hmph[/i]
 if {tried_talking_sharko} == true:
 	[end_timeline]
+join anemon left
 anemon: Hello! I'm we're the detectives in charge of the investigation, we'd like to ask you a few questions if you don't mind ?
 sharko: [i]Hmph Hmph Hmph[/i]
 anemon: Sir ? Would you please give us a moment of your time ?
