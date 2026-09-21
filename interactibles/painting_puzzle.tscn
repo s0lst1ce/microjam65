@@ -1,0 +1,703 @@
+[gd_scene format=3 uid="uid://bepjvspsktilm"]
+
+[ext_resource type="Script" uid="uid://dwda6xjm8by0i" path="res://interactibles/painting_puzzle.gd" id="1_xjuka"]
+[ext_resource type="Texture2D" uid="uid://bvc2517bxn17r" path="res://assets/furniture/puzzle_frame_facing.png" id="2_ni6lv"]
+[ext_resource type="Script" uid="uid://cljufwwino3xj" path="res://interactibles/token_inventory.gd" id="3_nbjjy"]
+[ext_resource type="Script" uid="uid://c2gnkk8cru14w" path="res://interactibles/puzzle_token_slot.gd" id="4_5jwt3"]
+[ext_resource type="Shader" uid="uid://dvdb7o7b5ndrc" path="res://interactibles/table_puzzle.gdshader" id="6_vj6j6"]
+[ext_resource type="Texture2D" uid="uid://1vdcg5hsdtwl" path="res://assets/unsorted/crux.png" id="15_jnv63"]
+[ext_resource type="Script" uid="uid://b2jgxvglqtwtu" path="res://interactibles/table_puzzle_close_button.gd" id="16_u16ib"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vb20r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t35mi"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p4o86"]
+shader = ExtResource("6_vj6j6")
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/width = 5.0000002375
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = true
+
+[node name="PaintingPuzzle" type="CanvasLayer" unique_id=1424272518]
+process_mode = 2
+script = ExtResource("1_xjuka")
+
+[node name="Background" type="TextureRect" parent="." unique_id=642099615]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_ni6lv")
+
+[node name="Painting" type="Panel" parent="." unique_id=1152246160]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -379.0
+offset_top = -387.0
+offset_right = 389.0
+offset_bottom = 381.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_vb20r")
+script = ExtResource("3_nbjjy")
+
+[node name="GridContainer" type="GridContainer" parent="Painting" unique_id=1382178346]
+custom_maximum_size = Vector2(768, 768)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 6
+
+[node name="TokenSlot" type="Panel" parent="Painting/GridContainer" unique_id=658795528]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot" unique_id=602700793]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot2" type="Panel" parent="Painting/GridContainer" unique_id=1897093195]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 1
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot2" unique_id=3731733]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot3" type="Panel" parent="Painting/GridContainer" unique_id=1643382212]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 2
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot3" unique_id=2068208675]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot4" type="Panel" parent="Painting/GridContainer" unique_id=2083930145]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 3
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot4" unique_id=1960772593]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot5" type="Panel" parent="Painting/GridContainer" unique_id=1979707213]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 4
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot5" unique_id=1033833071]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot6" type="Panel" parent="Painting/GridContainer" unique_id=1135527762]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 5
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot6" unique_id=1753768465]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot7" type="Panel" parent="Painting/GridContainer" unique_id=1209396820]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 6
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot7" unique_id=438111276]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot8" type="Panel" parent="Painting/GridContainer" unique_id=1663324860]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 7
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot8" unique_id=429834735]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot9" type="Panel" parent="Painting/GridContainer" unique_id=1970316262]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 8
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot9" unique_id=2090372296]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot10" type="Panel" parent="Painting/GridContainer" unique_id=253961985]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 9
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot10" unique_id=1667781389]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot11" type="Panel" parent="Painting/GridContainer" unique_id=530036884]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 10
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot11" unique_id=240570198]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot12" type="Panel" parent="Painting/GridContainer" unique_id=226055807]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 11
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot12" unique_id=1145199578]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot13" type="Panel" parent="Painting/GridContainer" unique_id=294018002]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 12
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot13" unique_id=1441988892]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot14" type="Panel" parent="Painting/GridContainer" unique_id=1334123057]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 13
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot14" unique_id=599613638]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot15" type="Panel" parent="Painting/GridContainer" unique_id=2094509535]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 14
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot15" unique_id=1659639224]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot16" type="Panel" parent="Painting/GridContainer" unique_id=1471810669]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 15
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot16" unique_id=1578777941]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot17" type="Panel" parent="Painting/GridContainer" unique_id=906570301]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 16
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot17" unique_id=402177871]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot18" type="Panel" parent="Painting/GridContainer" unique_id=2124489591]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 17
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot18" unique_id=1329549419]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot19" type="Panel" parent="Painting/GridContainer" unique_id=752238510]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 18
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot19" unique_id=816573276]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot20" type="Panel" parent="Painting/GridContainer" unique_id=69013644]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 19
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot20" unique_id=1362524497]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot21" type="Panel" parent="Painting/GridContainer" unique_id=51524617]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 20
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot21" unique_id=355331746]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot22" type="Panel" parent="Painting/GridContainer" unique_id=1439909180]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 21
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot22" unique_id=1565004234]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot23" type="Panel" parent="Painting/GridContainer" unique_id=847193149]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 22
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot23" unique_id=324520649]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot24" type="Panel" parent="Painting/GridContainer" unique_id=1663503818]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 23
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot24" unique_id=1685169957]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot25" type="Panel" parent="Painting/GridContainer" unique_id=1861519325]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+idx = 24
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot25" unique_id=962181948]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot26" type="Panel" parent="Painting/GridContainer" unique_id=1188428342]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot26" unique_id=197108795]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot27" type="Panel" parent="Painting/GridContainer" unique_id=69900256]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot27" unique_id=189922442]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot28" type="Panel" parent="Painting/GridContainer" unique_id=1830419262]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot28" unique_id=1524166289]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot29" type="Panel" parent="Painting/GridContainer" unique_id=966298846]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot29" unique_id=969312542]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot30" type="Panel" parent="Painting/GridContainer" unique_id=488596889]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot30" unique_id=1663887532]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot31" type="Panel" parent="Painting/GridContainer" unique_id=1620264353]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot31" unique_id=447453504]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot32" type="Panel" parent="Painting/GridContainer" unique_id=1343956028]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot32" unique_id=913198188]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot33" type="Panel" parent="Painting/GridContainer" unique_id=1832096474]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot33" unique_id=1555234537]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot34" type="Panel" parent="Painting/GridContainer" unique_id=2077772422]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot34" unique_id=1068266011]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot35" type="Panel" parent="Painting/GridContainer" unique_id=35879640]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot35" unique_id=94497874]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot36" type="Panel" parent="Painting/GridContainer" unique_id=1679352482]
+custom_minimum_size = Vector2(128, 128)
+custom_maximum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_5jwt3")
+
+[node name="Icon" type="TextureRect" parent="Painting/GridContainer/TokenSlot36" unique_id=233994335]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="CloseButton" type="TextureButton" parent="." unique_id=1615438251]
+material = SubResource("ShaderMaterial_p4o86")
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("15_jnv63")
+script = ExtResource("16_u16ib")
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://cvivw8v45n7k1"]
+
+[ext_resource type="Script" uid="uid://bp63adiuj3ujh" path="res://item_data.gd" id="1_6hwnw"]
+[ext_resource type="Texture2D" uid="uid://b32i17v7rpccu" path="res://assets/furniture/shrimp_can.png" id="1_6mwb6"]
+
+[resource]
+script = ExtResource("1_6hwnw")
+name = "shrimp_can"
+icon = ExtResource("1_6mwb6")
+metadata/_custom_type_script = "uid://bp63adiuj3ujh"

@@ -1,9 +1,30 @@
 [gd_scene format=3 uid="uid://c83eng2l4wp26"]
 
 [ext_resource type="Script" uid="uid://birsj1hmvmeyf" path="res://room.gd" id="1_2aifn"]
-[ext_resource type="Texture2D" uid="uid://bdonf2blj6up7" path="res://assets/rooms/bedroom_sharko.png" id="2_ou55f"]
+[ext_resource type="Texture2D" uid="uid://dae668uv78e7v" path="res://assets/rooms/bedroom_sharko.png" id="2_ou55f"]
 [ext_resource type="Texture2D" uid="uid://bmupftdn8r7js" path="res://assets/portraits/sharko.png" id="3_60cc3"]
 [ext_resource type="Script" uid="uid://c6lanv6uyjx5f" path="res://scenes/sharko.gd" id="4_2aifn"]
+[ext_resource type="Texture2D" uid="uid://76m0lq2hmnfl" path="res://assets/furniture/bed_sharko.png" id="5_ou55f"]
+[ext_resource type="Texture2D" uid="uid://bi2n3kfl8cvqd" path="res://assets/furniture/clock.png" id="6_wkv07"]
+[ext_resource type="Texture2D" uid="uid://ess677jsp55i" path="res://assets/furniture/puzzle_piece.png" id="7_8c3qo"]
+[ext_resource type="PackedScene" uid="uid://re8kn4o0tu3b" path="res://interactibles/puzzle_piece.tscn" id="7_44r4d"]
+[ext_resource type="Texture2D" uid="uid://d2bnpfxgkp54e" path="res://assets/furniture/cap.png" id="7_flhft"]
+[ext_resource type="Texture2D" uid="uid://beylpvgjj20nr" path="res://assets/furniture/carpet_shark.png" id="8_g6gmd"]
+[ext_resource type="Script" uid="uid://ct7hin3df3sjv" path="res://interactibles/puzzle_piece.gd" id="8_sc6j1"]
+[ext_resource type="Texture2D" uid="uid://2ruww4n3oyfx" path="res://assets/furniture/buoy.png" id="8_vsic4"]
+[ext_resource type="Texture2D" uid="uid://de61p3anqt0x8" path="res://assets/furniture/dumbels.png" id="9_8c3qo"]
+[ext_resource type="Texture2D" uid="uid://dtbotdvlx1uup" path="res://assets/furniture/dumbel.png" id="9_t4uot"]
+[ext_resource type="Texture2D" uid="uid://copl7nsn3l1pn" path="res://assets/furniture/table_shark.png" id="10_flhft"]
+[ext_resource type="Texture2D" uid="uid://chqxj2e650je4" path="res://assets/furniture/ventilation_closed.png" id="13_8c3qo"]
+[ext_resource type="Script" uid="uid://vj3ex3uya220" path="res://interactibles/ventilation.gd" id="15_44r4d"]
+[ext_resource type="Script" uid="uid://bp63adiuj3ujh" path="res://item_data.gd" id="16_rukd4"]
+[ext_resource type="Resource" uid="uid://b1y6l7nrm2o6k" path="res://items/bloody_dumbel.tres" id="17_48cb8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wm6sv"]
+size = Vector2(252.06055, 241.97827)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yn442"]
+size = Vector2(127, 92.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
 size = Vector2(455.71356, 665.09534)
@@ -16,11 +37,77 @@ metadata/_custom_type_script = "uid://birsj1hmvmeyf"
 texture = ExtResource("2_ou55f")
 centered = false
 
+[node name="Bed" type="Sprite2D" parent="." unique_id=788617872]
+position = Vector2(634, 632)
+texture = ExtResource("5_ou55f")
+
+[node name="Clock" type="Sprite2D" parent="." unique_id=1736600914]
+position = Vector2(204, 317)
+texture = ExtResource("6_wkv07")
+
+[node name="Table" type="Sprite2D" parent="." unique_id=1350649266]
+position = Vector2(1043, 570)
+texture = ExtResource("10_flhft")
+
+[node name="Cap" type="Sprite2D" parent="." unique_id=1736172952]
+position = Vector2(1049, 465)
+texture = ExtResource("7_flhft")
+
+[node name="PuzzlePiece" parent="." unique_id=1002671440 instance=ExtResource("7_44r4d")]
+position = Vector2(1573, 398)
+
+[node name="PuzzlePiece2" type="Sprite2D" parent="." unique_id=636303435]
+position = Vector2(1482, 1036)
+scale = Vector2(0.19836488, 0.19836488)
+texture = ExtResource("7_8c3qo")
+script = ExtResource("8_sc6j1")
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="PuzzlePiece2" unique_id=1607349452]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PuzzlePiece2/Area2D" unique_id=1030165472]
+position = Vector2(0, -5.041382)
+shape = SubResource("RectangleShape2D_wm6sv")
+
+[node name="Buoy" type="Sprite2D" parent="." unique_id=905886834]
+position = Vector2(1666, 314)
+texture = ExtResource("8_vsic4")
+
+[node name="Carpet" type="Sprite2D" parent="." unique_id=670978521]
+position = Vector2(1307, 910)
+texture = ExtResource("8_g6gmd")
+
+[node name="Dumbels" type="Sprite2D" parent="." unique_id=1992335914]
+position = Vector2(1424, 664.00006)
+scale = Vector2(0.5203461, 0.5203461)
+texture = ExtResource("9_8c3qo")
+
+[node name="Dumbel" type="Sprite2D" parent="." unique_id=1754132081]
+position = Vector2(969, 782)
+texture = ExtResource("9_t4uot")
+
+[node name="Ventilation" type="Sprite2D" parent="." unique_id=291833899]
+position = Vector2(1314, 506)
+texture = ExtResource("13_8c3qo")
+script = ExtResource("15_44r4d")
+interacts_with = Array[String](["knife"])
+gives = Array[ExtResource("16_rukd4")]([ExtResource("17_48cb8")])
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="Ventilation" unique_id=112203869]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ventilation/Area2D" unique_id=116722943]
+position = Vector2(-0.5, 0.75)
+shape = SubResource("RectangleShape2D_yn442")
+
 [node name="Sharko" type="Sprite2D" parent="." unique_id=1136671448]
-position = Vector2(1423, 784)
-scale = Vector2(0.73072237, 0.73072237)
+position = Vector2(589, 761)
+scale = Vector2(0.931579, 0.931579)
 texture = ExtResource("3_60cc3")
+flip_h = true
 script = ExtResource("4_2aifn")
+interacts_with = Array[String](["shrimp_can"])
 metadata/_custom_type_script = "uid://brgtb1k50k6x"
 
 [node name="Area2D" type="Area2D" parent="Sharko" unique_id=554691055]

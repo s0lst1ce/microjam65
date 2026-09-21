@@ -6,6 +6,7 @@ extends Panel
 
 func _ready() -> void:	
 	ItemExchange.add_item.connect(_on_add_item)
+	Dialogic.signal_event.connect(_on_dialogic_signal)
 
 #func _process(delta: float) -> void:
 #	if Input.get_current_cursor_shape() == CURSOR_FORBIDDEN:
@@ -17,6 +18,7 @@ func _notification(what: int) -> void:
 		data_bk = get_viewport().gui_get_drag_data()
 	if what == Node.NOTIFICATION_DRAG_END:
 		if data_bk:
+			print("droppping ", data_bk)
 			ItemExchange.drop_item.emit(data_bk)
 			data_bk.icon.show()
 			data_bk = null
@@ -30,3 +32,7 @@ func _on_add_item(item: ItemData):
 			slot.update_ui()
 			return
 	assert(false)
+
+func _on_dialogic_signal(argument:String):
+	if argument == "gain_can":
+		ItemExchange.add_item.emit(preload("res://items/shrimp_can.tres"))

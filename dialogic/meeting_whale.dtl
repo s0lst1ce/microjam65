@@ -1,9 +1,9 @@
-[background arg="res://assets/unsorted/black.png" fade="0.0"]
+[background arg="res://assets/misc/black.png" fade="0.0"]
 join anemon leftmost [animation="Instant In"]
 join whale center
-anemon: So Ms.Whale, you're the owner of this fine establishment ?
+anemon: So Ms.Abigawhale, you're the owner of this fine establishment ?
 whale: Yes. I thought I could carry the elderly on their last voyage.
-whale: I didn't mean to have it sound like that. I just really wanted to give them some company and a nice place to be in their elderly days. Shouldering their burdens with them I suppose ?
+whale: I didn't mean to have it sound like that. I just really wanted to give them some company and a nice place to be in their old days. Shouldering their burdens with them I suppose ?
 anemon: And so you invited Shrimp on WhaleBack ?
 whale: Shrimp and I go way back! We were friends even before she came aboard. We met at a protest for the fish's rights and it instantly clicked. We had the interests, same hobbies, same views on the world ! Inviting her aboard was only natural and she quickly got along with the other residents.
 anemon: So she didn't have bad blood with anyone here ?
@@ -16,4 +16,8 @@ anemon: And when was the last time you saw Shrimp ?
 whale: Just before the supper. We had gotten into the habit of chatting everyday at that time. Sharing our latest thoughts and feelings.
 anemon: Was Shrimp worried about something recently ?
 whale: If she was, she didn't tell me.
-set {NextDialogue.whale} = "nothing_whale"
+anemon: And what else did you do after your chat with Shrimp ?
+whale: I swam as I do most of the time. I love swiming and carrying the residens all over the ocean!
+whale: Later on Ed joined me for some accounting. In truth we mostly chatted though she claimed, as she often does, that she only came for the bookmaking.
+whale: After she left I left myself drift in the ocean and to sleep.
+set {NextDialogue.whale} = "whale_can"

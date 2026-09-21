@@ -1,0 +1,10 @@
+if {sharko_got_can} == false:
+	[end_timeline]
+[background arg="res://assets/misc/black.png" fade="0.0"]
+join anemon left
+join sharko right
+set {NextDialogue.sharko} = "nothing_whale"
+sharko: Good ol'shrimp! My favorite ! I haven't eaten one of those in ages, what with Shrimp moving in here.
+sharko: [i]nom nom[/i]
+anemon: So she stopped you from eating your favorite food ?
+sharko: That and so much else!

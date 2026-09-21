@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://c1nvgukltd0na"]
+
+[ext_resource type="Script" uid="uid://birsj1hmvmeyf" path="res://room.gd" id="1_05lwq"]
+[ext_resource type="Texture2D" uid="uid://b4duobwoiqmjg" path="res://assets/rooms/bedroom_shrimp.png" id="2_84naq"]
+[ext_resource type="Texture2D" uid="uid://c7kakiuyji0cy" path="res://assets/furniture/bed_shrimp.png" id="3_n4i4s"]
+[ext_resource type="Texture2D" uid="uid://bge0al38m4vty" path="res://assets/furniture/table_shrimp.png" id="4_srfvv"]
+[ext_resource type="PackedScene" uid="uid://re8kn4o0tu3b" path="res://interactibles/puzzle_piece.tscn" id="5_srfvv"]
+[ext_resource type="Texture2D" uid="uid://be43p6jp6g61d" path="res://assets/furniture/shrimp_poster_love.png" id="5_wgaro"]
+[ext_resource type="Texture2D" uid="uid://c0x7f7dt081wg" path="res://assets/furniture/carpet_shrimp.png" id="6_eeoao"]
+[ext_resource type="Texture2D" uid="uid://brgmly2pqg7f1" path="res://assets/furniture/coral_pot.png" id="7_0ymh6"]
+[ext_resource type="Texture2D" uid="uid://cvpbdbxudy8bl" path="res://assets/furniture/puzzle_frame.png" id="8_gk7ot"]
+
+[node name="BedroomShrimp" type="Node2D" unique_id=1442393120]
+script = ExtResource("1_05lwq")
+metadata/_custom_type_script = "uid://birsj1hmvmeyf"
+
+[node name="Background" type="Sprite2D" parent="." unique_id=518532658]
+texture = ExtResource("2_84naq")
+centered = false
+
+[node name="BedShrimp" type="Sprite2D" parent="." unique_id=675889489]
+position = Vector2(592, 605)
+texture = ExtResource("3_n4i4s")
+
+[node name="TableShrimp" type="Sprite2D" parent="." unique_id=2067717368]
+position = Vector2(581, 843)
+texture = ExtResource("4_srfvv")
+
+[node name="PuzzlePiece" parent="." unique_id=1002671440 instance=ExtResource("5_srfvv")]
+position = Vector2(1194, 57)
+
+[node name="ShrimpPosterLove" type="Sprite2D" parent="." unique_id=1594845266]
+position = Vector2(1250, 151)
+texture = ExtResource("5_wgaro")
+
+[node name="CarpetShrimp" type="Sprite2D" parent="." unique_id=1338431492]
+position = Vector2(1306, 924)
+texture = ExtResource("6_eeoao")
+
+[node name="CoralPot" type="Sprite2D" parent="." unique_id=28815373]
+position = Vector2(582, 679)
+texture = ExtResource("7_0ymh6")
+
+[node name="PuzzleFrame" type="Sprite2D" parent="." unique_id=1473224571]
+position = Vector2(301, 361)
+texture = ExtResource("8_gk7ot")

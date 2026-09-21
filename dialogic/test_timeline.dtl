@@ -1,4 +1,4 @@
-[background arg="res://assets/unsorted/backgroundroom2.png" fade="0.0"]
+[background arg="res://assets/misc/black.png" fade="0.0"]
 join anemon left [animation="Instant In"]
 anemon: Hello! I'm Anne and this little guy is Mon.
 join sharko right [animation="Slide From Right"]

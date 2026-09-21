@@ -4,9 +4,35 @@
 [ext_resource type="Texture2D" uid="uid://ucokwuoy18ba" path="res://assets/rooms/bedroom_swordfish.png" id="2_4x2um"]
 [ext_resource type="Texture2D" uid="uid://hos1jqypprtu" path="res://assets/portraits/swordfish.png" id="3_jjxpg"]
 [ext_resource type="Script" uid="uid://gbbkn86uxfyr" path="res://scenes/swordfish.gd" id="4_jjxpg"]
+[ext_resource type="Texture2D" uid="uid://du0pcpc0m1tye" path="res://assets/furniture/hublot.png" id="5_bd2me"]
+[ext_resource type="Texture2D" uid="uid://bn647v2qqeh7l" path="res://assets/furniture/armor.png" id="5_t6qre"]
+[ext_resource type="PackedScene" uid="uid://re8kn4o0tu3b" path="res://interactibles/puzzle_piece.tscn" id="6_80xpl"]
+[ext_resource type="Texture2D" uid="uid://b43skjwtf5vi4" path="res://assets/furniture/carpet_black.png" id="6_bd2me"]
+[ext_resource type="Texture2D" uid="uid://dmej8gkkp5vu8" path="res://assets/furniture/trident.png" id="7_0laek"]
+[ext_resource type="Texture2D" uid="uid://8bge82xiivb8" path="res://assets/furniture/bed_sword.png" id="8_f3x8y"]
+[ext_resource type="Texture2D" uid="uid://b1s6j4o4xuh6a" path="res://assets/furniture/shield.png" id="9_2l6ow"]
+[ext_resource type="Texture2D" uid="uid://80u1tkxd1f4u" path="res://assets/furniture/knife.png" id="10_f3x8y"]
+[ext_resource type="Script" uid="uid://cjkdtvsyjnpgx" path="res://interactibles/knife.gd" id="12_ybjo0"]
+[ext_resource type="Texture2D" uid="uid://cvpbdbxudy8bl" path="res://assets/furniture/puzzle_frame.png" id="13_2l6ow"]
+[ext_resource type="Resource" uid="uid://ds6o6wf3sfa2n" path="res://items/knife_item.tres" id="14_tl4y2"]
+[ext_resource type="Script" uid="uid://n6w2k5llkdb6" path="res://interactibles/painting_swordfish.gd" id="14_yqt1e"]
+[ext_resource type="PackedScene" uid="uid://bepjvspsktilm" path="res://interactibles/painting_puzzle.tscn" id="15_2t2fd"]
+[ext_resource type="Texture2D" uid="uid://31b262mg55we" path="res://assets/furniture/diamond.png" id="16_qfeic"]
+[ext_resource type="Script" uid="uid://bp63adiuj3ujh" path="res://item_data.gd" id="17_4mmm3"]
+[ext_resource type="Script" uid="uid://bwbn511hii481" path="res://scenes/diamond.gd" id="17_c21r2"]
+[ext_resource type="Resource" uid="uid://dav3w35133qs7" path="res://items/diamond.tres" id="18_c21r2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
 size = Vector2(311, 668)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wgcn5"]
+size = Vector2(63.327637, 179.4281)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yn442"]
+size = Vector2(266, 304)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wm6sv"]
+size = Vector2(422.29602, 349.09436)
 
 [node name="BedroomSwordfish" type="Node2D" unique_id=384221034]
 script = ExtResource("1_cfa77")
@@ -17,7 +43,8 @@ texture = ExtResource("2_4x2um")
 centered = false
 
 [node name="Swordfish" type="Sprite2D" parent="." unique_id=1174429590]
-position = Vector2(1389, 675)
+z_index = 1
+position = Vector2(1416, 705)
 texture = ExtResource("3_jjxpg")
 script = ExtResource("4_jjxpg")
 metadata/_custom_type_script = "uid://brgtb1k50k6x"
@@ -27,3 +54,85 @@ metadata/_custom_type_script = "uid://brgtb1k50k6x"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Swordfish/Area2D" unique_id=1029807999]
 position = Vector2(15.5, -19)
 shape = SubResource("RectangleShape2D_3bft5")
+
+[node name="Hublot" type="Sprite2D" parent="." unique_id=1150157655]
+position = Vector2(1180.0001, 203)
+scale = Vector2(0.9123384, 0.9123384)
+texture = ExtResource("5_bd2me")
+
+[node name="PuzzlePiece" parent="." unique_id=1002671440 instance=ExtResource("6_80xpl")]
+position = Vector2(1112.9999, 262.99994)
+rotation = 3.0739825
+
+[node name="Armor" type="Sprite2D" parent="." unique_id=1317350043]
+position = Vector2(1074, 456)
+texture = ExtResource("5_t6qre")
+
+[node name="Carpet" type="Sprite2D" parent="." unique_id=735923038]
+position = Vector2(1318, 852)
+scale = Vector2(0.84675723, 0.84675723)
+texture = ExtResource("6_bd2me")
+
+[node name="Trident" type="Sprite2D" parent="." unique_id=923705995]
+position = Vector2(1680, 407)
+scale = Vector2(0.8199855, 0.8199855)
+texture = ExtResource("7_0laek")
+
+[node name="PuzzlePiece2" parent="." unique_id=118856240 instance=ExtResource("6_80xpl")]
+position = Vector2(660.00006, 445)
+rotation = 1.6335592
+
+[node name="Bed" type="Sprite2D" parent="." unique_id=382147563]
+position = Vector2(684, 612)
+texture = ExtResource("8_f3x8y")
+
+[node name="Interactible" type="Sprite2D" parent="Bed" unique_id=526590389]
+position = Vector2(-203.99998, 60.999985)
+scale = Vector2(0.8527091, 0.8527091)
+texture = ExtResource("10_f3x8y")
+script = ExtResource("12_ybjo0")
+gives = Array[ExtResource("17_4mmm3")]([ExtResource("14_tl4y2")])
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="Bed/Interactible" unique_id=600359487]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bed/Interactible/Area2D" unique_id=1581878227]
+position = Vector2(1.1727905, -0.58636475)
+shape = SubResource("RectangleShape2D_wgcn5")
+
+[node name="Shield" type="Sprite2D" parent="." unique_id=342806673]
+visible = false
+position = Vector2(253, 370.00003)
+scale = Vector2(0.6691352, 0.6691352)
+texture = ExtResource("9_2l6ow")
+
+[node name="Painting" type="Sprite2D" parent="." unique_id=105318983]
+position = Vector2(301, 311)
+texture = ExtResource("13_2l6ow")
+script = ExtResource("14_yqt1e")
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="Painting" unique_id=857766410]
+position = Vector2(-137, -153)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Painting/Area2D" unique_id=1263193384]
+position = Vector2(136, 152)
+shape = SubResource("RectangleShape2D_yn442")
+
+[node name="PaintingPuzzle" parent="Painting" unique_id=1424272518 instance=ExtResource("15_2t2fd")]
+visible = false
+
+[node name="Diamond" type="Sprite2D" parent="." unique_id=2059879241]
+position = Vector2(373, 795)
+rotation = 0.94799346
+scale = Vector2(0.1431342, 0.1431342)
+texture = ExtResource("16_qfeic")
+script = ExtResource("17_c21r2")
+gives = Array[ExtResource("17_4mmm3")]([ExtResource("18_c21r2")])
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="Diamond" unique_id=1264677945]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Diamond/Area2D" unique_id=656168516]
+position = Vector2(20.223145, 44.02832)
+shape = SubResource("RectangleShape2D_wm6sv")

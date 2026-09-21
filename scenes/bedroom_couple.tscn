@@ -5,7 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://g53fpdh62wcs" path="res://assets/portraits/pirhana.png" id="3_5obm4"]
 [ext_resource type="Script" uid="uid://boxf0pdte2l2e" path="res://scenes/couple.gd" id="4_t7wao"]
 [ext_resource type="Texture2D" uid="uid://51erjked01we" path="res://assets/portraits/brochette.png" id="5_p08yg"]
-[ext_resource type="Texture2D" uid="uid://76m0lq2hmnfl" path="res://assets/furniture/bed_sharko.png" id="5_x3vfp"]
+[ext_resource type="Texture2D" uid="uid://clb8hkaf2vmy4" path="res://assets/furniture/bed_couple.png" id="6_t7wao"]
+[ext_resource type="Texture2D" uid="uid://l5bbe48c5ark" path="res://assets/furniture/shelves.png" id="7_xbn0d"]
+[ext_resource type="Texture2D" uid="uid://d0v7ukl8vm20r" path="res://assets/furniture/desk.png" id="8_xbn0d"]
+[ext_resource type="PackedScene" uid="uid://re8kn4o0tu3b" path="res://interactibles/puzzle_piece.tscn" id="9_ronf3"]
+[ext_resource type="Texture2D" uid="uid://cxr6p0f2wwbb3" path="res://assets/furniture/rocking_chair.png" id="9_saa3c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
 size = Vector2(345.093, 551.5416)
@@ -22,9 +26,11 @@ texture = ExtResource("2_px10l")
 centered = false
 
 [node name="Pirhana" type="Sprite2D" parent="." unique_id=5536094]
-position = Vector2(1610, 743.00006)
-scale = Vector2(0.9881397, 0.9881397)
+z_index = 1
+position = Vector2(416.6582, 757.87756)
+scale = Vector2(1.062194, 1.062194)
 texture = ExtResource("3_5obm4")
+flip_h = true
 script = ExtResource("4_t7wao")
 metadata/_custom_type_script = "uid://brgtb1k50k6x"
 
@@ -35,8 +41,9 @@ position = Vector2(-24.79419, -1.5180664)
 shape = SubResource("RectangleShape2D_3bft5")
 
 [node name="Brochette" type="Sprite2D" parent="." unique_id=2090154004]
-position = Vector2(1207, 745.00006)
-scale = Vector2(0.9881397, 0.9881397)
+z_index = 3
+position = Vector2(836.99994, 759.87756)
+scale = Vector2(1.0621941, 1.0621941)
 texture = ExtResource("5_p08yg")
 script = ExtResource("4_t7wao")
 metadata/_custom_type_script = "uid://brgtb1k50k6x"
@@ -48,5 +55,29 @@ position = Vector2(-20.240234, -6.0720825)
 shape = SubResource("RectangleShape2D_t7wao")
 
 [node name="Bed" type="Sprite2D" parent="." unique_id=1488252497]
-position = Vector2(662, 630)
-texture = ExtResource("5_x3vfp")
+position = Vector2(817, 611)
+scale = Vector2(0.8533779, 0.8533779)
+texture = ExtResource("6_t7wao")
+
+[node name="PuzzlePiece2" parent="." unique_id=1002671440 instance=ExtResource("9_ronf3")]
+position = Vector2(117.000015, 135)
+rotation = -1.4866693
+
+[node name="Shelves" type="Sprite2D" parent="." unique_id=1236237822]
+position = Vector2(182, 316)
+texture = ExtResource("7_xbn0d")
+
+[node name="Desk" type="Sprite2D" parent="." unique_id=1551998619]
+position = Vector2(1744.0001, 946.99994)
+rotation = -0.075164065
+scale = Vector2(0.6551445, 0.6551445)
+texture = ExtResource("8_xbn0d")
+
+[node name="PuzzlePiece" parent="." unique_id=1720424245 instance=ExtResource("9_ronf3")]
+position = Vector2(1345, 668.00006)
+scale = Vector2(0.14909126, 0.14909126)
+
+[node name="RockingChair" type="Sprite2D" parent="." unique_id=281072895]
+position = Vector2(1354, 593)
+scale = Vector2(0.52657205, 0.52657205)
+texture = ExtResource("9_saa3c")

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PuzzlePiece" format=3 uid="uid://bujxrataqupao"]
+
+[ext_resource type="Texture2D" uid="uid://ffq48vejkryo" path="res://assets/tokens/puzzle/piece_17.png" id="1_55uj1"]
+[ext_resource type="Script" uid="uid://cumc4bn488j8b" path="res://puzzle_piece_token.gd" id="2_m60wj"]
+
+[resource]
+script = ExtResource("2_m60wj")
+idx = 17
+icon = ExtResource("1_55uj1")
+metadata/_custom_type_script = "uid://cumc4bn488j8b"

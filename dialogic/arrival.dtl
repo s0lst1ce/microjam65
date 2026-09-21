@@ -1,4 +1,5 @@
-[background arg="res://assets/unsorted/black.png" fade="0.0"]
+[end_timeline]
+[background arg="res://assets/misc/black.png" fade="0.0"]
 join whale (Main) center
 whale: Hi Ms.Mone, Mr.Ker ! Welcome to WhaleBack, though I'm pained it had to be in such troubled times. Nonetheless I must thank you for answering our call for help !
 join anemon leftmost [animation="Instant In"]
