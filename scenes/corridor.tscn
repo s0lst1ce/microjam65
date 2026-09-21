@@ -17,13 +17,14 @@ texture = ExtResource("2_xswuy")
 centered = false
 
 [node name="Interactible" type="Sprite2D" parent="." unique_id=1026083434]
-position = Vector2(973.00006, 690.00006)
+position = Vector2(973.00006, 694)
 scale = Vector2(0.86771685, 0.89034957)
 texture = ExtResource("2_pucmg")
 script = ExtResource("4_mus4g")
 metadata/_custom_type_script = "uid://brgtb1k50k6x"
 
 [node name="Area2D" type="Area2D" parent="Interactible" unique_id=1904777336]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactible/Area2D" unique_id=1121980302]
 position = Vector2(53.012695, -23.024841)
