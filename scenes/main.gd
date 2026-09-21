@@ -25,10 +25,9 @@ func _ready() -> void:
 	SceneSwitching.toggle_hud_visibility.connect(_on_toggle_hud_visibility)
 	ItemExchange.drop_item.connect(_on_drop_item)
 	ItemExchange.start_furniture_hover.connect(_on_furniture_enter)
-	change_scene("corridor")
-
-func _on_intro_video_finished() -> void:
 	self.add_child(scenes[current_room])
+	Dialogic.start("arrival")
+
 
 func change_scene(room: String) -> void:
 	self.remove_child(scenes[current_room])

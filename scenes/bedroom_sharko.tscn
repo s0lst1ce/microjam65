@@ -21,6 +21,7 @@ position = Vector2(1423, 784)
 scale = Vector2(0.73072237, 0.73072237)
 texture = ExtResource("3_60cc3")
 script = ExtResource("4_2aifn")
+interacts_with = Array[String](["shrimp_can"])
 metadata/_custom_type_script = "uid://brgtb1k50k6x"
 
 [node name="Area2D" type="Area2D" parent="Sharko" unique_id=554691055]

@@ -10,7 +10,7 @@
 [ext_resource type="Resource" uid="uid://cob3wvjc232ro" path="res://items/donut.tres" id="5_047uy"]
 [ext_resource type="Shader" uid="uid://cqv4mrmukav8w" path="res://scenes/highlight.gdshader" id="7_5pdws"]
 [ext_resource type="Resource" uid="uid://f4mmrvrtj26i" path="res://items/portable_lantern.tres" id="8_hd3ao"]
-[ext_resource type="Resource" uid="uid://cw7yy0ukjt3an" path="res://items/necklace.tres" id="9_mphia"]
+[ext_resource type="Resource" uid="uid://cvivw8v45n7k1" path="res://items/shrimp_can.tres" id="10_0m4u7"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cty71"]
 texture = ExtResource("3_mphia")
@@ -49,8 +49,10 @@ process_mode = 3
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -128.0
-offset_bottom = 128.0
+offset_left = -130.0
+offset_top = 3.0
+offset_right = -2.0
+offset_bottom = 131.0
 grow_horizontal = 0
 texture_normal = ExtResource("2_5ysmq")
 script = ExtResource("3_5ysmq")
@@ -59,9 +61,10 @@ script = ExtResource("3_5ysmq")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -261.99994
-offset_right = 247.36816
-offset_bottom = 88.35193
+offset_left = -949.0
+offset_top = 12.000001
+offset_right = -439.63196
+offset_bottom = 100.351746
 grow_horizontal = 2
 scale = Vector2(1.3016127, 1.3016127)
 theme_override_styles/panel = SubResource("StyleBoxTexture_cty71")
@@ -117,7 +120,7 @@ custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_apjy4")
 script = ExtResource("3_047uy")
-item = ExtResource("9_mphia")
+item = ExtResource("10_0m4u7")
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot2" unique_id=822962553]
 material = SubResource("ShaderMaterial_uo2fv")
