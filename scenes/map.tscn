@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c3n1qbseae57p" path="res://assets/unsorted/backgrounfmap.png" id="2_jh32y"]
 [ext_resource type="Script" uid="uid://gjrq8c7t8xje" path="res://scenes/map_room.gd" id="2_paxxb"]
 [ext_resource type="Texture2D" uid="uid://6wjgxdgnoeck" path="res://assets/unsorted/black.png" id="3_jh32y"]
-[ext_resource type="Texture2D" uid="uid://cfoac3fdxnmgs" path="res://assets/misc/frame.png" id="3_mlgqr"]
+[ext_resource type="Texture2D" uid="uid://crqb2jxk3rrns" path="res://assets/misc/frame.png" id="3_mlgqr"]
 [ext_resource type="Texture2D" uid="uid://bwmdfc7r84xq7" path="res://assets/rooms/bedroom_couple.png" id="4_0cso3"]
 [ext_resource type="Texture2D" uid="uid://cpstm02pr37cy" path="res://assets/rooms/corridor.png" id="5_2klcf"]
 [ext_resource type="Texture2D" uid="uid://vcqobsvm38xi" path="res://assets/rooms/cafeteria.png" id="5_2lpho"]
@@ -29,14 +29,14 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("2_jh32y")
 
-[node name="Panel" type="Panel" parent="Control" unique_id=755861497]
-layout_mode = 0
+[node name="BedroomCouple" type="Control" parent="Control" unique_id=911338238]
+anchors_preset = 0
 offset_left = 846.0
 offset_top = 242.0
-offset_right = 886.0
-offset_bottom = 282.0
+offset_right = 1211.0
+offset_bottom = 473.0
 
-[node name="BedroomCouple" type="MarginContainer" parent="Control/Panel" unique_id=1214140749]
+[node name="MarginContainer" type="MarginContainer" parent="Control/BedroomCouple" unique_id=1214140749]
 modulate = Color(1, 1, 1, 0.62352943)
 layout_mode = 0
 offset_left = 50.00002
@@ -52,7 +52,7 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="TextureRect" type="TextureButton" parent="Control/Panel/BedroomCouple" unique_id=1800774651]
+[node name="TextureRect" type="TextureButton" parent="Control/BedroomCouple/MarginContainer" unique_id=1800774651]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -61,31 +61,31 @@ stretch_mode = 0
 script = ExtResource("2_paxxb")
 room = "bedroom_couple"
 
-[node name="Frame" type="TextureRect" parent="Control/Panel" unique_id=174705551]
+[node name="Frame" type="TextureRect" parent="Control/BedroomCouple" unique_id=174705551]
 layout_mode = 0
-offset_left = -32.000004
-offset_top = -22.0
-offset_right = 284.0
-offset_bottom = 197.0
+offset_left = -11.000004
+offset_top = -5.0
+offset_right = 286.0
+offset_bottom = 204.0
 scale = Vector2(1.3705827, 1.3705827)
 mouse_behavior_recursive = 1
 texture = ExtResource("3_mlgqr")
 stretch_mode = 2
 
-[node name="Library" type="Panel" parent="Control" unique_id=1723720010]
-layout_mode = 0
-offset_left = 133.0
-offset_top = 746.0
-offset_right = 173.0
-offset_bottom = 786.0
+[node name="Library" type="Control" parent="Control" unique_id=252003339]
+anchors_preset = 0
+offset_left = 196.0
+offset_top = 263.0
+offset_right = 550.0
+offset_bottom = 490.0
 
-[node name="BedroomCouple" type="MarginContainer" parent="Control/Library" unique_id=1998397721]
+[node name="MarginContainer" type="MarginContainer" parent="Control/Library" unique_id=1998397721]
 modulate = Color(1, 1, 1, 0.62352943)
 layout_mode = 0
-offset_left = 50.00002
-offset_top = 49.000004
-offset_right = 1990.0
-offset_bottom = 1149.0
+offset_left = 29.000006
+offset_top = 32.000008
+offset_right = 1969.0
+offset_bottom = 1132.0
 scale = Vector2(0.155, 0.155)
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -95,7 +95,7 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="TextureRect" type="TextureButton" parent="Control/Library/BedroomCouple" unique_id=1789367317]
+[node name="TextureRect" type="TextureButton" parent="Control/Library/MarginContainer" unique_id=1789367317]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -115,22 +115,30 @@ mouse_behavior_recursive = 1
 texture = ExtResource("3_mlgqr")
 stretch_mode = 2
 
-[node name="BedroomSwordfish" type="MarginContainer" parent="Control" unique_id=104933967]
+[node name="BedroomSwordfish" type="Control" parent="Control" unique_id=263676634]
+anchors_preset = 0
+offset_left = 195.0
+offset_top = 552.0
+offset_right = 549.0
+offset_bottom = 779.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/BedroomSwordfish" unique_id=1992864997]
 modulate = Color(1, 1, 1, 0.62352943)
 layout_mode = 0
-offset_left = 550.0
-offset_top = 608.0
-offset_right = 2490.0
-offset_bottom = 1708.0
-scale = Vector2(0.15519369, 0.15519369)
+offset_left = 29.000006
+offset_top = 32.000008
+offset_right = 1969.0
+offset_bottom = 1132.0
+scale = Vector2(0.155, 0.155)
 size_flags_horizontal = 4
 size_flags_vertical = 4
+mouse_behavior_recursive = 2
 theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="TextureRect" type="TextureButton" parent="Control/BedroomSwordfish" unique_id=1471568375]
+[node name="TextureRect" type="TextureButton" parent="Control/BedroomSwordfish/MarginContainer" unique_id=155916195]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -139,22 +147,41 @@ stretch_mode = 0
 script = ExtResource("2_paxxb")
 room = "bedroom_swordfish"
 
-[node name="BedroomSharko" type="MarginContainer" parent="Control" unique_id=56570118]
+[node name="Frame" type="TextureRect" parent="Control/BedroomSwordfish" unique_id=987079101]
+layout_mode = 0
+offset_left = -32.000004
+offset_top = -22.0
+offset_right = 284.0
+offset_bottom = 197.0
+scale = Vector2(1.3705827, 1.3705827)
+mouse_behavior_recursive = 1
+texture = ExtResource("3_mlgqr")
+stretch_mode = 2
+
+[node name="BedroomSharko" type="Control" parent="Control" unique_id=2036019755]
+anchors_preset = 0
+offset_left = 597.0
+offset_top = 558.0
+offset_right = 951.0
+offset_bottom = 785.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/BedroomSharko" unique_id=1875983757]
 modulate = Color(1, 1, 1, 0.62352943)
 layout_mode = 0
-offset_left = 1104.0
-offset_top = 696.0
-offset_right = 3044.0
-offset_bottom = 1796.0
-scale = Vector2(0.15519369, 0.15519369)
+offset_left = 29.000006
+offset_top = 32.000008
+offset_right = 1969.0
+offset_bottom = 1132.0
+scale = Vector2(0.155, 0.155)
 size_flags_horizontal = 4
 size_flags_vertical = 4
+mouse_behavior_recursive = 2
 theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="TextureRect" type="TextureButton" parent="Control/BedroomSharko" unique_id=1985438128]
+[node name="TextureRect" type="TextureButton" parent="Control/BedroomSharko/MarginContainer" unique_id=2127257982]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -163,22 +190,41 @@ stretch_mode = 0
 script = ExtResource("2_paxxb")
 room = "bedroom_sharko"
 
-[node name="Cafeteria" type="MarginContainer" parent="Control" unique_id=842498289]
+[node name="Frame" type="TextureRect" parent="Control/BedroomSharko" unique_id=1476770868]
+layout_mode = 0
+offset_left = -32.000004
+offset_top = -22.0
+offset_right = 284.0
+offset_bottom = 197.0
+scale = Vector2(1.3705827, 1.3705827)
+mouse_behavior_recursive = 1
+texture = ExtResource("3_mlgqr")
+stretch_mode = 2
+
+[node name="BedroomSharko2" type="Control" parent="Control" unique_id=1825637949]
+anchors_preset = 0
+offset_left = 1085.0
+offset_top = 558.0
+offset_right = 1439.0
+offset_bottom = 785.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/BedroomSharko2" unique_id=561325840]
 modulate = Color(1, 1, 1, 0.62352943)
 layout_mode = 0
-offset_left = 408.0
-offset_top = 300.0
-offset_right = 2348.0
-offset_bottom = 1400.0
-scale = Vector2(0.15519369, 0.15519369)
+offset_left = 29.000006
+offset_top = 32.000008
+offset_right = 1969.0
+offset_bottom = 1132.0
+scale = Vector2(0.155, 0.155)
 size_flags_horizontal = 4
 size_flags_vertical = 4
+mouse_behavior_recursive = 2
 theme_override_constants/margin_left = 10
 theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="TextureRect" type="TextureButton" parent="Control/Cafeteria" unique_id=605550156]
+[node name="TextureRect" type="TextureButton" parent="Control/BedroomSharko2/MarginContainer" unique_id=83084904]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -187,7 +233,23 @@ stretch_mode = 0
 script = ExtResource("2_paxxb")
 room = "cafeteria"
 
-[node name="Corridor" type="MarginContainer" parent="Control" unique_id=1954965522]
+[node name="Frame" type="TextureRect" parent="Control/BedroomSharko2" unique_id=1373679478]
+layout_mode = 0
+offset_left = -32.000004
+offset_top = -22.0
+offset_right = 284.0
+offset_bottom = 197.0
+scale = Vector2(1.3705827, 1.3705827)
+mouse_behavior_recursive = 1
+texture = ExtResource("3_mlgqr")
+stretch_mode = 2
+
+[node name="Corridor" type="Control" parent="Control" unique_id=1930343944]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/Corridor" unique_id=1954965522]
 modulate = Color(1, 1, 1, 0.62352943)
 layout_mode = 0
 offset_left = 1339.9999
@@ -202,7 +264,7 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="TextureRect" type="TextureButton" parent="Control/Corridor" unique_id=684808767]
+[node name="TextureRect" type="TextureButton" parent="Control/Corridor/MarginContainer" unique_id=684808767]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -211,7 +273,7 @@ stretch_mode = 0
 script = ExtResource("2_paxxb")
 room = "corridor"
 
-[node name="MarginContainer" type="MarginContainer" parent="Control/Corridor" unique_id=1803784172]
+[node name="MarginContainer" type="MarginContainer" parent="Control/Corridor/MarginContainer" unique_id=1803784172]
 layout_mode = 2
 mouse_behavior_recursive = 1
 theme_override_constants/margin_left = 700
@@ -219,12 +281,23 @@ theme_override_constants/margin_top = 600
 theme_override_constants/margin_right = 600
 theme_override_constants/margin_bottom = 350
 
-[node name="Container" type="AspectRatioContainer" parent="Control/Corridor/MarginContainer" unique_id=1989605234]
+[node name="Container" type="AspectRatioContainer" parent="Control/Corridor/MarginContainer/MarginContainer" unique_id=1989605234]
 layout_mode = 2
 
-[node name="TextureRect2" type="TextureRect" parent="Control/Corridor/MarginContainer/Container" unique_id=1390271028]
+[node name="TextureRect2" type="TextureRect" parent="Control/Corridor/MarginContainer/MarginContainer/Container" unique_id=1390271028]
 layout_mode = 2
 texture = ExtResource("7_nakos")
+
+[node name="Frame" type="TextureRect" parent="Control/Corridor" unique_id=1146817834]
+layout_mode = 0
+offset_left = 1277.0
+offset_top = 270.0
+offset_right = 1593.0
+offset_bottom = 489.0
+scale = Vector2(1.3705827, 1.3705827)
+mouse_behavior_recursive = 1
+texture = ExtResource("3_mlgqr")
+stretch_mode = 2
 
 [node name="Black" type="TextureRect" parent="Control" unique_id=510930777]
 visible = false
@@ -233,9 +306,9 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("3_jh32y")
 
-[connection signal="pressed" from="Control/Panel/BedroomCouple/TextureRect" to="Control/Panel/BedroomCouple/TextureRect" method="_on_pressed"]
-[connection signal="pressed" from="Control/Library/BedroomCouple/TextureRect" to="Control/Library/BedroomCouple/TextureRect" method="_on_pressed"]
-[connection signal="pressed" from="Control/BedroomSwordfish/TextureRect" to="Control/BedroomSwordfish/TextureRect" method="_on_pressed"]
-[connection signal="pressed" from="Control/BedroomSharko/TextureRect" to="Control/BedroomSharko/TextureRect" method="_on_pressed"]
-[connection signal="pressed" from="Control/Cafeteria/TextureRect" to="Control/Cafeteria/TextureRect" method="_on_pressed"]
-[connection signal="pressed" from="Control/Corridor/TextureRect" to="Control/Corridor/TextureRect" method="_on_pressed"]
+[connection signal="pressed" from="Control/BedroomCouple/MarginContainer/TextureRect" to="Control/BedroomCouple/MarginContainer/TextureRect" method="_on_pressed"]
+[connection signal="pressed" from="Control/Library/MarginContainer/TextureRect" to="Control/Library/MarginContainer/TextureRect" method="_on_pressed"]
+[connection signal="pressed" from="Control/BedroomSwordfish/MarginContainer/TextureRect" to="Control/BedroomSwordfish/MarginContainer/TextureRect" method="_on_pressed"]
+[connection signal="pressed" from="Control/BedroomSharko/MarginContainer/TextureRect" to="Control/BedroomSharko/MarginContainer/TextureRect" method="_on_pressed"]
+[connection signal="pressed" from="Control/BedroomSharko2/MarginContainer/TextureRect" to="Control/BedroomSharko2/MarginContainer/TextureRect" method="_on_pressed"]
+[connection signal="pressed" from="Control/Corridor/MarginContainer/TextureRect" to="Control/Corridor/MarginContainer/TextureRect" method="_on_pressed"]
