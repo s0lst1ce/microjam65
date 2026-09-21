@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b43skjwtf5vi4"
-path="res://.godot/imported/carpetroomsword.png-ac0c9d763af82d56bea850cc6b7a2f1f.ctex"
+uid="uid://ds5bxwdsd8pt6"
+path="res://.godot/imported/shrimpligote.png-0d27406fa1b6ee30cdd2ed5b857a8fee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/carpetroomsword.png"
-dest_files=["res://.godot/imported/carpetroomsword.png-ac0c9d763af82d56bea850cc6b7a2f1f.ctex"]
+source_file="res://assets/unsorted/shrimpligote.png"
+dest_files=["res://.godot/imported/shrimpligote.png-0d27406fa1b6ee30cdd2ed5b857a8fee.ctex"]
 
 [params]
 

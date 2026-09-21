@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dawih0i27vluk"
-path="res://.godot/imported/litsword.png-3eeff6ccf7f40fdfa0b3749da002719d.ctex"
+uid="uid://b1s6j4o4xuh6a"
+path="res://.godot/imported/shield.png-d8c78438608e8a74a6bedfa4803c4d3c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/litsword.png"
-dest_files=["res://.godot/imported/litsword.png-3eeff6ccf7f40fdfa0b3749da002719d.ctex"]
+source_file="res://assets/furniture/shield.png"
+dest_files=["res://.godot/imported/shield.png-d8c78438608e8a74a6bedfa4803c4d3c.ctex"]
 
 [params]
 

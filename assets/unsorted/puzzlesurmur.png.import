@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmej8gkkp5vu8"
-path="res://.godot/imported/trident.png-74f8236ecfa3c62bda27ae4305a1d611.ctex"
+uid="uid://cvpbdbxudy8bl"
+path="res://.godot/imported/puzzlesurmur.png-28e2b57331ec3a27771cd5c7d4f95f03.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/trident.png"
-dest_files=["res://.godot/imported/trident.png-74f8236ecfa3c62bda27ae4305a1d611.ctex"]
+source_file="res://assets/unsorted/puzzlesurmur.png"
+dest_files=["res://.godot/imported/puzzlesurmur.png-28e2b57331ec3a27771cd5c7d4f95f03.ctex"]
 
 [params]
 

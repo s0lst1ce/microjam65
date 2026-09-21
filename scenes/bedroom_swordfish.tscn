@@ -4,6 +4,11 @@
 [ext_resource type="Texture2D" uid="uid://ucokwuoy18ba" path="res://assets/rooms/bedroom_swordfish.png" id="2_4x2um"]
 [ext_resource type="Texture2D" uid="uid://hos1jqypprtu" path="res://assets/portraits/swordfish.png" id="3_jjxpg"]
 [ext_resource type="Script" uid="uid://gbbkn86uxfyr" path="res://scenes/swordfish.gd" id="4_jjxpg"]
+[ext_resource type="Texture2D" uid="uid://bn647v2qqeh7l" path="res://assets/furniture/armor.png" id="5_t6qre"]
+[ext_resource type="Texture2D" uid="uid://b43skjwtf5vi4" path="res://assets/furniture/carpet_black.png" id="6_bd2me"]
+[ext_resource type="Texture2D" uid="uid://dmej8gkkp5vu8" path="res://assets/furniture/trident.png" id="7_0laek"]
+[ext_resource type="Texture2D" uid="uid://8bge82xiivb8" path="res://assets/furniture/bed_sword.png" id="8_f3x8y"]
+[ext_resource type="Texture2D" uid="uid://b1s6j4o4xuh6a" path="res://assets/furniture/shield.png" id="9_2l6ow"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
 size = Vector2(311, 668)
@@ -17,7 +22,8 @@ texture = ExtResource("2_4x2um")
 centered = false
 
 [node name="Swordfish" type="Sprite2D" parent="." unique_id=1174429590]
-position = Vector2(1389, 675)
+z_index = 1
+position = Vector2(1416, 705)
 texture = ExtResource("3_jjxpg")
 script = ExtResource("4_jjxpg")
 metadata/_custom_type_script = "uid://brgtb1k50k6x"
@@ -27,3 +33,26 @@ metadata/_custom_type_script = "uid://brgtb1k50k6x"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Swordfish/Area2D" unique_id=1029807999]
 position = Vector2(15.5, -19)
 shape = SubResource("RectangleShape2D_3bft5")
+
+[node name="Armor" type="Sprite2D" parent="." unique_id=1317350043]
+position = Vector2(1074, 456)
+texture = ExtResource("5_t6qre")
+
+[node name="Carpet" type="Sprite2D" parent="." unique_id=735923038]
+position = Vector2(1318, 852)
+scale = Vector2(0.84675723, 0.84675723)
+texture = ExtResource("6_bd2me")
+
+[node name="Trident" type="Sprite2D" parent="." unique_id=923705995]
+position = Vector2(1680, 407)
+scale = Vector2(0.8199855, 0.8199855)
+texture = ExtResource("7_0laek")
+
+[node name="Bed" type="Sprite2D" parent="." unique_id=382147563]
+position = Vector2(684, 612)
+texture = ExtResource("8_f3x8y")
+
+[node name="Shield" type="Sprite2D" parent="." unique_id=342806673]
+position = Vector2(253, 370.00003)
+scale = Vector2(0.6691352, 0.6691352)
+texture = ExtResource("9_2l6ow")
