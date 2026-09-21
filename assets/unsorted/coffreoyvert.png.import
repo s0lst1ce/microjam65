@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckreoqykt5jit"
-path="res://.godot/imported/tambour1.png-7ef6ab4797d250a0941e886f73c82620.ctex"
+uid="uid://dwtos4ude46tc"
+path="res://.godot/imported/coffreoyvert.png-5938e71a32cd4b1254e83e99ded72e18.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/tambour1.png"
-dest_files=["res://.godot/imported/tambour1.png-7ef6ab4797d250a0941e886f73c82620.ctex"]
+source_file="res://assets/unsorted/coffreoyvert.png"
+dest_files=["res://.godot/imported/coffreoyvert.png-5938e71a32cd4b1254e83e99ded72e18.ctex"]
 
 [params]
 

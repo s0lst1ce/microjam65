@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2pht850177b3"
-path="res://.godot/imported/talbour3.png-d398ed895bc63c2a55753b8b691dee69.ctex"
+uid="uid://ckreoqykt5jit"
+path="res://.godot/imported/drum_green.png-3995adceb5170429c0fc5fcfe1d7c6ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/talbour3.png"
-dest_files=["res://.godot/imported/talbour3.png-d398ed895bc63c2a55753b8b691dee69.ctex"]
+source_file="res://assets/furniture/drum_green.png"
+dest_files=["res://.godot/imported/drum_green.png-3995adceb5170429c0fc5fcfe1d7c6ec.ctex"]
 
 [params]
 
