@@ -31,7 +31,7 @@ func _ready() -> void:
 
 	self.add_child(scenes[current_room])
 	Dialogic.preload_timeline("arrival")
-	#Dialogic.start("arrival")
+	Dialogic.start("whale_greets")
 
 
 func change_scene(room: String) -> void:

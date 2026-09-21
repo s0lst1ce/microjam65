@@ -53,7 +53,8 @@ directories/dtl_directory={
 "table_disabled": "res://dialogic/table_disabled.dtl",
 "table_success": "res://dialogic/table_success.dtl",
 "test_timeline": "res://dialogic/test_timeline.dtl",
-"whale_can": "res://dialogic/whale_can.dtl"
+"whale_can": "res://dialogic/whale_can.dtl",
+"whale_greets": "res://dialogic/whale_greets.dtl"
 }
 layout/style_directory={}
 glossary/default_case_sensitive=true
@@ -63,7 +64,7 @@ variables={
 "lantern": "meeting_lantern",
 "sharko": "meeting_sharko",
 "swordfish": "meeting_swordfish",
-"whale": "arrival"
+"whale": "meeting_whale"
 },
 "puzzle_pieces_count": 0,
 "sharko_got_can": false,
