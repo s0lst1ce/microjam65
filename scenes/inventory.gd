@@ -17,6 +17,7 @@ func _notification(what: int) -> void:
 		data_bk = get_viewport().gui_get_drag_data()
 	if what == Node.NOTIFICATION_DRAG_END:
 		if data_bk:
+			print("droppping ", data_bk)
 			ItemExchange.drop_item.emit(data_bk)
 			data_bk.icon.show()
 			data_bk = null

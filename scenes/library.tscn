@@ -12,7 +12,7 @@ shader = ExtResource("3_6frsu")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
 size = Vector2(1920.5, 1082)
 
-[node name="Room" type="Node2D" unique_id=1294214668]
+[node name="Library" type="Node2D" unique_id=1294214668]
 script = ExtResource("1_m4m2s")
 metadata/_custom_type_script = "uid://birsj1hmvmeyf"
 
