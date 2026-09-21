@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://crqb2jxk3rrns" path="res://assets/misc/frame.png" id="3_mlgqr"]
 [ext_resource type="Texture2D" uid="uid://bwmdfc7r84xq7" path="res://assets/rooms/bedroom_couple.png" id="4_0cso3"]
 [ext_resource type="Texture2D" uid="uid://cpstm02pr37cy" path="res://assets/rooms/corridor.png" id="5_2klcf"]
-[ext_resource type="Texture2D" uid="uid://vcqobsvm38xi" path="res://assets/rooms/cafeteria.png" id="5_2lpho"]
+[ext_resource type="Texture2D" uid="uid://b024md48qxl2p" path="res://assets/rooms/cafeteria.png" id="5_2lpho"]
 [ext_resource type="Texture2D" uid="uid://ucokwuoy18ba" path="res://assets/rooms/bedroom_swordfish.png" id="5_blm8a"]
 [ext_resource type="Texture2D" uid="uid://bdonf2blj6up7" path="res://assets/rooms/bedroom_sharko.png" id="6_mlgqr"]
 [ext_resource type="Texture2D" uid="uid://cuijjrqyjdj27" path="res://assets/rooms/library.png" id="6_wslke"]
