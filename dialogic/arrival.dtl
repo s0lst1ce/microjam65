@@ -6,9 +6,7 @@ anemon: Thanks ! I always wanted to visit a caring home !
 whale: ...
 [wait time="1.0"]
 whale: As you know our cherished Shrimp passed away recently.
-update whale (Crying)
 whale: [i]whwawhahwhaw[/i]
-update whale (Main)
 whale: I'm sorry. It's just, I liked her so much! Every time I think of her death I tear up. Especially since I fear her death was not of natural causes.
 whale: We found her dead in the library, her crushed body is still there should you want to inspect it. I locked down the caring home as soon as her corpse was found. No one has come in or out since.
 leave whale [animation="Fade Out Down"]

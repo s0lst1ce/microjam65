@@ -1,7 +1,14 @@
 [background arg="res://assets/misc/black.png" fade="0.0"]
 join anemon left
 join latern right
-anemon: It seems you have lied to us Edmond.
-latern: Lied ?!
+anemon: We have some more questions for you Ms.Light.
+latern: Sure.
 label chained
-anemon: You told us ... but Brochette saw pushning a cart at ...
+anemon: How many accounting books do you have ?
+latern: Just the one, both precious and terrible. A relief for the lucky but a sentence for the unprepared
+[wait time="1.0"]
+latern: This place doesn't actually have much expenses. We've been running it on an ever tighter budget. The cogs of money crush fish under bureaucracy's weight !
+anemon: I see, only the One Book for the accounting with Aggigawhale then.
+latern: Indeed
+anemon: Yet you were seen pushing a cart full of books during the evening.
+latern: Oh... Did I forget to mention that ? I can get disoriented sometimes. I picked up some books lying here and there on my way back to the library. I was with the cart when I got back to the library.
