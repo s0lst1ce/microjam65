@@ -9,6 +9,8 @@
 [ext_resource type="Shader" uid="uid://cqv4mrmukav8w" path="res://scenes/highlight.gdshader" id="7_5pdws"]
 [ext_resource type="Resource" uid="uid://f4mmrvrtj26i" path="res://items/portable_lantern.tres" id="8_hd3ao"]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cty71"]
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_uo2fv"]
 shader = ExtResource("3_uo2fv")
 shader_parameter/color = Color(1, 1, 1, 1)
@@ -52,6 +54,7 @@ offset_right = 244.5
 offset_bottom = 75.0
 grow_horizontal = 2
 scale = Vector2(1.3016127, 1.3016127)
+theme_override_styles/panel = SubResource("StyleBoxTexture_cty71")
 script = ExtResource("3_5pdws")
 
 [node name="MarginContainer" type="MarginContainer" parent="Inventory" unique_id=1115177449]

@@ -12,6 +12,7 @@ extends Node2D
 	"bedroom_couple": preload("res://scenes/bedroom_couple.tscn").instantiate(),
 	"bedroom_sharko": preload("res://scenes/bedroom_sharko.tscn").instantiate(),
 	"bedroom_swordfish": preload("res://scenes/bedroom_swordfish.tscn").instantiate(),
+	"bedroom_shrimp": preload("res://scenes/bedroom_shrimp.tscn").instantiate(),
 	"library": preload("res://scenes/library.tscn").instantiate(),
 }
 
