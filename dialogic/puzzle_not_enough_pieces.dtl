@@ -1,3 +1,3 @@
-[background fade="0.0"]
+[background arg="res://assets/misc/black.png" fade="0.0"]
 join joe right [animation="Instant In"]
 joe: I think we're still missing {(36 - {puzzle_pieces_count})/3} puzzle pieces to fil the frame.
