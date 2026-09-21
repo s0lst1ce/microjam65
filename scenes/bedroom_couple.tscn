@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://clb8hkaf2vmy4" path="res://assets/furniture/bed_couple.png" id="6_t7wao"]
 [ext_resource type="Texture2D" uid="uid://l5bbe48c5ark" path="res://assets/furniture/shelves.png" id="7_xbn0d"]
 [ext_resource type="Texture2D" uid="uid://d0v7ukl8vm20r" path="res://assets/furniture/desk.png" id="8_xbn0d"]
+[ext_resource type="PackedScene" uid="uid://re8kn4o0tu3b" path="res://interactibles/puzzle_piece.tscn" id="9_ronf3"]
 [ext_resource type="Texture2D" uid="uid://cxr6p0f2wwbb3" path="res://assets/furniture/rocking_chair.png" id="9_saa3c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
@@ -58,6 +59,10 @@ position = Vector2(817, 611)
 scale = Vector2(0.8533779, 0.8533779)
 texture = ExtResource("6_t7wao")
 
+[node name="PuzzlePiece2" parent="." unique_id=1002671440 instance=ExtResource("9_ronf3")]
+position = Vector2(117.000015, 135)
+rotation = -1.4866693
+
 [node name="Shelves" type="Sprite2D" parent="." unique_id=1236237822]
 position = Vector2(182, 316)
 texture = ExtResource("7_xbn0d")
@@ -67,6 +72,10 @@ position = Vector2(1744.0001, 946.99994)
 rotation = -0.075164065
 scale = Vector2(0.6551445, 0.6551445)
 texture = ExtResource("8_xbn0d")
+
+[node name="PuzzlePiece" parent="." unique_id=1720424245 instance=ExtResource("9_ronf3")]
+position = Vector2(1345, 668.00006)
+scale = Vector2(0.14909126, 0.14909126)
 
 [node name="RockingChair" type="Sprite2D" parent="." unique_id=281072895]
 position = Vector2(1354, 593)
