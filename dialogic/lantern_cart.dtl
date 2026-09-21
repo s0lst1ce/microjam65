@@ -1,0 +1,7 @@
+[background arg="res://assets/misc/black.png" fade="0.0"]
+join anemon left
+join latern right
+anemon: It seems you have lied to us Edmond.
+latern: Lied ?!
+label chained
+anemon: You told us ... but Brochette saw pushning a cart at ...

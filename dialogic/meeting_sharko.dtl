@@ -1,0 +1,19 @@
+[background arg="res://assets/misc/black.png" fade="0.0"]
+join anemon left
+join sharko right
+sharko: [i]Hmph Hmph Hmph[/i]
+if {tried_talking_sharko} == true:
+	[end_timeline]
+anemon: Hello! I'm we're the detectives in charge of the investigation, we'd like to ask you a few questions if you don't mind ?
+sharko: [i]Hmph Hmph Hmph[/i]
+anemon: Sir ? Would you please give us a moment of your time ?
+sharko: [i]Hmph Hmph Hmph[/i]
+[wait time="1.0"]
+leave sharko
+update anemon (Alone)
+join joe right [animation="Slide From Left"]
+anemon: Did you see that Joe ? He's even less amicable than you !
+joe: ...
+anemon: You're the expert here. How do you get someone like that to open up ?
+joe: Bribe him.
+set {tried_talking_sharko} = true

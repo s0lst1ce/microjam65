@@ -1,4 +1,4 @@
-[background arg="res://assets/unsorted/black.png" fade="0.0"]
+[background arg="res://assets/misc/black.png" fade="0.0"]
 join anemon left [animation="Instant In"]
 join swordfish right
 anemon: Hello Sir William ! I am Anne the detective in charge of the investigation. And a big fan of yours !

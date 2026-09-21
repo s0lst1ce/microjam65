@@ -1,0 +1,4 @@
+[background arg="res://assets/misc/black.png" fade="0.0"]
+join anemon left [animation="Instant In"]
+join joe right [animation="Instant In"]
+joe: Oh! A puzzle piece, I love these. I'll keep it for now, let's find more.

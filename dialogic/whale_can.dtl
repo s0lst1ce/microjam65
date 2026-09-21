@@ -1,0 +1,17 @@
+if {tried_talking_sharko} == false:
+	[end_timeline]
+[background arg="res://assets/misc/black.png" fade="0.0"]
+join anemon leftmost
+join whale center
+anemon: We'd like to request your intervention Abigawhale. We've spoken with most of the residents but Sharko refuses to talk to us. While this is highly suspicious we want to give him a chance to give us his version of the facts. Could you make him talk to us ?
+whale: I won't force him to to speak.
+anemon: Then maybe you could convince him ?
+[wait time="1.0"]
+whale: I suppose you could give him with food...
+join shrimp_can center [z_index="1"]
+whale: Here take this, it's always been his favorite.
+leave whale [animation="Fade Out" length="0.2"]
+update anemon (Alone)
+join joe right
+joe: A can of shrimp ?
+[signal arg="gain_can"]

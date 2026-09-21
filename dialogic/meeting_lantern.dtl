@@ -1,4 +1,4 @@
-[background arg="res://assets/unsorted/black.png" fade="0.0"]
+[background arg="res://assets/misc/black.png" fade="0.0"]
 join latern right [animation="Instant In"]
 join anemon left
 anemon: Hello I'm Anne, and this is Joe.
@@ -16,6 +16,9 @@ latern: Sorry. I am always a little tense what with sleep-deprevation. Shrimp's 
 anemon: Speaking of Shrimp, what do you know about her death ?
 [wait time="2.0"]
 latern: I am the one who found her in the Library. Her body was crushed under books. Her entrails splattered on the floor.
+anemon: And what were doing before you found her ?
+latern: After eating along with the others in the cafeteria I went back to the library to put some order in it. I thought I may meet Shrimp there since she had left the table earlier. She was the most regular user of the library and always put it upside down every time she read or borrowed a book. It is beyond me how one can be so messy.
+latern: She wasn't there this time though. So I simply ordered some books before going to Abigawhale. We had some accounting to sort out. It's only after spending time with Abigawhale that I went back to the library and found Shrimp's remains.
 leave latern
 update anemon (Alone)
 join joe right
@@ -23,4 +26,7 @@ joe: This one is unhinged.
 anemon: I like her. I like her a [b]lot[/b]!
 joe: Of course you would! You really should see a shrink some day Anne.
 anemon: No thanks, I really don't wanna be as small as you !
-set {NextDialogue.lantern} = "nothing_whale"
+if {NextDialogue.couple} == "meeting_couple":
+	set {NextDialogue.lantern} = "nothing_whale"
+else:
+	jump lantern_cart/chained
