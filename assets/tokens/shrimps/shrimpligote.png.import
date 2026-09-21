@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds5bxwdsd8pt6"
-path="res://.godot/imported/shrimpligote.png-0d27406fa1b6ee30cdd2ed5b857a8fee.ctex"
+path="res://.godot/imported/shrimpligote.png-1d50ec22d533c5c65ea3a94b96c1d90f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/shrimpligote.png"
-dest_files=["res://.godot/imported/shrimpligote.png-0d27406fa1b6ee30cdd2ed5b857a8fee.ctex"]
+source_file="res://assets/tokens/shrimps/shrimpligote.png"
+dest_files=["res://.godot/imported/shrimpligote.png-1d50ec22d533c5c65ea3a94b96c1d90f.ctex"]
 
 [params]
 

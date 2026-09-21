@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ba5jalwc6twys"
-path="res://.godot/imported/shrimpressionniste.png-eccfe94a64f9024157ac4ce06d2e2893.ctex"
+path="res://.godot/imported/shrimpressionniste.png-5d9194bc65f107fe8b3cccb3f8fdfdc6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/shrimpressionniste.png"
-dest_files=["res://.godot/imported/shrimpressionniste.png-eccfe94a64f9024157ac4ce06d2e2893.ctex"]
+source_file="res://assets/tokens/shrimps/shrimpressionniste.png"
+dest_files=["res://.godot/imported/shrimpressionniste.png-5d9194bc65f107fe8b3cccb3f8fdfdc6.ctex"]
 
 [params]
 
