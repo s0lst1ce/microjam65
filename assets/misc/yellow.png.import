@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://x620i3ii3my0"
-path="res://.godot/imported/fondbleu.png-1875605e61e2e9f152e6bf93717197a1.ctex"
+uid="uid://cg6e0f70aj546"
+path="res://.godot/imported/yellow.png-e7baa1b3bc4742f9e055734cf4f74320.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/fondbleu.png"
-dest_files=["res://.godot/imported/fondbleu.png-1875605e61e2e9f152e6bf93717197a1.ctex"]
+source_file="res://assets/misc/yellow.png"
+dest_files=["res://.godot/imported/yellow.png-e7baa1b3bc4742f9e055734cf4f74320.ctex"]
 
 [params]
 

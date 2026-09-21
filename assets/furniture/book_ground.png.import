@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cre5vskrturs"
-path="res://.godot/imported/fondgris.png-6138f3b77f102aa6f7ff4cf840b73bc9.ctex"
+uid="uid://7i42a260ccww"
+path="res://.godot/imported/book_ground.png-97ae7cc47ef0f8ed58f6a8ba3c3e21b3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/fondgris.png"
-dest_files=["res://.godot/imported/fondgris.png-6138f3b77f102aa6f7ff4cf840b73bc9.ctex"]
+source_file="res://assets/furniture/book_ground.png"
+dest_files=["res://.godot/imported/book_ground.png-97ae7cc47ef0f8ed58f6a8ba3c3e21b3.ctex"]
 
 [params]
 

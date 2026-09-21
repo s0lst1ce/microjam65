@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://w1csghjlgqxu"
-path="res://.godot/imported/surpriselanterne.png-afe7dbefa3d4d50e8127f4bf9d755326.ctex"
+uid="uid://x620i3ii3my0"
+path="res://.godot/imported/marine.png-48f2cdc360549fda843757713a5ba075.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/surpriselanterne.png"
-dest_files=["res://.godot/imported/surpriselanterne.png-afe7dbefa3d4d50e8127f4bf9d755326.ctex"]
+source_file="res://assets/misc/marine.png"
+dest_files=["res://.godot/imported/marine.png-48f2cdc360549fda843757713a5ba075.ctex"]
 
 [params]
 

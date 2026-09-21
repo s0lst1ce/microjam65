@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cg6e0f70aj546"
-path="res://.godot/imported/yellow.png-aef135b26fd64869511d24c67c87efe8.ctex"
+uid="uid://cjsic2wgw8cga"
+path="res://.godot/imported/notebook.png-2ee18ead194a37d82413461a4b78087b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/yellow.png"
-dest_files=["res://.godot/imported/yellow.png-aef135b26fd64869511d24c67c87efe8.ctex"]
+source_file="res://assets/furniture/notebook.png"
+dest_files=["res://.godot/imported/notebook.png-2ee18ead194a37d82413461a4b78087b.ctex"]
 
 [params]
 

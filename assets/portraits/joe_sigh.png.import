@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cdp4u8h2i6w5r"
-path="res://.godot/imported/joesinique.png-53d307f9e46bea998178498c6b06cb75.ctex"
+path="res://.godot/imported/joe_sigh.png-ced799cbca65a592eeb9c8029a1df41b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/joesinique.png"
-dest_files=["res://.godot/imported/joesinique.png-53d307f9e46bea998178498c6b06cb75.ctex"]
+source_file="res://assets/portraits/joe_sigh.png"
+dest_files=["res://.godot/imported/joe_sigh.png-ced799cbca65a592eeb9c8029a1df41b.ctex"]
 
 [params]
 

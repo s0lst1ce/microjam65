@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxcjhuc504cgq"
-path="res://.godot/imported/purple.png-48d27fd33825f50b98be66db0cf0a845.ctex"
+uid="uid://dwhfuqvy30jen"
+path="res://.godot/imported/brochette_frustrated.png-62d5f51aa9607cb376eb0c10fcd60e9f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/purple.png"
-dest_files=["res://.godot/imported/purple.png-48d27fd33825f50b98be66db0cf0a845.ctex"]
+source_file="res://assets/portraits/brochette_frustrated.png"
+dest_files=["res://.godot/imported/brochette_frustrated.png-62d5f51aa9607cb376eb0c10fcd60e9f.ctex"]
 
 [params]
 

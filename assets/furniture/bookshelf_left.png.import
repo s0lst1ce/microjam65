@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7r3esiggrx8p"
-path="res://.godot/imported/tableauplein.png-e75d37824287ce3cdf65653e8e8fa0e4.ctex"
+uid="uid://d0yfriuttpdgy"
+path="res://.godot/imported/bookshelf_left.png-c08c779adb748b3e7534a3b8a7cb6e43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/tableauplein.png"
-dest_files=["res://.godot/imported/tableauplein.png-e75d37824287ce3cdf65653e8e8fa0e4.ctex"]
+source_file="res://assets/furniture/bookshelf_left.png"
+dest_files=["res://.godot/imported/bookshelf_left.png-c08c779adb748b3e7534a3b8a7cb6e43.ctex"]
 
 [params]
 

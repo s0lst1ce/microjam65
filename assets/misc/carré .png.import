@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0yfriuttpdgy"
-path="res://.godot/imported/bookshelf.png-16d5cef06db678466a10eb47ac2678c9.ctex"
+uid="uid://dpjhgpanqef7d"
+path="res://.godot/imported/carré .png-06eae3211ce1a2b1338ab26d1a48b661.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/bookshelf.png"
-dest_files=["res://.godot/imported/bookshelf.png-16d5cef06db678466a10eb47ac2678c9.ctex"]
+source_file="res://assets/misc/carré .png"
+dest_files=["res://.godot/imported/carré .png-06eae3211ce1a2b1338ab26d1a48b661.ctex"]
 
 [params]
 

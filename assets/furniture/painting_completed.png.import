@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpjhgpanqef7d"
-path="res://.godot/imported/carré .png-3e77852b86a2f7e94258e9b6204d5336.ctex"
+uid="uid://7r3esiggrx8p"
+path="res://.godot/imported/painting_completed.png-f42cbd6fbc6fb2d002e84efe75d2f5b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/carré .png"
-dest_files=["res://.godot/imported/carré .png-3e77852b86a2f7e94258e9b6204d5336.ctex"]
+source_file="res://assets/furniture/painting_completed.png"
+dest_files=["res://.godot/imported/painting_completed.png-f42cbd6fbc6fb2d002e84efe75d2f5b2.ctex"]
 
 [params]
 
