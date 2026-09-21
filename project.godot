@@ -70,7 +70,7 @@ variables={
 },
 "puzzle_pieces_count": 0,
 "sharko_got_can": false,
-"table_puzzle_enabled": false,
+"table_puzzle_enabled": true,
 "tried_talking_sharko": false
 }
 text/letter_speed=0.01

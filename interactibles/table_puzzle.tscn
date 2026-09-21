@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bijjioucygif3" path="res://interactibles/table_puzzle.gd" id="1_vog88"]
 [ext_resource type="Texture2D" uid="uid://dxuoq7cycn8ge" path="res://assets/furniture/table_topdown.png" id="2_nb681"]
-[ext_resource type="Script" uid="uid://cljufwwino3xj" path="res://interactibles/token_inventory.gd" id="3_322pw"]
+[ext_resource type="Script" uid="uid://djbs6816ugh4a" path="res://interactibles/table_inventory.gd" id="3_plgim"]
 [ext_resource type="Script" uid="uid://4itk45jk0gyl" path="res://interactibles/token_slot.gd" id="3_tixy7"]
 [ext_resource type="Resource" uid="uid://ba2eed72pw084" path="res://token_pirhana.tres" id="5_allwu"]
 [ext_resource type="Resource" uid="uid://dit43tg48wx1l" path="res://token_sharko.tres" id="7_ry8c3"]
@@ -61,7 +61,7 @@ offset_bottom = 246.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_vb20r")
-script = ExtResource("3_322pw")
+script = ExtResource("3_plgim")
 
 [node name="MarginContainer" type="MarginContainer" parent="Inventory" unique_id=133078894]
 layout_mode = 0

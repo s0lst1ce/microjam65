@@ -2,8 +2,8 @@ extends Panel
 
 @onready var icon: TextureRect = $Icon
 #@onready var item_highlight: ColorRect = $Icon/ItemHighlight
-@export var token: PuzzlePiece
-@export var correct: PuzzlePiece
+@export var token: TokenData
+@export var correct: TokenData
 @export var idx: int
 
 func _ready() -> void:
@@ -15,6 +15,7 @@ func update_ui():
 		icon.texture=null
 	else:
 		icon.texture = token.icon
+		tooltip_text = token.tooltip
 
 
 func _get_drag_data(_at_position: Vector2) -> Variant:
