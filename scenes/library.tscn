@@ -21,6 +21,7 @@ texture = ExtResource("2_n61aj")
 centered = false
 
 [node name="Dark" type="Sprite2D" parent="." unique_id=9684964]
+visible = false
 material = SubResource("ShaderMaterial_dr2oc")
 texture = ExtResource("3_igipr")
 centered = false

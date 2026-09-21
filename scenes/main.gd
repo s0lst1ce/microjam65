@@ -18,14 +18,19 @@ extends Node2D
 
 @onready var sfx = $SFX
 @onready var hovered_furniture: Interactible = null
+@onready var dia_style: DialogicStyle = preload("res://addons/dialogic/Modules/DefaultLayoutParts/Style_VN_Default/default_vn_style.tres")
 
 func _ready() -> void:
+	dia_style.prepare()
+
 	SceneSwitching.goto_room.connect(_on_change_room)
 	SceneSwitching.toggle_map.connect(_on_toggle_map)
 	SceneSwitching.toggle_hud_visibility.connect(_on_toggle_hud_visibility)
 	ItemExchange.drop_item.connect(_on_drop_item)
 	ItemExchange.start_furniture_hover.connect(_on_furniture_enter)
+
 	self.add_child(scenes[current_room])
+	Dialogic.preload_timeline("arrival")
 	Dialogic.start("arrival")
 
 
