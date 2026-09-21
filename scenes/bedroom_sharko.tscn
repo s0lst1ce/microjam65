@@ -15,14 +15,13 @@
 [ext_resource type="Texture2D" uid="uid://de61p3anqt0x8" path="res://assets/furniture/dumbels.png" id="9_8c3qo"]
 [ext_resource type="Texture2D" uid="uid://dtbotdvlx1uup" path="res://assets/furniture/dumbel.png" id="9_t4uot"]
 [ext_resource type="Texture2D" uid="uid://copl7nsn3l1pn" path="res://assets/furniture/table_shark.png" id="10_flhft"]
-[ext_resource type="Script" uid="uid://brgtb1k50k6x" path="res://interactible.gd" id="12_g6gmd"]
 [ext_resource type="Texture2D" uid="uid://chqxj2e650je4" path="res://assets/furniture/ventilation_closed.png" id="13_8c3qo"]
+[ext_resource type="Script" uid="uid://vj3ex3uya220" path="res://interactibles/ventilation.gd" id="15_44r4d"]
+[ext_resource type="Script" uid="uid://bp63adiuj3ujh" path="res://item_data.gd" id="16_rukd4"]
+[ext_resource type="Resource" uid="uid://b1y6l7nrm2o6k" path="res://items/bloody_dumbel.tres" id="17_48cb8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wm6sv"]
 size = Vector2(252.06055, 241.97827)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_wgcn5"]
-size = Vector2(170, 120)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yn442"]
 size = Vector2(127, 92.5)
@@ -84,23 +83,16 @@ position = Vector2(1424, 664.00006)
 scale = Vector2(0.5203461, 0.5203461)
 texture = ExtResource("9_8c3qo")
 
-[node name="Dumbel" type="Sprite2D" parent="." unique_id=1069094041]
+[node name="Dumbel" type="Sprite2D" parent="." unique_id=1754132081]
 position = Vector2(969, 782)
 texture = ExtResource("9_t4uot")
-script = ExtResource("12_g6gmd")
-metadata/_custom_type_script = "uid://brgtb1k50k6x"
-
-[node name="Area2D" type="Area2D" parent="Dumbel" unique_id=110196627]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Dumbel/Area2D" unique_id=570890075]
-position = Vector2(1, 1)
-shape = SubResource("RectangleShape2D_wgcn5")
 
 [node name="Ventilation" type="Sprite2D" parent="." unique_id=291833899]
 position = Vector2(1314, 506)
 texture = ExtResource("13_8c3qo")
-script = ExtResource("12_g6gmd")
+script = ExtResource("15_44r4d")
 interacts_with = Array[String](["knife"])
+gives = Array[ExtResource("16_rukd4")]([ExtResource("17_48cb8")])
 metadata/_custom_type_script = "uid://brgtb1k50k6x"
 
 [node name="Area2D" type="Area2D" parent="Ventilation" unique_id=112203869]
