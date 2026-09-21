@@ -5,6 +5,10 @@
 [ext_resource type="Shader" uid="uid://2q563rjql2f2" path="res://scenes/black.gdshader" id="3_6frsu"]
 [ext_resource type="Texture2D" uid="uid://6wjgxdgnoeck" path="res://assets/misc/black.png" id="3_igipr"]
 [ext_resource type="Script" uid="uid://07coiec66sme" path="res://scenes/dark_room.gd" id="5_6frsu"]
+[ext_resource type="Texture2D" uid="uid://b3fplf1c3njuy" path="res://assets/furniture/bookshelf_right.png" id="6_qyo4v"]
+[ext_resource type="Texture2D" uid="uid://d0yfriuttpdgy" path="res://assets/furniture/bookshelf_left.png" id="7_h01uo"]
+[ext_resource type="Texture2D" uid="uid://ddnb03ltpa3ps" path="res://assets/furniture/book1.png" id="8_wyy3a"]
+[ext_resource type="Texture2D" uid="uid://brhavaswsb172" path="res://assets/furniture/book3.png" id="9_q3d3p"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_dr2oc"]
 shader = ExtResource("3_6frsu")
@@ -34,3 +38,19 @@ metadata/_custom_type_script = "uid://brgtb1k50k6x"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Dark/Area2D" unique_id=2073096032]
 position = Vector2(959.75, 541)
 shape = SubResource("RectangleShape2D_3bft5")
+
+[node name="BookshelfRight" type="Sprite2D" parent="." unique_id=809284963]
+position = Vector2(1641, 544)
+texture = ExtResource("6_qyo4v")
+
+[node name="BookshelfLeft" type="Sprite2D" parent="." unique_id=1243812281]
+position = Vector2(269, 481)
+texture = ExtResource("7_h01uo")
+
+[node name="SmallBookPile" type="Sprite2D" parent="." unique_id=1667310747]
+position = Vector2(397, 982)
+texture = ExtResource("8_wyy3a")
+
+[node name="BookPile" type="Sprite2D" parent="." unique_id=464665304]
+position = Vector2(660, 811)
+texture = ExtResource("9_q3d3p")
