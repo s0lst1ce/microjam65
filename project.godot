@@ -45,6 +45,7 @@ directories/dtl_directory={
 "meeting_sharko": "res://dialogic/meeting_sharko.dtl",
 "meeting_swordfish": "res://dialogic/meeting_swordfish.dtl",
 "meeting_whale": "res://dialogic/meeting_whale.dtl",
+"missing_shrimp": "res://dialogic/missing_shrimp.dtl",
 "nothing_whale": "res://dialogic/nothing_whale.dtl",
 "puzzle_not_enough_pieces": "res://dialogic/puzzle_not_enough_pieces.dtl",
 "puzzle_piece_first": "res://dialogic/puzzle_piece_first.dtl",
@@ -68,9 +69,10 @@ variables={
 "swordfish": "meeting_swordfish",
 "whale": "meeting_whale"
 },
+"collected_shrimps_counts": 5,
 "puzzle_pieces_count": 0,
 "sharko_got_can": false,
-"table_puzzle_enabled": true,
+"table_puzzle_enabled": false,
 "tried_talking_sharko": false
 }
 text/letter_speed=0.01

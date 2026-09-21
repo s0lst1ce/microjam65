@@ -7,8 +7,11 @@ var painting_puzzle: Array = []
 @onready var correct_painting_puzzle = []
 @onready var painting_puzzle_completed=false
 @onready var given_torn_papers = 0
+@onready var shrimp_puzzle = [0,0,0,0,0]
+@onready var shrimp_puzzle_completed=false
 
 signal drop_diamond
+signal remove_shrimp_frame
 
 func _ready() -> void:
 	for i in range(0, 36):
@@ -31,3 +34,9 @@ func painting_puzzle_complete():
 		return true
 	else:
 		return false
+
+func shrimp_puzzle_complete():
+	if shrimp_puzzle == [1, 1, 1, 1, 1]:
+		print("shrimp puzzle completed!")
+		shrimp_puzzle_completed = true
+		return true

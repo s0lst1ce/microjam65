@@ -1,0 +1,3 @@
+[background arg="res://assets/misc/black.png" fade="0.0"]
+join joe right
+joe: I think we're still missing {5 - {collected_shrimps_counts}} puzzle pieces to fil the frame.

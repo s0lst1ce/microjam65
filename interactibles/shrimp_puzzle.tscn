@@ -1,0 +1,192 @@
+[gd_scene format=3 uid="uid://dt6sm8yp6tshl"]
+
+[ext_resource type="Script" uid="uid://btsadto0ys76a" path="res://interactibles/shrimp_puzzle.gd" id="1_xvk5k"]
+[ext_resource type="Texture2D" uid="uid://x620i3ii3my0" path="res://assets/misc/marine.png" id="2_wvcx6"]
+[ext_resource type="Script" uid="uid://cwo54hiur8o2" path="res://interactibles/shrimp_token_slot.gd" id="3_prhw6"]
+[ext_resource type="Script" uid="uid://e25kle5anaia" path="res://interactibles/shrimp_inventory.gd" id="3_yra0f"]
+[ext_resource type="Resource" uid="uid://cjdm45buxxbqp" path="res://shrimp_tokens/shr-imp.tres" id="5_h88ie"]
+[ext_resource type="Shader" uid="uid://dvdb7o7b5ndrc" path="res://interactibles/table_puzzle.gdshader" id="6_gpsjq"]
+[ext_resource type="Resource" uid="uid://ddeatffrcyyu5" path="res://shrimp_tokens/shrimpson.tres" id="7_wvcx6"]
+[ext_resource type="Resource" uid="uid://bg5r1tln74e8" path="res://shrimp_tokens/shrimpaired.tres" id="8_0qj8f"]
+[ext_resource type="Resource" uid="uid://cpcctrun3ckdp" path="res://shrimp_tokens/shrimperialist.tres" id="9_gbcxt"]
+[ext_resource type="Resource" uid="uid://dady6pd7i7pux" path="res://shrimp_tokens/shrimpresionist.tres" id="10_gnu0l"]
+[ext_resource type="Texture2D" uid="uid://1vdcg5hsdtwl" path="res://assets/unsorted/crux.png" id="15_jgx38"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vb20r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t35mi"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fkyci"]
+shader = ExtResource("6_gpsjq")
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/width = 10.0
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p4o86"]
+shader = ExtResource("6_gpsjq")
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/width = 5.0000002375
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = true
+
+[node name="ShrimpPuzzle" type="CanvasLayer" unique_id=1424272518]
+process_mode = 2
+script = ExtResource("1_xvk5k")
+
+[node name="Background" type="TextureRect" parent="." unique_id=642099615]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_wvcx6")
+
+[node name="ShrimpInventory" type="Panel" parent="." unique_id=1152246160]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -862.0
+offset_top = -150.0
+offset_right = -94.0
+offset_bottom = -22.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.2934926, 1.2711788)
+theme_override_styles/panel = SubResource("StyleBoxEmpty_vb20r")
+script = ExtResource("3_yra0f")
+
+[node name="MarginContainer" type="MarginContainer" parent="ShrimpInventory" unique_id=133078894]
+layout_mode = 0
+offset_left = 40.1135
+offset_top = -58.213684
+offset_right = 722.1135
+offset_bottom = 141.78632
+scale = Vector2(1.024678, 1.6155871)
+
+[node name="GridContainer" type="GridContainer" parent="ShrimpInventory/MarginContainer" unique_id=1382178346]
+layout_mode = 2
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 6
+
+[node name="TokenSlot" type="Panel" parent="ShrimpInventory/MarginContainer/GridContainer" unique_id=658795528]
+custom_minimum_size = Vector2(150, 200)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("3_prhw6")
+token = ExtResource("5_h88ie")
+correct = ExtResource("8_0qj8f")
+
+[node name="Icon" type="TextureRect" parent="ShrimpInventory/MarginContainer/GridContainer/TokenSlot" unique_id=602700793]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 4
+flip_h = true
+
+[node name="TokenSlot2" type="Panel" parent="ShrimpInventory/MarginContainer/GridContainer" unique_id=1937611121]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("3_prhw6")
+token = ExtResource("10_gnu0l")
+correct = ExtResource("7_wvcx6")
+correct_mirrored = true
+idx = 1
+
+[node name="Icon" type="TextureRect" parent="ShrimpInventory/MarginContainer/GridContainer/TokenSlot2" unique_id=1444302832]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 4
+flip_h = true
+
+[node name="TokenSlot3" type="Panel" parent="ShrimpInventory/MarginContainer/GridContainer" unique_id=1321244114]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("3_prhw6")
+token = ExtResource("8_0qj8f")
+correct = ExtResource("10_gnu0l")
+idx = 2
+
+[node name="Icon" type="TextureRect" parent="ShrimpInventory/MarginContainer/GridContainer/TokenSlot3" unique_id=1802855937]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 4
+flip_h = true
+
+[node name="TokenSlot4" type="Panel" parent="ShrimpInventory/MarginContainer/GridContainer" unique_id=737806885]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("3_prhw6")
+token = ExtResource("9_gbcxt")
+correct = ExtResource("5_h88ie")
+idx = 3
+
+[node name="Icon" type="TextureRect" parent="ShrimpInventory/MarginContainer/GridContainer/TokenSlot4" unique_id=592622241]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 4
+flip_h = true
+
+[node name="TokenSlot5" type="Panel" parent="ShrimpInventory/MarginContainer/GridContainer" unique_id=605871685]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("3_prhw6")
+token = ExtResource("7_wvcx6")
+correct = ExtResource("9_gbcxt")
+correct_mirrored = true
+idx = 4
+
+[node name="Icon" type="TextureRect" parent="ShrimpInventory/MarginContainer/GridContainer/TokenSlot5" unique_id=858938290]
+material = SubResource("ShaderMaterial_fkyci")
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 4
+flip_h = true
+
+[node name="CloseButton" type="TextureButton" parent="." unique_id=1615438251]
+material = SubResource("ShaderMaterial_p4o86")
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("15_jgx38")
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]

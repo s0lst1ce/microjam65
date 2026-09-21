@@ -8,7 +8,12 @@
 [ext_resource type="Texture2D" uid="uid://be43p6jp6g61d" path="res://assets/furniture/shrimp_poster_love.png" id="5_wgaro"]
 [ext_resource type="Texture2D" uid="uid://c0x7f7dt081wg" path="res://assets/furniture/carpet_shrimp.png" id="6_eeoao"]
 [ext_resource type="Texture2D" uid="uid://brgmly2pqg7f1" path="res://assets/furniture/coral_pot.png" id="7_0ymh6"]
-[ext_resource type="Texture2D" uid="uid://cvpbdbxudy8bl" path="res://assets/furniture/puzzle_frame.png" id="8_gk7ot"]
+[ext_resource type="Texture2D" uid="uid://dlje6qgjh6hrb" path="res://assets/furniture/frame_filled.png" id="9_wgaro"]
+[ext_resource type="Script" uid="uid://dgvure600iicg" path="res://scenes/puzzle_frame_shrimp.gd" id="10_eeoao"]
+[ext_resource type="PackedScene" uid="uid://dt6sm8yp6tshl" path="res://interactibles/shrimp_puzzle.tscn" id="11_0ymh6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
+size = Vector2(220, 231)
 
 [node name="BedroomShrimp" type="Node2D" unique_id=1442393120]
 script = ExtResource("1_05lwq")
@@ -41,6 +46,17 @@ texture = ExtResource("6_eeoao")
 position = Vector2(582, 679)
 texture = ExtResource("7_0ymh6")
 
-[node name="PuzzleFrame" type="Sprite2D" parent="." unique_id=1473224571]
+[node name="PuzzleFrame" type="Sprite2D" parent="." unique_id=2041815570]
 position = Vector2(301, 361)
-texture = ExtResource("8_gk7ot")
+texture = ExtResource("9_wgaro")
+script = ExtResource("10_eeoao")
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="PuzzleFrame" unique_id=465539811]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PuzzleFrame/Area2D" unique_id=842362738]
+position = Vector2(5, 7.5)
+shape = SubResource("RectangleShape2D_3bft5")
+
+[node name="ShrimpPuzzle" parent="PuzzleFrame" unique_id=1424272518 instance=ExtResource("11_0ymh6")]
+visible = false

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ShrimpToken" format=3 uid="uid://dady6pd7i7pux"]
+
+[ext_resource type="Texture2D" uid="uid://ba5jalwc6twys" path="res://assets/tokens/shrimps/shrimpressionniste.png" id="1_05nmw"]
+[ext_resource type="Script" uid="uid://db6mofov3wukn" path="res://shrimp_token.gd" id="1_qcvws"]
+
+[resource]
+script = ExtResource("1_qcvws")
+name = "shrimpresionist"
+icon = ExtResource("1_05nmw")
+tooltip = "I turn my back to Shrimperialist. And to Shr-imp"
+metadata/_custom_type_script = "uid://db6mofov3wukn"

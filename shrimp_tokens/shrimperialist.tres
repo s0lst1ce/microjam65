@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ShrimpToken" format=3 uid="uid://cpcctrun3ckdp"]
+
+[ext_resource type="Script" uid="uid://db6mofov3wukn" path="res://shrimp_token.gd" id="1_r0qqs"]
+[ext_resource type="Texture2D" uid="uid://llredyr6lx56" path="res://assets/tokens/shrimps/shrimproi.png" id="1_vqjp1"]
+
+[resource]
+script = ExtResource("1_r0qqs")
+name = "shrimperialist"
+icon = ExtResource("1_vqjp1")
+tooltip = "Nobody is in front of me"
+metadata/_custom_type_script = "uid://db6mofov3wukn"
