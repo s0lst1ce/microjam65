@@ -65,7 +65,7 @@ variables={
 "swordfish": "meeting_swordfish",
 "whale": "arrival"
 },
-"puzzle_pieces_count": 36,
+"puzzle_pieces_count": 0,
 "sharko_got_can": false,
 "table_puzzle_enabled": false,
 "tried_talking_sharko": false
