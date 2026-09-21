@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxr6p0f2wwbb3"
-path="res://.godot/imported/chaiserandom.png-1bc3a7481321d31027a630b5acda5011.ctex"
+uid="uid://clb8hkaf2vmy4"
+path="res://.godot/imported/bed_couple.png-9f2e90946e663f5c078a8f71b65f7081.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/chaiserandom.png"
-dest_files=["res://.godot/imported/chaiserandom.png-1bc3a7481321d31027a630b5acda5011.ctex"]
+source_file="res://assets/furniture/bed_couple.png"
+dest_files=["res://.godot/imported/bed_couple.png-9f2e90946e663f5c078a8f71b65f7081.ctex"]
 
 [params]
 

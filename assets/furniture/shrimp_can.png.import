@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://l5bbe48c5ark"
-path="res://.godot/imported/etagere.png-690550e129c850da879abaca1aed6c2a.ctex"
+uid="uid://b32i17v7rpccu"
+path="res://.godot/imported/shrimp_can.png-b881386296d59773604c28ef45349f60.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/etagere.png"
-dest_files=["res://.godot/imported/etagere.png-690550e129c850da879abaca1aed6c2a.ctex"]
+source_file="res://assets/furniture/shrimp_can.png"
+dest_files=["res://.godot/imported/shrimp_can.png-b881386296d59773604c28ef45349f60.ctex"]
 
 [params]
 

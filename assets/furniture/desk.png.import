@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clb8hkaf2vmy4"
-path="res://.godot/imported/bedlovers.png-e491b5325f6eaa4e79410b46d1758555.ctex"
+uid="uid://d0v7ukl8vm20r"
+path="res://.godot/imported/desk.png-85baf37d102310bfa49f4904ffaed19f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/bedlovers.png"
-dest_files=["res://.godot/imported/bedlovers.png-e491b5325f6eaa4e79410b46d1758555.ctex"]
+source_file="res://assets/furniture/desk.png"
+dest_files=["res://.godot/imported/desk.png-85baf37d102310bfa49f4904ffaed19f.ctex"]
 
 [params]
 

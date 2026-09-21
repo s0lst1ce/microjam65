@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0v7ukl8vm20r"
-path="res://.godot/imported/bureau.png-502eec93a8602410297e448f4fcb076a.ctex"
+uid="uid://cxr6p0f2wwbb3"
+path="res://.godot/imported/rocking_chair.png-d123a920dde9692b75c76fc9bac550ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/bureau.png"
-dest_files=["res://.godot/imported/bureau.png-502eec93a8602410297e448f4fcb076a.ctex"]
+source_file="res://assets/furniture/rocking_chair.png"
+dest_files=["res://.godot/imported/rocking_chair.png-d123a920dde9692b75c76fc9bac550ae.ctex"]
 
 [params]
 
