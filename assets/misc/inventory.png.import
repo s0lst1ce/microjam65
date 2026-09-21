@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0lhfkhsf0bwe"
-path="res://.godot/imported/collier.png-a953856e249f3b6205d9c597d29cc5cf.ctex"
+uid="uid://ij1l3s8wbibx"
+path="res://.godot/imported/inventory.png-8019619e53474a28727885db1553644d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/collier.png"
-dest_files=["res://.godot/imported/collier.png-a953856e249f3b6205d9c597d29cc5cf.ctex"]
+source_file="res://assets/misc/inventory.png"
+dest_files=["res://.godot/imported/inventory.png-8019619e53474a28727885db1553644d.ctex"]
 
 [params]
 

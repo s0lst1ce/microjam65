@@ -1,17 +1,22 @@
 [gd_scene format=3 uid="uid://ddy2k1p5c4i6k"]
 
 [ext_resource type="Texture2D" uid="uid://rb217fhcfvrr" path="res://assets/misc/map_close.png" id="2_5ysmq"]
-[ext_resource type="Texture2D" uid="uid://dhrx2otlj5jss" path="res://assets/unsorted/inventaire.png" id="3_0i1j5"]
 [ext_resource type="Script" uid="uid://c0325j1vti6ny" path="res://scenes/inventory.gd" id="3_5pdws"]
 [ext_resource type="Script" uid="uid://cker0h66hbv4u" path="res://scenes/map_button.gd" id="3_5ysmq"]
 [ext_resource type="Script" uid="uid://bnikgswxgv1uf" path="res://scenes/item_slot.gd" id="3_047uy"]
+[ext_resource type="Texture2D" uid="uid://ij1l3s8wbibx" path="res://assets/misc/inventory.png" id="3_mphia"]
 [ext_resource type="Shader" uid="uid://dvdb7o7b5ndrc" path="res://interactibles/table_puzzle.gdshader" id="3_uo2fv"]
+[ext_resource type="Texture2D" uid="uid://dpjhgpanqef7d" path="res://assets/unsorted/carré .png" id="5_0m4u7"]
 [ext_resource type="Resource" uid="uid://cob3wvjc232ro" path="res://items/donut.tres" id="5_047uy"]
 [ext_resource type="Shader" uid="uid://cqv4mrmukav8w" path="res://scenes/highlight.gdshader" id="7_5pdws"]
 [ext_resource type="Resource" uid="uid://f4mmrvrtj26i" path="res://items/portable_lantern.tres" id="8_hd3ao"]
+[ext_resource type="Resource" uid="uid://cw7yy0ukjt3an" path="res://items/necklace.tres" id="9_mphia"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cty71"]
-texture = ExtResource("3_0i1j5")
+texture = ExtResource("3_mphia")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mphia"]
+texture = ExtResource("5_0m4u7")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_uo2fv"]
 shader = ExtResource("3_uo2fv")
@@ -34,6 +39,9 @@ shader_parameter/Position_Min = 0.25
 shader_parameter/Position_Max = 0.5
 shader_parameter/Alpha = 1.0
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_apjy4"]
+texture = ExtResource("5_0m4u7")
+
 [node name="HUD" type="CanvasLayer" unique_id=166520485]
 process_mode = 3
 
@@ -51,9 +59,9 @@ script = ExtResource("3_5ysmq")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -244.5
-offset_right = 244.5
-offset_bottom = 89.12021
+offset_left = -261.99994
+offset_right = 247.36816
+offset_bottom = 88.35193
 grow_horizontal = 2
 scale = Vector2(1.3016127, 1.3016127)
 theme_override_styles/panel = SubResource("StyleBoxTexture_cty71")
@@ -61,9 +69,9 @@ script = ExtResource("3_5pdws")
 
 [node name="MarginContainer" type="MarginContainer" parent="Inventory" unique_id=1115177449]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-theme_override_constants/margin_left = 5
+offset_right = 488.0
+offset_bottom = 88.0
+theme_override_constants/margin_left = 16
 theme_override_constants/margin_top = 19
 theme_override_constants/margin_right = 5
 theme_override_constants/margin_bottom = 5
@@ -77,6 +85,7 @@ columns = 8
 [node name="ItemSlot" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=672155765]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_mphia")
 script = ExtResource("3_047uy")
 item = ExtResource("5_047uy")
 
@@ -106,7 +115,9 @@ mouse_filter = 1
 [node name="ItemSlot2" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=899131930]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_apjy4")
 script = ExtResource("3_047uy")
+item = ExtResource("9_mphia")
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot2" unique_id=822962553]
 material = SubResource("ShaderMaterial_uo2fv")
@@ -134,6 +145,7 @@ mouse_filter = 1
 [node name="ItemSlot3" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=1600071151]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_apjy4")
 script = ExtResource("3_047uy")
 item = ExtResource("8_hd3ao")
 
@@ -163,6 +175,7 @@ mouse_filter = 1
 [node name="ItemSlot4" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=1677549761]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_apjy4")
 script = ExtResource("3_047uy")
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot4" unique_id=1456906161]
@@ -191,6 +204,7 @@ mouse_filter = 1
 [node name="ItemSlot5" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=1108754886]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_apjy4")
 script = ExtResource("3_047uy")
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot5" unique_id=1680700052]
@@ -219,6 +233,7 @@ mouse_filter = 1
 [node name="ItemSlot6" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=1459256991]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_apjy4")
 script = ExtResource("3_047uy")
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot6" unique_id=1301676248]
@@ -247,6 +262,7 @@ mouse_filter = 1
 [node name="ItemSlot7" type="Panel" parent="Inventory/MarginContainer/GridContainer" unique_id=1264288289]
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_apjy4")
 script = ExtResource("3_047uy")
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot7" unique_id=815101867]
