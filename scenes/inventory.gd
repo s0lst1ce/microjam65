@@ -36,3 +36,6 @@ func _on_add_item(item: ItemData):
 func _on_dialogic_signal(argument:String):
 	if argument == "gain_can":
 		ItemExchange.add_item.emit(preload("res://items/shrimp_can.tres"))
+
+func _toggle_visibility():
+	visible = not visible

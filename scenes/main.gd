@@ -61,6 +61,9 @@ func _on_toggle_map():
 		button.texture_normal = button.opened
 	else:
 		button.texture_normal = button.closed
+		
+	#inventory
+	$HUD/Inventory.visible = not $HUD/Inventory.visible
 
 func _on_toggle_hud_visibility():
 	hud.visible = not hud.visible
