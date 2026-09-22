@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpj70gg32wy2"
-path="res://.godot/imported/coffreachiffre.png-eaa1f02c483f98c4314e4c9600b76aa7.ctex"
+uid="uid://c8wtq033dujql"
+path="res://.godot/imported/chest_closed.png-f2cb6076ae54718200caa4d9c9db4536.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/coffreachiffre.png"
-dest_files=["res://.godot/imported/coffreachiffre.png-eaa1f02c483f98c4314e4c9600b76aa7.ctex"]
+source_file="res://assets/furniture/chest_closed.png"
+dest_files=["res://.godot/imported/chest_closed.png-f2cb6076ae54718200caa4d9c9db4536.ctex"]
 
 [params]
 

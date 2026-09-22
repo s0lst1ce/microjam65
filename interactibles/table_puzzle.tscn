@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://ckytasj551v7a"]
+[gd_scene format=3 uid="uid://df70lff56mrp0"]
 
 [ext_resource type="Script" uid="uid://bijjioucygif3" path="res://interactibles/table_puzzle.gd" id="1_vog88"]
 [ext_resource type="Texture2D" uid="uid://dxuoq7cycn8ge" path="res://assets/furniture/table_topdown.png" id="2_nb681"]

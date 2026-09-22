@@ -6,7 +6,7 @@
 [ext_resource type="Script" uid="uid://c0mq0pmy07xpm" path="res://scenes/lantern.gd" id="4_rrnwm"]
 [ext_resource type="Texture2D" uid="uid://brjd8j1xuff8k" path="res://assets/furniture/table.png" id="5_rrnwm"]
 [ext_resource type="Script" uid="uid://cbs1mjlb1wqds" path="res://interactibles/dining_table.gd" id="6_rrnwm"]
-[ext_resource type="PackedScene" uid="uid://ckytasj551v7a" path="res://interactibles/table_puzzle.tscn" id="7_p4o86"]
+[ext_resource type="PackedScene" uid="uid://df70lff56mrp0" path="res://interactibles/table_puzzle.tscn" id="7_p4o86"]
 [ext_resource type="Texture2D" uid="uid://c03it200vxob4" path="res://assets/furniture/cafeteria_painting.png" id="8_4xt3o"]
 [ext_resource type="PackedScene" uid="uid://re8kn4o0tu3b" path="res://interactibles/puzzle_piece.tscn" id="8_fd8ba"]
 

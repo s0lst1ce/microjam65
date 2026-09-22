@@ -9,9 +9,12 @@ var painting_puzzle: Array = []
 @onready var given_torn_papers = 0
 @onready var shrimp_puzzle = [0,0,0,0,0]
 @onready var shrimp_puzzle_completed=false
+@onready var mastermind_completed=false
+@onready var mastermind_puzzle = [0,0,0,0,0,1]
 
 signal drop_diamond
 signal remove_shrimp_frame
+signal close_mastermind
 
 func _ready() -> void:
 	for i in range(0, 36):
@@ -40,3 +43,11 @@ func shrimp_puzzle_complete():
 		print("shrimp puzzle completed!")
 		shrimp_puzzle_completed = true
 		return true
+		
+func mastermind_complete():
+	if mastermind_puzzle == [1,1,1,1,1,1] or mastermind_puzzle == [1,1,1,1,1,0]:
+		print("mastermind puzzle completed!")
+		mastermind_completed=true
+		return true
+	else:
+		false

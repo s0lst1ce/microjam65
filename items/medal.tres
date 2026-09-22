@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://bx6r12k1s6slb"]
+
+[ext_resource type="Texture2D" uid="uid://2eyacetwwhrm" path="res://assets/furniture/medal.png" id="1_lpamy"]
+[ext_resource type="Script" uid="uid://bp63adiuj3ujh" path="res://item_data.gd" id="1_uv60m"]
+
+[resource]
+script = ExtResource("1_uv60m")
+name = "medal"
+icon = ExtResource("1_lpamy")
+metadata/_custom_type_script = "uid://bp63adiuj3ujh"

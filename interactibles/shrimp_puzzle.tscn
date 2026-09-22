@@ -33,7 +33,6 @@ shader_parameter/inside = false
 shader_parameter/add_margins = true
 
 [node name="ShrimpPuzzle" type="CanvasLayer" unique_id=1424272518]
-process_mode = 2
 script = ExtResource("1_xvk5k")
 
 [node name="Background" type="TextureRect" parent="." unique_id=642099615]

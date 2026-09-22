@@ -28,4 +28,4 @@ func _on_close_button_pressed() -> void:
 
 func _on_dialogic_text_signal(argument: String):
 	if argument == "leave_table":
-		visible=false
+		hide()

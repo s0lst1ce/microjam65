@@ -8,9 +8,16 @@
 [ext_resource type="Texture2D" uid="uid://be43p6jp6g61d" path="res://assets/furniture/shrimp_poster_love.png" id="5_wgaro"]
 [ext_resource type="Texture2D" uid="uid://c0x7f7dt081wg" path="res://assets/furniture/carpet_shrimp.png" id="6_eeoao"]
 [ext_resource type="Texture2D" uid="uid://brgmly2pqg7f1" path="res://assets/furniture/coral_pot.png" id="7_0ymh6"]
+[ext_resource type="Texture2D" uid="uid://bpj70gg32wy2" path="res://assets/furniture/safe.png" id="9_6gkn2"]
 [ext_resource type="Texture2D" uid="uid://dlje6qgjh6hrb" path="res://assets/furniture/frame_filled.png" id="9_wgaro"]
+[ext_resource type="Script" uid="uid://imob65xrefad" path="res://scenes/safe.gd" id="10_d15ys"]
 [ext_resource type="Script" uid="uid://dgvure600iicg" path="res://scenes/puzzle_frame_shrimp.gd" id="10_eeoao"]
 [ext_resource type="PackedScene" uid="uid://dt6sm8yp6tshl" path="res://interactibles/shrimp_puzzle.tscn" id="11_0ymh6"]
+[ext_resource type="PackedScene" uid="uid://ckytasj551v7a" path="res://interactibles/mastermind_puzzle.tscn" id="11_d15ys"]
+[ext_resource type="Texture2D" uid="uid://c8wtq033dujql" path="res://assets/furniture/chest_closed.png" id="12_0ymh6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wgcn5"]
+size = Vector2(165, 136)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
 size = Vector2(220, 231)
@@ -46,6 +53,21 @@ texture = ExtResource("6_eeoao")
 position = Vector2(582, 679)
 texture = ExtResource("7_0ymh6")
 
+[node name="Safe" type="Sprite2D" parent="." unique_id=232708589]
+position = Vector2(311, 356)
+texture = ExtResource("9_6gkn2")
+script = ExtResource("10_d15ys")
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="Safe" unique_id=1432554737]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Safe/Area2D" unique_id=1215944359]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_wgcn5")
+
+[node name="MastermindPuzzle" parent="Safe" unique_id=1424272518 instance=ExtResource("11_d15ys")]
+visible = false
+
 [node name="PuzzleFrame" type="Sprite2D" parent="." unique_id=2041815570]
 position = Vector2(301, 361)
 texture = ExtResource("9_wgaro")
@@ -58,5 +80,14 @@ metadata/_custom_type_script = "uid://brgtb1k50k6x"
 position = Vector2(5, 7.5)
 shape = SubResource("RectangleShape2D_3bft5")
 
-[node name="ShrimpPuzzle" parent="PuzzleFrame" unique_id=1424272518 instance=ExtResource("11_0ymh6")]
+[node name="ShrimpPuzzle" parent="PuzzleFrame" unique_id=1365766458 instance=ExtResource("11_0ymh6")]
+process_mode = 2
 visible = false
+
+[node name="PuzzlePiece2" parent="." unique_id=1569075544 instance=ExtResource("5_srfvv")]
+position = Vector2(1496, 658)
+rotation = -3.1415925
+
+[node name="Chest" type="Sprite2D" parent="." unique_id=943937026]
+position = Vector2(1368, 617)
+texture = ExtResource("12_0ymh6")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8wtq033dujql"
-path="res://.godot/imported/coffreferme.png-b475e4d67d394e2c65a40221fe6aaeaf.ctex"
+uid="uid://bpj70gg32wy2"
+path="res://.godot/imported/safe.png-80c9d7cd36d7859af228e7b9fd4eefac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/coffreferme.png"
-dest_files=["res://.godot/imported/coffreferme.png-b475e4d67d394e2c65a40221fe6aaeaf.ctex"]
+source_file="res://assets/furniture/safe.png"
+dest_files=["res://.godot/imported/safe.png-80c9d7cd36d7859af228e7b9fd4eefac.ctex"]
 
 [params]
 

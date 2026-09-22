@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://be8pq2nuwtgfy"
-path="res://.godot/imported/epee.png-ec9de035f7c2b10422b63df42ba0f039.ctex"
+uid="uid://c7vv2vflotbe8"
+path="res://.godot/imported/library_plant.png-c770c3077884254608ae494b75265191.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/epee.png"
-dest_files=["res://.godot/imported/epee.png-ec9de035f7c2b10422b63df42ba0f039.ctex"]
+source_file="res://assets/furniture/library_plant.png"
+dest_files=["res://.godot/imported/library_plant.png-c770c3077884254608ae494b75265191.ctex"]
 
 [params]
 

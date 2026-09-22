@@ -1,0 +1,459 @@
+[gd_scene format=3 uid="uid://ckytasj551v7a"]
+
+[ext_resource type="Script" uid="uid://duuryy85thsyu" path="res://interactibles/mastermind_puzzle.gd" id="1_qahip"]
+[ext_resource type="Shader" uid="uid://2q563rjql2f2" path="res://scenes/black.gdshader" id="1_yxupk"]
+[ext_resource type="Texture2D" uid="uid://6wjgxdgnoeck" path="res://assets/misc/black.png" id="2_ykfqf"]
+[ext_resource type="Script" uid="uid://i1jsdxp7wrqi" path="res://interactibles/mastermind_token_slot.gd" id="4_j110i"]
+[ext_resource type="Resource" uid="uid://dlfjo6pgwobtx" path="res://mastermind_tokens/red.tres" id="5_ykfqf"]
+[ext_resource type="Shader" uid="uid://dvdb7o7b5ndrc" path="res://interactibles/table_puzzle.gdshader" id="6_xd1uk"]
+[ext_resource type="Resource" uid="uid://c3mikh4h567m2" path="res://mastermind_tokens/yellow.tres" id="6_xkrw7"]
+[ext_resource type="Texture2D" uid="uid://dpjhgpanqef7d" path="res://assets/misc/carré .png" id="7_pfr2o"]
+[ext_resource type="Resource" uid="uid://cpk2jgguns2f8" path="res://mastermind_tokens/green.tres" id="7_pv184"]
+[ext_resource type="Resource" uid="uid://b14vtofd1x1in" path="res://mastermind_tokens/purple.tres" id="8_pv184"]
+[ext_resource type="Resource" uid="uid://bhmtk4rbrp8n5" path="res://mastermind_tokens/orange.tres" id="9_h81cr"]
+[ext_resource type="Resource" uid="uid://clst22tqlumix" path="res://mastermind_tokens/blue.tres" id="10_7n0sc"]
+[ext_resource type="Script" uid="uid://47xf6766g7cf" path="res://interactibles/mastermind_inventory.gd" id="10_qahip"]
+[ext_resource type="Texture2D" uid="uid://1vdcg5hsdtwl" path="res://assets/unsorted/crux.png" id="15_40qrv"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hnxrp"]
+shader = ExtResource("1_yxupk")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ihef7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pfr2o"]
+bg_color = Color(1, 1, 1, 0.42352942)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t35mi"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p4o86"]
+shader = ExtResource("6_xd1uk")
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/width = 5.0000002375
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = true
+
+[node name="MastermindPuzzle" type="CanvasLayer" unique_id=1424272518]
+process_mode = 2
+script = ExtResource("1_qahip")
+
+[node name="Background" type="TextureRect" parent="." unique_id=642099615]
+material = SubResource("ShaderMaterial_hnxrp")
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_ykfqf")
+
+[node name="Slot" type="Control" parent="." unique_id=1176526696]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 386.0
+offset_top = 403.99997
+offset_right = 514.0
+offset_bottom = 532.0
+scale = Vector2(1.1914718, 1.1914718)
+
+[node name="TextureRect" type="TextureRect" parent="Slot" unique_id=1083622069]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 128.0
+texture = ExtResource("7_pfr2o")
+expand_mode = 2
+
+[node name="TokenSlot4" type="Panel" parent="Slot" unique_id=732256289]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 0.8615227
+offset_right = 1.5258789e-05
+offset_bottom = 0.8615265
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ihef7")
+script = ExtResource("4_j110i")
+correct = ExtResource("8_pv184")
+
+[node name="Icon" type="TextureRect" parent="Slot/TokenSlot4" unique_id=1746969760]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.017548
+offset_top = -45.55767
+offset_right = 148.98245
+offset_bottom = 146.4423
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.44290543, 0.44290543)
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Slot2" type="Control" parent="." unique_id=243151321]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 635.0
+offset_top = 403.99997
+offset_right = 763.0
+offset_bottom = 532.0
+scale = Vector2(1.1914718, 1.1914718)
+
+[node name="TextureRect" type="TextureRect" parent="Slot2" unique_id=926731855]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 128.0
+texture = ExtResource("7_pfr2o")
+expand_mode = 2
+
+[node name="TokenSlot4" type="Panel" parent="Slot2" unique_id=304496562]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 0.8615227
+offset_right = 1.5258789e-05
+offset_bottom = 0.8615265
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ihef7")
+script = ExtResource("4_j110i")
+correct = ExtResource("10_7n0sc")
+idx = 1
+
+[node name="Icon" type="TextureRect" parent="Slot2/TokenSlot4" unique_id=570547617]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.017548
+offset_top = -45.55767
+offset_right = 148.98245
+offset_bottom = 146.4423
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.44290543, 0.44290543)
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Slot3" type="Control" parent="." unique_id=352522890]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 891.0
+offset_top = 403.99997
+offset_right = 1019.0
+offset_bottom = 532.0
+scale = Vector2(1.1914718, 1.1914718)
+
+[node name="TextureRect" type="TextureRect" parent="Slot3" unique_id=380978608]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 128.0
+texture = ExtResource("7_pfr2o")
+expand_mode = 2
+
+[node name="TokenSlot4" type="Panel" parent="Slot3" unique_id=1985147718]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 0.8615227
+offset_right = 1.5258789e-05
+offset_bottom = 0.8615265
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ihef7")
+script = ExtResource("4_j110i")
+correct = ExtResource("7_pv184")
+idx = 2
+
+[node name="Icon" type="TextureRect" parent="Slot3/TokenSlot4" unique_id=2134596623]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.017548
+offset_top = -45.55767
+offset_right = 148.98245
+offset_bottom = 146.4423
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.44290543, 0.44290543)
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Slot4" type="Control" parent="." unique_id=1121203563]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1142.0
+offset_top = 403.99997
+offset_right = 1270.0
+offset_bottom = 532.0
+scale = Vector2(1.1914718, 1.1914718)
+
+[node name="TextureRect" type="TextureRect" parent="Slot4" unique_id=1088516752]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 128.0
+texture = ExtResource("7_pfr2o")
+expand_mode = 2
+
+[node name="TokenSlot4" type="Panel" parent="Slot4" unique_id=771847128]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 0.8615227
+offset_right = 1.5258789e-05
+offset_bottom = 0.8615265
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ihef7")
+script = ExtResource("4_j110i")
+correct = ExtResource("6_xkrw7")
+idx = 3
+
+[node name="Icon" type="TextureRect" parent="Slot4/TokenSlot4" unique_id=881310535]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.017548
+offset_top = -45.55767
+offset_right = 148.98245
+offset_bottom = 146.4423
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.44290543, 0.44290543)
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Slot5" type="Control" parent="." unique_id=1594764588]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1390.9999
+offset_top = 403.99997
+offset_right = 1518.9999
+offset_bottom = 532.0
+scale = Vector2(1.1914718, 1.1914718)
+
+[node name="TextureRect" type="TextureRect" parent="Slot5" unique_id=486702658]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 128.0
+texture = ExtResource("7_pfr2o")
+expand_mode = 2
+
+[node name="TokenSlot4" type="Panel" parent="Slot5" unique_id=755153595]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 0.8615227
+offset_right = 1.5258789e-05
+offset_bottom = 0.8615265
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_ihef7")
+script = ExtResource("4_j110i")
+correct = ExtResource("9_h81cr")
+idx = 4
+
+[node name="Icon" type="TextureRect" parent="Slot5/TokenSlot4" unique_id=487440854]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.017548
+offset_top = -45.55767
+offset_right = 148.98245
+offset_bottom = 146.4423
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.44290543, 0.44290543)
+expand_mode = 3
+stretch_mode = 5
+
+[node name="MastermindInventory" type="Panel" parent="." unique_id=1152246160]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -298.0
+offset_top = 313.0
+offset_right = 510.0
+offset_bottom = 451.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.95699424, 0.97271436)
+theme_override_styles/panel = SubResource("StyleBoxFlat_pfr2o")
+script = ExtResource("10_qahip")
+
+[node name="MarginContainer" type="MarginContainer" parent="MastermindInventory" unique_id=133078894]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="GridContainer" type="GridContainer" parent="MastermindInventory/MarginContainer" unique_id=1382178346]
+layout_mode = 2
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 6
+
+[node name="TokenSlot" type="Panel" parent="MastermindInventory/MarginContainer/GridContainer" unique_id=658795528]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_j110i")
+token = ExtResource("5_ykfqf")
+idx = 5
+
+[node name="Icon" type="TextureRect" parent="MastermindInventory/MarginContainer/GridContainer/TokenSlot" unique_id=602700793]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot2" type="Panel" parent="MastermindInventory/MarginContainer/GridContainer" unique_id=2126322188]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_j110i")
+token = ExtResource("6_xkrw7")
+idx = 5
+
+[node name="Icon" type="TextureRect" parent="MastermindInventory/MarginContainer/GridContainer/TokenSlot2" unique_id=1652019130]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot3" type="Panel" parent="MastermindInventory/MarginContainer/GridContainer" unique_id=938598690]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_j110i")
+token = ExtResource("7_pv184")
+idx = 5
+
+[node name="Icon" type="TextureRect" parent="MastermindInventory/MarginContainer/GridContainer/TokenSlot3" unique_id=1949332856]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot4" type="Panel" parent="MastermindInventory/MarginContainer/GridContainer" unique_id=1918657318]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_j110i")
+token = ExtResource("8_pv184")
+idx = 5
+
+[node name="Icon" type="TextureRect" parent="MastermindInventory/MarginContainer/GridContainer/TokenSlot4" unique_id=540485459]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot5" type="Panel" parent="MastermindInventory/MarginContainer/GridContainer" unique_id=1162688782]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_j110i")
+token = ExtResource("9_h81cr")
+idx = 5
+
+[node name="Icon" type="TextureRect" parent="MastermindInventory/MarginContainer/GridContainer/TokenSlot5" unique_id=2092824070]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="TokenSlot6" type="Panel" parent="MastermindInventory/MarginContainer/GridContainer" unique_id=2093003639]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_t35mi")
+script = ExtResource("4_j110i")
+token = ExtResource("10_7n0sc")
+idx = 5
+
+[node name="Icon" type="TextureRect" parent="MastermindInventory/MarginContainer/GridContainer/TokenSlot6" unique_id=1320575503]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5
+
+[node name="CloseButton" type="TextureButton" parent="." unique_id=1615438251]
+material = SubResource("ShaderMaterial_p4o86")
+offset_right = 40.0
+offset_bottom = 40.0
+texture_normal = ExtResource("15_40qrv")
+
+[node name="Label" type="Label" parent="." unique_id=1394262138]
+offset_left = 672.0
+offset_top = 45.0
+offset_right = 1087.0
+offset_bottom = 172.0
+scale = Vector2(1.8987154, 1.9593979)
+text = "🟡🟢🟣🔴🔵 : 4 right colors, none in the right place.
+🔴🟣🟠🟢🔵 : 4 right colors, none in the right place.
+🔴🟣🔵🟢🟡 : 4 right colors, none in the right place.
+🟠🔴🟣🟡🔵 : 1 right place, 3 right colors.
+🔵🟡🟣🟠🟢 : 5 right colors, none in the right place."
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]

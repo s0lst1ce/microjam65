@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TokenData" format=3 uid="uid://bhmtk4rbrp8n5"]
+
+[ext_resource type="Texture2D" uid="uid://covpbbx2krn17" path="res://assets/misc/orange.png" id="1_1t8bg"]
+[ext_resource type="Script" uid="uid://ury7uw8n8n8c" path="res://token.gd" id="1_todmm"]
+
+[resource]
+script = ExtResource("1_todmm")
+name = "orange"
+icon = ExtResource("1_1t8bg")
+metadata/_custom_type_script = "uid://ury7uw8n8n8c"

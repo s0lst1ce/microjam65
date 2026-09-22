@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c7vv2vflotbe8"
-path="res://.godot/imported/plante.png-279421a25012891442d281c811b15b08.ctex"
+uid="uid://2eyacetwwhrm"
+path="res://.godot/imported/medal.png-99fe34ed160b08356742ee9e37873ddd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/unsorted/plante.png"
-dest_files=["res://.godot/imported/plante.png-279421a25012891442d281c811b15b08.ctex"]
+source_file="res://assets/furniture/medal.png"
+dest_files=["res://.godot/imported/medal.png-99fe34ed160b08356742ee9e37873ddd.ctex"]
 
 [params]
 

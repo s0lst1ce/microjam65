@@ -58,7 +58,6 @@ func _drop_data(_at_position: Vector2, slot: Variant) -> void:
 #	item_highlight.visible=false
 
 func verify():
-	print(Enigma.shrimp_puzzle)
 	if token.mirrored == correct_mirrored and token==correct:
 		Enigma.shrimp_puzzle[idx] = 1
 		if not Enigma.shrimp_puzzle_completed and Enigma.shrimp_puzzle_complete():
@@ -66,6 +65,7 @@ func verify():
 
 	else:
 		Enigma.table_puzzle[idx] = 0
+	print(Enigma.shrimp_puzzle)
 
 func _on_gui_input(event: InputEvent) -> void:
 	if event.is_action_pressed("click"):

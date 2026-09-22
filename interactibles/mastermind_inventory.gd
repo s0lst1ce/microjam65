@@ -2,10 +2,6 @@ extends Panel
 
 @onready var grid_container: GridContainer = $"./MarginContainer/GridContainer"
 
-func _ready() -> void:
-	for child in grid_container.get_children():
-		child.verify()
-
 var data_bk
 func _notification(what: int) -> void:
 	if what == Node.NOTIFICATION_DRAG_BEGIN:
