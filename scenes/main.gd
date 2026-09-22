@@ -66,10 +66,12 @@ func _on_toggle_hud_visibility():
 	hud.visible = not hud.visible
 	
 func _on_drop_item(data: Variant):
-	print("Hovered ", hovered_furniture)
+	print("Dropping ", data.item, " on ", hovered_furniture)
 	if hovered_furniture != null and is_instance_valid(hovered_furniture) and hovered_furniture.get_rect().has_point(get_global_mouse_position()-hovered_furniture.position) and not get_tree().paused:
-		print("hey man!")
 		hovered_furniture.catch_item(data)
+		if data.item.name in hovered_furniture.interacts_with:
+			data.item = null
+			data.update_ui()
 
 func _on_furniture_enter(furniture: Interactible):
 	hovered_furniture = furniture

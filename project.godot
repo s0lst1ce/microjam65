@@ -69,7 +69,7 @@ variables={
 "swordfish": "meeting_swordfish",
 "whale": "meeting_whale"
 },
-"collected_shrimps_counts": 5,
+"collected_shrimps_counts": 3,
 "puzzle_pieces_count": 0,
 "sharko_got_can": false,
 "table_puzzle_enabled": false,
