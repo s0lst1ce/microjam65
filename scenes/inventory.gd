@@ -2,8 +2,6 @@ extends Panel
 
 @onready var grid_container: GridContainer = $"./MarginContainer/GridContainer"
 
-
-
 func _ready() -> void:	
 	ItemExchange.add_item.connect(_on_add_item)
 	Dialogic.signal_event.connect(_on_dialogic_signal)
@@ -36,3 +34,6 @@ func _on_add_item(item: ItemData):
 func _on_dialogic_signal(argument:String):
 	if argument == "gain_can":
 		ItemExchange.add_item.emit(preload("res://items/shrimp_can.tres"))
+
+func _toggle_visibility():
+	visible = not visible

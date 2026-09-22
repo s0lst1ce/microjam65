@@ -47,7 +47,8 @@ func _interact_with(_item: ItemData) -> void:
 	pass
 
 func catch_item(data: Variant) -> void:
-	print(name, process_mode, get_tree().paused)
+	#print(name, process_mode, get_tree().paused)
+	print("Trying to interact with ", data.item)
 	if data.item.name in interacts_with:
 		print(data.item, " is interacting with ", self)
 		_interact_with(data.item)
