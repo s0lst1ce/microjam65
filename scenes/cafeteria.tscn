@@ -5,16 +5,22 @@
 [ext_resource type="Texture2D" uid="uid://qecvmpn6x7jy" path="res://assets/portraits/lantern.png" id="3_4gkc1"]
 [ext_resource type="Script" uid="uid://c0mq0pmy07xpm" path="res://scenes/lantern.gd" id="4_rrnwm"]
 [ext_resource type="Texture2D" uid="uid://brjd8j1xuff8k" path="res://assets/furniture/table.png" id="5_rrnwm"]
+[ext_resource type="Texture2D" uid="uid://dd5e40isspndr" path="res://assets/furniture/calendar.png" id="6_hwmdj"]
 [ext_resource type="Script" uid="uid://cbs1mjlb1wqds" path="res://interactibles/dining_table.gd" id="6_rrnwm"]
 [ext_resource type="PackedScene" uid="uid://df70lff56mrp0" path="res://interactibles/table_puzzle.tscn" id="7_p4o86"]
 [ext_resource type="Texture2D" uid="uid://c03it200vxob4" path="res://assets/furniture/cafeteria_painting.png" id="8_4xt3o"]
 [ext_resource type="PackedScene" uid="uid://re8kn4o0tu3b" path="res://interactibles/puzzle_piece.tscn" id="8_fd8ba"]
+[ext_resource type="Script" uid="uid://jsao73musulf" path="res://scenes/calendar.gd" id="11_lxt4k"]
+[ext_resource type="PackedScene" uid="uid://v02dradvcb3l" path="res://scenes/calendar.tscn" id="12_h1qar"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s86j8"]
 size = Vector2(1414.3859, 317.06262)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
 size = Vector2(380.46683, 649.2218)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wgcn5"]
+size = Vector2(595.56104, 642.29065)
 
 [node name="Cafeteria" type="Node2D" unique_id=1419031862]
 script = ExtResource("1_guycb")
@@ -62,3 +68,23 @@ position = Vector2(1445, 307)
 [node name="Painting" type="Sprite2D" parent="." unique_id=1707683348]
 position = Vector2(1552, 325)
 texture = ExtResource("8_4xt3o")
+
+[node name="Calendar" type="Sprite2D" parent="." unique_id=1328338181]
+position = Vector2(1751, 404.9999)
+rotation = -0.1675516
+scale = Vector2(0.18360633, 0.37223697)
+skew = 0.3630284
+texture = ExtResource("6_hwmdj")
+script = ExtResource("11_lxt4k")
+interacts_with = Array[String](["loop"])
+metadata/_custom_type_script = "uid://brgtb1k50k6x"
+
+[node name="Area2D" type="Area2D" parent="Calendar" unique_id=658599279]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Calendar/Area2D" unique_id=1930743840]
+position = Vector2(-15.416016, 1.0847168)
+shape = SubResource("RectangleShape2D_wgcn5")
+
+[node name="Calendar" parent="Calendar" unique_id=2043618056 instance=ExtResource("12_h1qar")]
+process_mode = 2
+visible = false

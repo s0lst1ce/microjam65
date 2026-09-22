@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://v02dradvcb3l"]
+
+[ext_resource type="Texture2D" uid="uid://dd5e40isspndr" path="res://assets/furniture/calendar.png" id="1_nb4pb"]
+[ext_resource type="Script" uid="uid://bhefoog2gqy5n" path="res://scenes/zoomed_calendar.gd" id="1_xnkdq"]
+[ext_resource type="Shader" uid="uid://b7sb2ttxlkl27" path="res://scenes/solid_color.gdshader" id="2_l5pxe"]
+[ext_resource type="Shader" uid="uid://dvdb7o7b5ndrc" path="res://interactibles/table_puzzle.gdshader" id="2_vrnb8"]
+[ext_resource type="Texture2D" uid="uid://6wjgxdgnoeck" path="res://assets/misc/black.png" id="3_bud5a"]
+[ext_resource type="Texture2D" uid="uid://1vdcg5hsdtwl" path="res://assets/unsorted/crux.png" id="3_xnkdq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wm6sv"]
+shader = ExtResource("2_l5pxe")
+shader_parameter/color = Color(0.91764706, 0.85490197, 0.61960787, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yqp0o"]
+shader = ExtResource("2_vrnb8")
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/width = 5.0000002375
+shader_parameter/pattern = 0
+shader_parameter/inside = false
+shader_parameter/add_margins = true
+
+[node name="Calendar" type="CanvasLayer" unique_id=2043618056]
+script = ExtResource("1_xnkdq")
+
+[node name="Wall" type="TextureRect" parent="." unique_id=856981634]
+material = SubResource("ShaderMaterial_wm6sv")
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_bud5a")
+
+[node name="Background" type="TextureRect" parent="." unique_id=431278655]
+offset_left = 525.0
+offset_top = 13.000002
+offset_right = 1085.0
+offset_bottom = 643.0
+scale = Vector2(1.6766201, 1.6766201)
+texture = ExtResource("1_nb4pb")
+
+[node name="CloseButton" type="TextureButton" parent="." unique_id=1060564781]
+material = SubResource("ShaderMaterial_yqp0o")
+offset_left = 2.0
+offset_right = 130.0
+offset_bottom = 128.0
+texture_normal = ExtResource("3_xnkdq")

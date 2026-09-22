@@ -10,6 +10,7 @@
 [ext_resource type="Resource" uid="uid://bi5kaj7xmp2kd" path="res://items/torn_paper.tres" id="7_0i1j5"]
 [ext_resource type="Shader" uid="uid://cqv4mrmukav8w" path="res://scenes/highlight.gdshader" id="7_5pdws"]
 [ext_resource type="Resource" uid="uid://b4lxcfoxv08ft" path="res://items/half_sheet.tres" id="10_mphia"]
+[ext_resource type="Resource" uid="uid://diobv8pafb1sk" path="res://items/magniyfing_glass.tres" id="11_0m4u7"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cty71"]
 texture = ExtResource("3_mphia")
@@ -179,6 +180,7 @@ custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_apjy4")
 script = ExtResource("3_047uy")
+item = ExtResource("11_0m4u7")
 
 [node name="Icon" type="TextureRect" parent="Inventory/MarginContainer/GridContainer/ItemSlot4" unique_id=1456906161]
 material = SubResource("ShaderMaterial_uo2fv")

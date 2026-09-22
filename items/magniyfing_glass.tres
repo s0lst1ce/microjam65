@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" format=3 uid="uid://diobv8pafb1sk"]
+
+[ext_resource type="Texture2D" uid="uid://d3t7g0j6ufen4" path="res://assets/furniture/magnifying_glass.png" id="1_8pc7a"]
+[ext_resource type="Script" uid="uid://bp63adiuj3ujh" path="res://item_data.gd" id="1_tkdrq"]
+
+[resource]
+script = ExtResource("1_tkdrq")
+name = "magniyfing_glass"
+icon = ExtResource("1_8pc7a")
+metadata/_custom_type_script = "uid://bp63adiuj3ujh"
