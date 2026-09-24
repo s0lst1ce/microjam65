@@ -86,17 +86,17 @@ rotation = 1.6335592
 position = Vector2(684, 612)
 texture = ExtResource("8_f3x8y")
 
-[node name="Interactible" type="Sprite2D" parent="Bed" unique_id=526590389]
-position = Vector2(-203.99998, 60.999985)
+[node name="Interactible" type="Sprite2D" parent="." unique_id=526590389]
+position = Vector2(480, 673)
 scale = Vector2(0.8527091, 0.8527091)
 texture = ExtResource("10_f3x8y")
 script = ExtResource("12_ybjo0")
 gives = Array[ExtResource("17_4mmm3")]([ExtResource("14_tl4y2")])
 metadata/_custom_type_script = "uid://brgtb1k50k6x"
 
-[node name="Area2D" type="Area2D" parent="Bed/Interactible" unique_id=600359487]
+[node name="Area2D" type="Area2D" parent="Interactible" unique_id=600359487]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Bed/Interactible/Area2D" unique_id=1581878227]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactible/Area2D" unique_id=1581878227]
 position = Vector2(1.1727905, -0.58636475)
 shape = SubResource("RectangleShape2D_wgcn5")
 
