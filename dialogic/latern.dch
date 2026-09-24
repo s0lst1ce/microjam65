@@ -2,7 +2,7 @@
 "@path": "res://addons/dialogic/Resources/character.gd",
 "@subpath": NodePath(""),
 &"_translation_id": "",
-&"color": Color(0.8117647, 0.54901963, 0.3372549, 1),
+&"color": Color(0.8, 0.78431374, 0.24313726, 1),
 &"custom_info": {
 "prefix": "",
 "sound_mood_default": "",
@@ -20,6 +20,15 @@
 "Main": {
 "export_overrides": {
 "image": "\"res://assets/portraits/lantern.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
+"Surprised": {
+"export_overrides": {
+"image": "\"res://assets/portraits/lantern_surprised.png\""
 },
 "mirror": false,
 "offset": Vector2(0, 0),

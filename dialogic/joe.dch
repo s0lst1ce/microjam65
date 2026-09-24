@@ -25,6 +25,15 @@
 "offset": Vector2(0, -100),
 "scale": 0.2,
 "scene": ""
+},
+"Sighing": {
+"export_overrides": {
+"image": "\"res://assets/portraits/joe_sigh.png\""
+},
+"mirror": true,
+"offset": Vector2(0, -100),
+"scale": 0.2,
+"scene": ""
 }
 },
 &"scale": 1.0
