@@ -17,6 +17,15 @@
 &"nicknames": [""],
 &"offset": Vector2(0, 0),
 &"portraits": {
+"Frustrated": {
+"export_overrides": {
+"image": "\"res://assets/portraits/brochette_frustrated.png\""
+},
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.5,
+"scene": ""
+},
 "Main": {
 "export_overrides": {
 "image": "\"res://assets/portraits/brochette.png\""
