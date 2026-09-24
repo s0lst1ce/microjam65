@@ -35,6 +35,7 @@ script = ExtResource("4_t7wao")
 metadata/_custom_type_script = "uid://brgtb1k50k6x"
 
 [node name="Area2D" type="Area2D" parent="Pirhana" unique_id=182261235]
+position = Vector2(34.213898, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pirhana/Area2D" unique_id=1720994838]
 position = Vector2(-24.79419, -1.5180664)
@@ -49,6 +50,7 @@ script = ExtResource("4_t7wao")
 metadata/_custom_type_script = "uid://brgtb1k50k6x"
 
 [node name="Area2D" type="Area2D" parent="Brochette" unique_id=34662602]
+position = Vector2(17.88756, 5.7639523)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Brochette/Area2D" unique_id=1489342884]
 position = Vector2(-20.240234, -6.0720825)

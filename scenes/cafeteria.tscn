@@ -17,7 +17,7 @@
 size = Vector2(1414.3859, 317.06262)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3bft5"]
-size = Vector2(380.46683, 649.2218)
+size = Vector2(462.4259, 700.37286)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wgcn5"]
 size = Vector2(595.56104, 642.29065)
@@ -58,8 +58,8 @@ metadata/_custom_type_script = "uid://brgtb1k50k6x"
 [node name="Area2D" type="Area2D" parent="Lantern" unique_id=517275709]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Lantern/Area2D" unique_id=919342031]
-position = Vector2(18.310059, 16.332886)
-scale = Vector2(0.9999992, 0.9999992)
+position = Vector2(11.223877, 0)
+scale = Vector2(0.99999917, 0.99999917)
 shape = SubResource("RectangleShape2D_3bft5")
 
 [node name="PuzzlePiece" parent="." unique_id=1002671440 instance=ExtResource("8_fd8ba")]
